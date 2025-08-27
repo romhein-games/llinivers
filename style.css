@@ -1,5 +1,4 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     flex-direction: column; /* empile verticalement */
     justify-content: center;
@@ -21,4 +20,5 @@ body {
 
 h1 { color: #333; }
 p { color: #666; }
+
 
