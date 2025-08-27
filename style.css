@@ -50,10 +50,13 @@ body {
     word-wrap: break-word;
 }
 
-/* Media query pour mobile */
-@media (max-width: 600px) {
+/* Mobile portrait : image verticale optimisée */
+@media (max-width: 600px) and (orientation: portrait) {
     body {
-        background-image: url('background-mobile.png'); /* version optimisée pour mobile */
+        background-image: url('background-mobile-portrait.png'); 
+        background-size: contain; /* toute l'image visible */
+        background-repeat: no-repeat;
+        background-position: center top;
     }
     .box {
         width: 80%;
@@ -61,34 +64,16 @@ body {
     }
 }
 
-/* Orientation portrait */
-@media (orientation: portrait) {
+/* Mobile paysage : image paysage optimisée */
+@media (max-width: 600px) and (orientation: landscape) {
+    body {
+        background-image: url('background-mobile-landscape.png'); 
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
     .box {
-        width: 80%; /* plus large verticalement */
+        width: 70%;
+        padding: 1rem;
     }
 }
-
-/* Orientation paysage */
-@media (orientation: landscape) {
-    .box {
-        width: 70%; /* plus étroite horizontalement */
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
