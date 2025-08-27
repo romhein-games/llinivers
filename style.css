@@ -1,47 +1,65 @@
+/* Body : background responsive et centrage Flexbox */
 body {
     display: flex; 
-    font-family: Arial, sans-serif;
     flex-direction: column; /* empile verticalement */
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin:0;
+    font-family: Arial, sans-serif;
+    
     background: #0a0a2a url('background.png') no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
+    
     color: white;
     text-align: center;
-    background-attachment: fixed;
 }
 
-.box {
-      background: white;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      width: 60%;         /* largeur = 80% de l’écran */
-      max-width: 700px;
-    }
-
-h1 { 
-    color: #333;
-    font-size: clamp(1.5rem, 5vw, 3rem);
-    white-space: nowrap;
-    overflow: hidden;   /* si trop long, le texte ne déborde pas visuellement */
-    text-overflow: ellipsis; /* ajoute "..." si le texte dépasse */
-   }
-p { 
-    color: #666;
-    font-size: clamp(1rem, 3vw, 1.2rem);
-    white-space: nowrap;
-    overflow: hidden;   /* si trop long, le texte ne déborde pas visuellement */
-    text-overflow: ellipsis; /* ajoute "..." si le texte dépasse */
-  }
-
+/* Logo centré et responsive */
 .logo {
-    width: 30%;              /* prend 30% de la largeur de la boîte parente */
-    max-width: 300px;        /* largeur maximale */
+    width: 30%;              
+    max-width: 300px;        
     display: block;
     margin: 0 auto 2rem auto;
 }
+
+/* Box blanche centrée */
+.box {
+    background: rgba(255, 255, 255, 0.9); /* légèrement translucide */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 80%;           
+    max-width: 600px;
+}
+
+/* Texte responsive */
+h1 { 
+    color: #333;
+    font-size: clamp(1.5rem, 3.5vw, 1.8rem);
+    white-space: nowrap;   /* reste sur une ligne */
+}
+p { 
+    color: #666;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+/* Media query pour mobile */
+@media (max-width: 600px) {
+    body {
+        background-image: url('background-mobile.png'); /* version optimisée pour mobile */
+    }
+    .box {
+        width: 90%;
+        padding: 1rem;
+    }
+    h1, p {
+        white-space: normal; /* texte peut passer à la ligne si nécessaire */
+    }
+}
+
+
 
 
 
