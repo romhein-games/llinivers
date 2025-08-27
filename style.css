@@ -35,14 +35,19 @@ body {
 }
 
 /* Texte responsive */
-h1 { 
+.box h1 { 
     color: #333;
-    font-size: clamp(1.5rem, 3.5vw, 1.8rem);
-    white-space: nowrap;   /* reste sur une ligne */
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    width: 100%;                           /* limite à la largeur de la box */
+    text-align: center;
+    word-wrap: break-word; 
 }
-p { 
+.box p { 
     color: #666;
-    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
 }
 
 /* Media query pour mobile */
@@ -54,10 +59,8 @@ p {
         width: 90%;
         padding: 1rem;
     }
-    h1, p {
-        white-space: normal; /* texte peut passer à la ligne si nécessaire */
-    }
 }
+
 
 
 
