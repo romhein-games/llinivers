@@ -30,7 +30,7 @@ body {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    width: 50%;           
+    width: 80%;           
     max-width: 600px;
 }
 
@@ -56,10 +56,24 @@ body {
         background-image: url('background-mobile.png'); /* version optimisée pour mobile */
     }
     .box {
-        width: 90%;
+        width: 80%;
         padding: 1rem;
     }
 }
+
+/* Orientation portrait */
+@media (orientation: portrait) {
+    .box {
+        width: 80%; /* plus large verticalement */
+    }
+}
+
+/* Orientation paysage */
+@media (orientation: landscape) {
+    .box {
+        width: 70%; /* plus étroite horizontalement */
+    }
+
 
 
 
