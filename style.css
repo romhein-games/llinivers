@@ -30,6 +30,14 @@ p {
     font-size: clamp(1rem, 3vw, 1.2rem);
   }
 
+.logo {
+    width: 30%;              /* prend 30% de la largeur de la boîte parente */
+    max-width: 300px;        /* largeur maximale */
+    display: block;
+    margin: 0 auto 2rem auto;
+}
+
+
 
 
 
