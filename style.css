@@ -16,9 +16,12 @@ body {
       padding: 2rem;
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 60%;         /* largeur = 80% de l’écran */
+      max-width: 500px;
     }
 
 h1 { color: #333; }
 p { color: #666; }
+
 
 
