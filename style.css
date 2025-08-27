@@ -18,16 +18,22 @@ body {
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       width: 80%;         /* largeur = 80% de l’écran */
-      max-width: 600px;
+      max-width: 700px;
     }
 
 h1 { 
     color: #333;
     font-size: clamp(1.5rem, 3.5vw, 1.8rem);
+    white-space: nowrap;
+    overflow: hidden;   /* si trop long, le texte ne déborde pas visuellement */
+    text-overflow: ellipsis; /* ajoute "..." si le texte dépasse */
    }
 p { 
     color: #666;
     font-size: clamp(1rem, 3vw, 1.2rem);
+    white-space: nowrap;
+    overflow: hidden;   /* si trop long, le texte ne déborde pas visuellement */
+    text-overflow: ellipsis; /* ajoute "..." si le texte dépasse */
   }
 
 .logo {
@@ -36,6 +42,7 @@ p {
     display: block;
     margin: 0 auto 2rem auto;
 }
+
 
 
 
