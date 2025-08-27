@@ -23,7 +23,7 @@ body {
 
 h1 { 
     color: #333;
-    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
    }
 p { 
     color: #666;
@@ -36,6 +36,7 @@ p {
     display: block;
     margin: 0 auto 2rem auto;
 }
+
 
 
 
