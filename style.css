@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0a2a url('assets/background.jpg') no-repeat center top;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
