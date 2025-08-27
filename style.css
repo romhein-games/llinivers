@@ -17,7 +17,7 @@ body {
       padding: 2rem;
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      width: 80%;         /* largeur = 80% de l’écran */
+      width: 60%;         /* largeur = 80% de l’écran */
       max-width: 700px;
     }
 
@@ -42,6 +42,7 @@ p {
     display: block;
     margin: 0 auto 2rem auto;
 }
+
 
 
 
