@@ -18,7 +18,7 @@ body {
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       width: 80%;         /* largeur = 80% de l’écran */
-      max-width: 500px;
+      max-width: 600px;
     }
 
 h1 { 
@@ -36,6 +36,7 @@ p {
     display: block;
     margin: 0 auto 2rem auto;
 }
+
 
 
 
