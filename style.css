@@ -32,9 +32,6 @@ header {
 
 /* Logo centré et responsive */
 header .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 50%;       /* prend 50% de l'écran, tu peux ajuster */
     max-width: 300px; /* ne dépasse pas 300px */
     min-width: 120px; /* ne descend pas en dessous de 120px */
@@ -185,6 +182,7 @@ header .logo {
         min-width: 250px;
     }
 }
+
 
 
 
