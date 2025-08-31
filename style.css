@@ -22,8 +22,14 @@ body {
     background-attachment: fixed;
 }
 
+header {
+    text-align: center; /* centre le contenu dans le header */
+    padding: 2rem 0;
+}
+header
+
 /* Logo centré et responsive */
-.logo {
+header .logo {
     width: 30%;              
     max-width: 300px;        
     display: block;
@@ -142,4 +148,5 @@ body {
         background-repeat: no-repeat;
     }
 }
+
 
