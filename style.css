@@ -191,7 +191,7 @@ header .logo {
         background-repeat: no-repeat;
     }
      header {
-        padding-top: 3rem; /* descend le logo */
+        padding-top: 4rem; /* descend le logo */
         padding-bottom: 1rem;
         display: flex;
         justify-content: center;
@@ -201,6 +201,33 @@ header .logo {
         width: 40%;
         max-width: 280px;
         min-width: 150px;
+    }
+    .box {
+        width: 75%;
+        max-width: 300px;
+        margin: 2rem auto 1rem auto; /* margin-top pour créer l’espace sous le header */
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    .box h1 { 
+        font-size: clamp(0.9rem, 4vw, 1.2rem);
+        line-height: 1.2; 
+        max-width: 90%; 
+        margin: 0 auto 0.8rem auto;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+
+    .box p { 
+        font-size: clamp(0.8rem, 3.5vw, 1rem);
+        line-height: 1.25;
+        max-width: 90%; 
+        margin: 0 auto;
+        overflow-wrap: break-word;
+        hyphens: auto;
     }
 }
 
@@ -239,6 +266,7 @@ header .logo {
         min-width: 250px;
     }
 }
+
 
 
 
