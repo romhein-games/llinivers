@@ -8,12 +8,18 @@ body {
     margin:0;
     font-family: Arial, sans-serif;
     
-    background: #0a0a2a url('background.png') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    
     color: white;
     text-align: center;
+
+    /* Background responsive avec WebP + fallback JPEG */
+    background-image: image-set(
+        url('images/background-mobile-portrait.webp') type('image/webp'),
+        url('images/background-mobile-portrait.jpg') type('image/jpeg')
+    );
+    background-size: cover;           /* remplit l’écran */
+    background-position: top left;    /* planète en haut à gauche */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Logo centré et responsive */
@@ -32,6 +38,7 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     width: 80%;           
     max-width: 600px;
+    box-sizing: border-box;
 }
 
 /* Texte responsive */
@@ -53,10 +60,13 @@ body {
 /* Mobile portrait : image verticale optimisée */
 @media (max-width: 600px) and (orientation: portrait) {
     body {
-        background-image: url('background-mobile-portrait.png'); 
-        background-size: contain; /* toute l'image visible */
+        background-image: image-set(
+            url('images/background-mobile-portrait.webp') type('image/webp'),
+            url('images/background-mobile-portrait.jpg') type('image/jpeg')
+        );
+        background-size: cover;
+        background-position: top left;
         background-repeat: no-repeat;
-        background-position: center top;
     }
     .box {
         width: 80%;
@@ -67,13 +77,69 @@ body {
 /* Mobile paysage : image paysage optimisée */
 @media (max-width: 600px) and (orientation: landscape) {
     body {
-        background-image: url('background-mobile-landscape.png'); 
-        background-size: contain;
+       background-image: image-set(
+            url('images/background-mobile-landscape.webp') type('image/webp'),
+            url('images/background-mobile-landscape.jpg') type('image/jpeg')
+        );
+        background-size: cover;
+        background-position: top left;
         background-repeat: no-repeat;
-        background-position: center center;
     }
     .box {
         width: 70%;
         padding: 1rem;
     }
 }
+
+/* Tablette portrait */
+@media (min-width: 601px) and (max-width: 1280px) and (orientation: portrait) {
+    body {
+        background-image: image-set(
+            url('images/background-tablet-portrait.webp') type('image/webp'),
+            url('images/background-tablet-portrait.jpg') type('image/jpeg')
+        );
+        background-size: cover;
+        background-position: top left;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Tablette paysage */
+@media (min-width: 601px) and (max-width: 1280px) and (orientation: landscape) {
+    body {
+        background-image: image-set(
+            url('images/background-tablet-landscape.webp') type('image/webp'),
+            url('images/background-tablet-landscape.jpg') type('image/jpeg')
+        );
+        background-size: cover;
+        background-position: top left;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Desktop standard */
+@media (min-width: 1281px) and (max-width: 1920px) {
+    body {
+        background-image: image-set(
+            url('images/background-desktop.webp') type('image/webp'),
+            url('images/background-desktop.jpg') type('image/jpeg')
+        );
+        background-size: cover;
+        background-position: top left;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Grand écran */
+@media (min-width: 1921px) {
+    body {
+        background-image: image-set(
+            url('images/background-desktop-large.webp') type('image/webp'),
+            url('images/background-desktop-large.jpg') type('image/jpeg')
+        );
+        background-size: cover;
+        background-position: top left;
+        background-repeat: no-repeat;
+    }
+}
+
