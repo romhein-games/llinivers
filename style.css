@@ -46,7 +46,7 @@ header .logo {
             url('images/background-mobile-portrait.webp') type('image/webp'),
             url('images/background-mobile-portrait.jpg') type('image/jpeg')
         );
-        background-size: cover;
+        background-size: 100% auto;  /* toute la largeur, hauteur automatique */
         background-position: top left;
         background-repeat: no-repeat;
     }
@@ -94,7 +94,7 @@ header .logo {
             url('images/background-tablet-portrait.webp') type('image/webp'),
             url('images/background-tablet-portrait.jpg') type('image/jpeg')
         );
-        background-size: cover;
+        background-size: 100% auto;
         background-position: top left;
         background-repeat: no-repeat;
     }
@@ -165,6 +165,7 @@ header .logo {
         min-width: 250px;
     }
 }
+
 
 
 
