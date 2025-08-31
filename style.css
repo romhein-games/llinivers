@@ -39,34 +39,6 @@ header .logo {
     display: block;
 }
 
-/* Box blanche centrée */
-.box {
-    background: rgba(255, 255, 255, 0.9); /* légèrement translucide */
-    padding: clamp(1rem, 5%, 2rem);   /* padding fluide */
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    width: 80%;           
-    max-width: 600px;
-    margin: 2rem auto;                /* toujours centrée */
-    text-align: center;
-}
-
-/* Texte responsive */
-.box h1 { 
-    color: #333;
-    font-size: clamp(1.5rem, 6vw, 2rem);
-    overflow-wrap: break-word;
-    hyphens: auto;
-    margin-bottom: 1rem; 
-}
-.box p { 
-    color: #666;
-    font-size: clamp(1rem, 4vw, 1.2rem);
-    line-height: 1.5;
-    overflow-wrap: break-word;
-    hyphens: auto;
-}
-
 /* Mobile portrait : image verticale optimisée */
 @media (max-width: 600px) and (orientation: portrait) {
     body {
@@ -82,25 +54,6 @@ header .logo {
         width: 70%;
         max-width: 200px;
         min-width: 100px;
-    }
-    .box {
-        width: 90%;          /* marge sur les côtés */
-        max-width: 320px;    /* largeur max en pixels */
-        margin: 1.5rem auto; /* centrage + espace */
-        padding: 1rem;
-    }
-    .box h1 { 
-        font-size: clamp(0.8rem, 4vw, 1rem);
-        line-height: 1.2; 
-        max-width: 90%; 
-        margin: 0 auto 0.8rem auto;
-    }
-
-    .box p { 
-        font-size: clamp(0.7rem, 3.5vw, 0.9rem);
-        line-height: 1.25;
-        max-width: 90%; 
-        margin: 0 auto;
     }
 }
 
@@ -131,33 +84,6 @@ header .logo {
         min-width: 90px;
         height: auto;
         display: block;
-    }
-    .box {
-        width: 75%;
-        max-width: 300px;
-        margin: 2rem auto 1rem auto; /* margin-top pour créer l’espace sous le header */
-        padding: 1rem;
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 15px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        text-align: center;
-    }
-    .box h1 { 
-        font-size: clamp(0.9rem, 4vw, 1.2rem);
-        line-height: 1.2; 
-        max-width: 90%; 
-        margin: 0 auto 0.8rem auto;
-        overflow-wrap: break-word;
-        hyphens: auto;
-    }
-
-    .box p { 
-        font-size: clamp(0.8rem, 3.5vw, 1rem);
-        line-height: 1.25;
-        max-width: 90%; 
-        margin: 0 auto;
-        overflow-wrap: break-word;
-        hyphens: auto;
     }
 }
 
@@ -202,33 +128,6 @@ header .logo {
         max-width: 280px;
         min-width: 150px;
     }
-    .box {
-        width: 75%;
-        max-width: 300px;
-        margin: 2rem auto 1rem auto; /* margin-top pour créer l’espace sous le header */
-        padding: 1rem;
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 15px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        text-align: center;
-    }
-    .box h1 { 
-        font-size: clamp(0.9rem, 4vw, 1.2rem);
-        line-height: 1.2; 
-        max-width: 90%; 
-        margin: 0 auto 0.8rem auto;
-        overflow-wrap: break-word;
-        hyphens: auto;
-    }
-
-    .box p { 
-        font-size: clamp(0.8rem, 3.5vw, 1rem);
-        line-height: 1.25;
-        max-width: 90%; 
-        margin: 0 auto;
-        overflow-wrap: break-word;
-        hyphens: auto;
-    }
 }
 
 /* Desktop standard */
@@ -266,6 +165,7 @@ header .logo {
         min-width: 250px;
     }
 }
+
 
 
 
