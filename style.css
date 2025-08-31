@@ -84,7 +84,7 @@ header .logo {
         min-width: 100px;
     }
     .box {
-       width: 95%; /* plus large pour donner de l'air au texte */
+       width: 90%; /* plus large pour donner de l'air au texte */
         padding: clamp(0.8rem, 4%, 1.2rem);
     }
 }
@@ -182,6 +182,7 @@ header .logo {
         min-width: 250px;
     }
 }
+
 
 
 
