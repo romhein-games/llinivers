@@ -22,13 +22,13 @@ body {
     background-attachment: fixed;
 }
 
+/* header : entete et centrage Flexbox */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
-header
 
 /* Logo centré et responsive */
 header .logo {
@@ -150,6 +150,7 @@ header .logo {
         background-repeat: no-repeat;
     }
 }
+
 
 
 
