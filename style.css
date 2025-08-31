@@ -24,7 +24,7 @@ body {
 }
 
 /* Mobile portrait : image verticale optimisée (tous mobiles <= 480px et tablettes petites verticales) */
-@media (max-width: 480px) and (orientation: portrait) {
+@media (max-width: 768px) and (orientation: portrait) {
     body {
         background-image: image-set(
             url('images/background-mobile-portrait.webp') type('image/webp'),
@@ -50,7 +50,7 @@ body {
 }
 
 /* Tablette portrait moyenne (768px – 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
     body {
         background-image: image-set(
             url('images/background-tablet-portrait.webp') type('image/webp'),
@@ -100,6 +100,7 @@ body {
         background-repeat: no-repeat;
     }
 }
+
 
 
 
