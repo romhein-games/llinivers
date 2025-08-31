@@ -32,6 +32,9 @@ header {
 
 /* Logo centré et responsive */
 header .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: 50%;       /* prend 50% de l'écran, tu peux ajuster */
     max-width: 300px; /* ne dépasse pas 300px */
     min-width: 120px; /* ne descend pas en dessous de 120px */
@@ -42,28 +45,29 @@ header .logo {
 /* Box blanche centrée */
 .box {
     background: rgba(255, 255, 255, 0.9); /* légèrement translucide */
-    padding: 2rem;
+    padding: clamp(1rem, 5%, 2rem);   /* padding fluide */
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     width: 80%;           
     max-width: 600px;
-    box-sizing: border-box;
+    margin: 1rem auto;                /* toujours centrée */
+    text-align: center;
 }
 
 /* Texte responsive */
 .box h1 { 
     color: #333;
     font-size: clamp(1.5rem, 6vw, 2rem);
-    width: 100%;                           /* limite à la largeur de la box */
-    text-align: center;
-    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    hyphens: auto;
+    margin-bottom: 1rem; 
 }
 .box p { 
     color: #666;
     font-size: clamp(1rem, 4vw, 1.2rem);
-    width: 100%;
-    text-align: center;
-    word-wrap: break-word;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 /* Mobile portrait : image verticale optimisée */
@@ -181,6 +185,7 @@ header .logo {
         min-width: 250px;
     }
 }
+
 
 
 
