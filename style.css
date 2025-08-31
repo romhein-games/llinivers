@@ -14,8 +14,8 @@ body {
     /* Background responsive avec WebP + fallback JPEG */
     background: #0a0a2a;
     background-image: image-set(
-        url('images/background-mobile-portrait.webp') type('image/webp'),
-        url('images/background-mobile-portrait.jpg') type('image/jpeg')
+        url('images/background-desktop.webp') type('image/webp'),
+        url('images/background-desktop.jpg') type('image/jpeg')
     );
     background-size: cover;           /* remplit l’écran */
     background-position: top left;    /* planète en haut à gauche */
@@ -87,6 +87,7 @@ body {
         background-repeat: no-repeat;
     }
 }
+
 
 
 
