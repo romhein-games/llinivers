@@ -84,9 +84,17 @@ header .logo {
         min-width: 100px;
     }
     .box {
-       width: 70%; /* plus large pour donner de l'air au texte */
-       padding: clamp(0.8rem, 4%, 1.2rem);
-       margin: 1.5rem auto; /* espace autour */
+        width: 90%;          /* marge sur les côtés */
+        max-width: 320px;    /* largeur max en pixels */
+        margin: 1.5rem auto; /* centrage + espace */
+        padding: 1rem;
+    }
+    .box h1 { 
+        font-size: clamp(1rem, 5vw, 1.4rem);
+    }
+
+    .box p { 
+        font-size: clamp(0.85rem, 4vw, 1rem);
     }
 }
 
@@ -183,6 +191,7 @@ header .logo {
         min-width: 250px;
     }
 }
+
 
 
 
