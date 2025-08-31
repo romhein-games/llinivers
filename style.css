@@ -23,8 +23,10 @@ body {
 }
 
 header {
-    text-align: center; /* centre le contenu dans le header */
-    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 header
 
@@ -148,5 +150,6 @@ header .logo {
         background-repeat: no-repeat;
     }
 }
+
 
 
