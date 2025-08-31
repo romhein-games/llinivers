@@ -13,11 +13,10 @@ body {
 
     /* Background responsive avec WebP + fallback JPEG */
     background: #0a0a2a;
-    /*background-image: image-set(
+    background-image: image-set(
         url('images/background-desktop.webp') type('image/webp'),
         url('images/background-desktop.jpg') type('image/jpeg')
-    );*/
-    background-image: url('https://via.placeholder.com/800x600.png?text=Test');
+    );
     background-size: cover;           /* remplit l’écran */
     background-position: top left;    /* planète en haut à gauche */
     background-repeat: no-repeat;
@@ -101,6 +100,7 @@ body {
         background-repeat: no-repeat;
     }
 }
+
 
 
 
