@@ -12,6 +12,7 @@ body {
     text-align: center;
 
     /* Background responsive avec WebP + fallback JPEG */
+    background: #0a0a2a;
     background-image: image-set(
         url('images/background-mobile-portrait.webp') type('image/webp'),
         url('images/background-mobile-portrait.jpg') type('image/jpeg')
@@ -30,35 +31,21 @@ header {
     padding: 20px;
 }
 
-/* Logo centré et responsive */
-header .logo {
-    width: 50%;       /* prend 50% de l'écran, tu peux ajuster */
-    max-width: 300px; /* ne dépasse pas 300px */
-    min-width: 120px; /* ne descend pas en dessous de 120px */
-    height: auto;     /* conserve les proportions */
-    display: block;
-}
-
 /* Mobile portrait : image verticale optimisée */
-@media (max-width: 600px) and (orientation: portrait) {
+@media (max-width: 480px) and (orientation: portrait) {
     body {
         background-image: image-set(
             url('images/background-mobile-portrait.webp') type('image/webp'),
             url('images/background-mobile-portrait.jpg') type('image/jpeg')
         );
-        background-size: 100% auto;  /* toute la largeur, hauteur automatique */
-        background-position: top left;
+        background-size: contain;
         background-repeat: no-repeat;
-    }
-    header .logo {
-        width: 70%;
-        max-width: 200px;
-        min-width: 100px;
+        background-position: top left;
     }
 }
 
 /* Mobile paysage : image paysage optimisée */
-@media (max-width: 600px) and (orientation: landscape) {
+@media (max-width: 767px) and (orientation: landscape) {
     body {
        background-image: image-set(
             url('images/background-mobile-landscape.webp') type('image/webp'),
@@ -67,46 +54,24 @@ header .logo {
         background-size: cover;
         background-position: top left;
         background-repeat: no-repeat;
-        display: block; /* désactive le flex vertical pour éviter que la box monte */
-        margin: 0;
-        padding: 0;
-    }
-     header {
-        padding-top: 6rem; /* descend le logo */
-        padding-bottom: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    header .logo {
-        width: 50%;
-        max-width: 180px;
-        min-width: 90px;
-        height: auto;
-        display: block;
     }
 }
 
 /* Tablette portrait */
-@media (min-width: 601px) and (max-width: 1280px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     body {
         background-image: image-set(
             url('images/background-tablet-portrait.webp') type('image/webp'),
             url('images/background-tablet-portrait.jpg') type('image/jpeg')
         );
-        background-size: 100% auto;
-        background-position: top left;
+        background-size: contain;
         background-repeat: no-repeat;
-    }
-    header .logo {
-        width: 50%;
-        max-width: 250px;
-        min-width: 150px;
+        background-position: top left;
     }
 }
 
 /* Tablette paysage */
-@media (min-width: 601px) and (max-width: 1280px) and (orientation: landscape) {
+@media (min-width: 1025px) and (max-width: 1279px) and (orientation: landscape) {
     body {
         background-image: image-set(
             url('images/background-tablet-landscape.webp') type('image/webp'),
@@ -116,40 +81,11 @@ header .logo {
         background-position: top left;
         background-repeat: no-repeat;
     }
-     header {
-        padding-top: 4rem; /* descend le logo */
-        padding-bottom: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-     header .logo {
-        width: 40%;
-        max-width: 280px;
-        min-width: 150px;
-    }
 }
 
-/* Desktop standard */
-@media (min-width: 1281px) and (max-width: 1920px) {
-    body {
-        background-image: image-set(
-            url('images/background-desktop.webp') type('image/webp'),
-            url('images/background-desktop.jpg') type('image/jpeg')
-        );
-        background-size: cover;
-        background-position: top left;
-        background-repeat: no-repeat;
-    }
-    header .logo {
-        width: 35%;
-        max-width: 300px;
-        min-width: 200px;
-    }
-}
 
 /* Grand écran */
-@media (min-width: 1921px) {
+@media (min-width: 1920px) {
     body {
         background-image: image-set(
             url('images/background-desktop-large.webp') type('image/webp'),
@@ -159,12 +95,8 @@ header .logo {
         background-position: top left;
         background-repeat: no-repeat;
     }
-    header .logo {
-        width: 30%;
-        max-width: 350px;
-        min-width: 250px;
-    }
 }
+
 
 
 
