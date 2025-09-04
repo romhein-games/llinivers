@@ -114,14 +114,15 @@ header {
 
 @media (orientation: portrait) {
   .logo {
-    width: clamp(120px, 25vw, 280px);
+    width: clamp(200px, 30vw, 300px);
   }
 }
 @media (orientation: landscape) {
   .logo {
-    width: clamp(100px, 20vw, 250px);
+    width: clamp(180px, 25vw, 280px);
   }
 }
+
 
 
 
