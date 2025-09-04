@@ -104,4 +104,9 @@ header {
     padding: 10px 0;
 }
 
+/* Logo responsive */
+.logo {
+    width: clamp(60px, 12vw, 180px); /* min 60px, max 180px, idéal 12% largeur écran */
+    height: auto;
+}
 
