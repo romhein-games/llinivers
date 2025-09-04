@@ -12,6 +12,7 @@ body {
     text-align: center;
 
     background: #0a0a2a;
+    background: url('images/portrait-720.jpg') no-repeat center center;
     background-size: cover;           /* remplit l’écran */
     background-position: center center;
     background-repeat: no-repeat;
@@ -52,4 +53,5 @@ body {
         );
     }
 }
+
 
