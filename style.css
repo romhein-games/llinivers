@@ -94,13 +94,5 @@ body {
     }
 }
 
-/* ---------------------- */
-/* Header et logo responsive */
-/* ---------------------- */
-header {
-    width: 100%;
-    display: flex;
-    justify-content: center; /* centre horizontalement */
-    padding: 10px 0;
-}
+
 
