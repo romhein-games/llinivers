@@ -101,7 +101,9 @@ header {
     width: 100%;
     display: flex;
     justify-content: center; /* centre horizontalement */
-    padding: 10px 0;
+    align-items: flex-start; /* place le logo en haut */
+    padding-top: 15px; /* petite marge avec le bord supérieur */
+    padding-bottom: 10px;
 }
 
 /* Logo responsive */
@@ -109,4 +111,5 @@ header {
     width: clamp(60px, 12vw, 180px); /* min 60px, max 180px, idéal 12% largeur écran */
     height: auto;
 }
+
 
