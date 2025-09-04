@@ -102,7 +102,7 @@ header {
     display: flex;
     justify-content: center; /* centre horizontalement */
     align-items: flex-start; /* place le logo en haut */
-    padding-top: 15px; /* petite marge avec le bord supérieur */
+    padding-top: 5px; /* petite marge avec le bord supérieur */
     padding-bottom: 10px;
 }
 
@@ -122,6 +122,7 @@ header {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
