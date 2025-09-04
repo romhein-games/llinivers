@@ -93,31 +93,3 @@ body {
         }
     }
 }
-
-header {
-    width: 100%;
-    display: flex;
-    justify-content: center; /* centre horizontalement */
-    padding: 10px 0;
-}
-
-.logo {
-    width: clamp(80px, 20vw, 300px); /* taille responsive min 80px, max 300px */
-    height: auto;
-    margin-bottom: 20px;
-}
-
-/* Ajustement logo selon orientation */
-@media (orientation: portrait) {
-    .logo {
-        width: clamp(80px, 25vw, 250px);
-    }
-}
-
-@media (orientation: landscape) {
-    .logo {
-        width: clamp(80px, 8vw, 200px);
-    }
-}
-
-
