@@ -11,122 +11,44 @@ body {
     color: white;
     text-align: center;
 
-    /* Background responsive par défaut : desktop moyen (avec WebP + fallback JPEG) */
     background: #0a0a2a;
-    background-image: image-set(
-       url('output/landscape-1920.webp') type('image/webp'),
-       url('output/landscape-1920.jpg') type('image/jpeg')
-    );
     background-size: cover;           /* remplit l’écran */
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
 
-/* Mobile portrait : <= 480px */
-@media (max-width: 480px) and (orientation: portrait) {
-    body {
-        background-image: image-set(
-            url('output/portrait-480.webp') type('image/webp'),
-            url('output/portrait-480.jpg') type('image/jpeg')
+    /* Background responsive automatique avec orientation et résolution */
+    background-image: 
+        /* Portrait : utilisé par défaut pour écrans étroits ou orientation verticale */
+        image-set(
+            url('output/portrait-480.webp') type('image/webp') 480w,
+            url('output/portrait-480.jpg') type('image/jpeg') 480w,
+            url('output/portrait-720.webp') type('image/webp') 720w,
+            url('output/portrait-720.jpg') type('image/jpeg') 720w,
+            url('output/portrait-1080.webp') type('image/webp') 1080w,
+            url('output/portrait-1080.jpg') type('image/jpeg') 1080w,
+            url('output/portrait-1536.webp') type('image/webp') 1536w,
+            url('output/portrait-1536.jpg') type('image/jpeg') 1536w
         );
-        background-size: cover;
-        background-position: center top;
-    }
-}
 
-/* Mobile portrait : 481px – 720px */
-@media (min-width: 481px) and (max-width: 720px) and (orientation: portrait) {
-    body {
+    /* Landscape : utilisé automatiquement si orientation paysage */
+    /* Les navigateurs modernes choisiront automatiquement la meilleure résolution */
+    @supports (background-image: image-set(url('a.webp') type('image/webp') 1x)) {
         background-image: image-set(
-            url('output/portrait-720.webp') type('image/webp'),
-            url('output/portrait-720.jpg') type('image/jpeg')
+            url('output/landscape-640.webp') type('image/webp') 640w,
+            url('output/landscape-640.jpg') type('image/jpeg') 640w,
+            url('output/landscape-896.webp') type('image/webp') 896w,
+            url('output/landscape-896.jpg') type('image/jpeg') 896w,
+            url('output/landscape-1280.webp') type('image/webp') 1280w,
+            url('output/landscape-1280.jpg') type('image/jpeg') 1280w,
+            url('output/landscape-1440.webp') type('image/webp') 1440w,
+            url('output/landscape-1440.jpg') type('image/jpeg') 1440w,
+            url('output/landscape-1920.webp') type('image/webp') 1920w,
+            url('output/landscape-1920.jpg') type('image/jpeg') 1920w,
+            url('output/landscape-2560.webp') type('image/webp') 2560w,
+            url('output/landscape-2560.jpg') type('image/jpeg') 2560w,
+            url('output/landscape-3840.webp') type('image/webp') 3840w,
+            url('output/landscape-3840.jpg') type('image/jpeg') 3840w
         );
-        background-size: cover;
-        background-position: center top;
-    }
-}
-
-/* Mobile portrait : 721px – 1080px */
-@media (min-width: 721px) and (max-width: 1080px) and (orientation: portrait) {
-    body {
-        background-image: image-set(
-            url('output/portrait-1080.webp') type('image/webp'),
-            url('output/portrait-1080.jpg') type('image/jpeg')
-        );
-        background-size: cover;
-        background-position: center top;
-    }
-}
-
-/* Tablet portrait : 1081px – 1536px */
-@media (min-width: 1081px) and (max-width: 1536px) and (orientation: portrait) {
-    body {
-        background-image: image-set(
-            url('output/portrait-1536.webp') type('image/webp'),
-            url('output/portrait-1536.jpg') type('image/jpeg')
-        );
-        background-size: cover;
-        background-position: center top;
-    }
-}
-
-/* Mobile landscape : <= 640px */
-@media (max-width: 640px) and (orientation: landscape) {
-    body {
-        background-image: image-set(
-            url('output/landscape-640.webp') type('image/webp'),
-            url('output/landscape-640.jpg') type('image/jpeg')
-        );
-        background-size: cover;
-        background-position: center center;
-    }
-}
-
-/* Mobile landscape : 641px – 896px */
-@media (min-width: 641px) and (max-width: 896px) and (orientation: landscape) {
-    body {
-        background-image: image-set(
-            url('output/landscape-896.webp') type('image/webp'),
-            url('output/landscape-896.jpg') type('image/jpeg')
-        );
-        background-size: cover;
-        background-position: center center;
-    }
-}
-
-/* Mobile landscape : 897px – 1280px */
-@media (min-width: 897px) and (max-width: 1280px) and (orientation: landscape) {
-    body {
-        background-image: image-set(
-            url('output/landscape-1280.webp') type('image/webp'),
-            url('output/landscape-1280.jpg') type('image/jpeg')
-        );
-        background-size: cover;
-        background-position: center center;
-    }
-}
-
-/* Tablet/Desktop landscape : 1281px – 1920px */
-@media (min-width: 1281px) and (max-width: 1920px) and (orientation: landscape) {
-    body {
-        background-image: image-set(
-            url('output/landscape-1920.webp') type('image/webp'),
-            url('output/landscape-1920.jpg') type('image/jpeg')
-        );
-        background-size: cover;
-        background-position: center center;
-    }
-}
-
-/* Très grand écran : >1920px */
-@media (min-width: 1921px) {
-    body {
-        background-image: image-set(
-            url('output/landscape-2560.webp') type('image/webp'),
-            url('output/landscape-2560.jpg') type('image/jpeg')
-        );
-        background-size: cover;
-        background-position: center center;
     }
 }
