@@ -12,46 +12,90 @@ body {
     text-align: center;
 
     background: #0a0a2a;
-    background: url('images/portrait-720.jpg') no-repeat center center;
     background-size: cover;           /* remplit l’écran */
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    /* Background responsive automatique avec orientation et résolution */
-    background-image: 
-        /* Portrait : utilisé par défaut pour écrans étroits ou orientation verticale */
-        image-set(
-            url('images/portrait-480.webp') type('image/webp') 480w,
-            url('images/portrait-480.jpg') type('image/jpeg') 480w,
-            url('images/portrait-720.webp') type('image/webp') 720w,
-            url('images/portrait-720.jpg') type('image/jpeg') 720w,
-            url('images/portrait-1080.webp') type('image/webp') 1080w,
-            url('images/portrait-1080.jpg') type('image/jpeg') 1080w,
-            url('images/portrait-1536.webp') type('image/webp') 1536w,
-            url('images/portrait-1536.jpg') type('image/jpeg') 1536w
-        );
+     /* Fallback portrait JPEG */
+    background-image: url('images/portrait-720.jpg');
 
-    /* Landscape : utilisé automatiquement si orientation paysage */
-    /* Les navigateurs modernes choisiront automatiquement la meilleure résolution */
-    @supports (background-image: image-set(url('a.webp') type('image/webp') 1x)) {
-        background-image: image-set(
-            url('images/landscape-640.webp') type('image/webp') 640w,
-            url('images/landscape-640.jpg') type('image/jpeg') 640w,
-            url('images/landscape-896.webp') type('image/webp') 896w,
-            url('images/landscape-896.jpg') type('image/jpeg') 896w,
-            url('images/landscape-1280.webp') type('image/webp') 1280w,
-            url('images/landscape-1280.jpg') type('image/jpeg') 1280w,
-            url('images/landscape-1440.webp') type('image/webp') 1440w,
-            url('images/landscape-1440.jpg') type('image/jpeg') 1440w,
-            url('images/landscape-1920.webp') type('image/webp') 1920w,
-            url('images/landscape-1920.jpg') type('image/jpeg') 1920w,
-            url('images/landscape-2560.webp') type('image/webp') 2560w,
-            url('images/landscape-2560.jpg') type('image/jpeg') 2560w,
-            url('images/landscape-3840.webp') type('image/webp') 3840w,
-            url('images/landscape-3840.jpg') type('image/jpeg') 3840w
-        );
+    /* WebP portrait si supporté, fallback JPEG */
+    background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
+
+}
+
+/* Portrait responsive selon largeur écran */
+@media (max-width: 480px) {
+    body {
+        background-image: url('images/portrait-480.webp'), url('images/portrait-480.jpg');
     }
 }
 
+@media (min-width: 481px) and (max-width: 720px) {
+    body {
+        background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
+    }
+}
 
+@media (min-width: 721px) and (max-width: 1080px) {
+    body {
+        background-image: url('images/portrait-1080.webp'), url('images/portrait-1080.jpg');
+    }
+}
+
+@media (min-width: 1081px) {
+    body {
+        background-image: url('images/portrait-1536.webp'), url('images/portrait-1536.jpg');
+    }
+}
+
+/* Landscape responsive via orientation */
+@media (orientation: landscape) {
+    /* Fallback JPEG landscape */
+    body {
+        background-image: url('images/landscape-1280.jpg');
+    }
+
+    /* WebP landscape si supporté */
+    body {
+        background-image: url('images/landscape-1280.webp'), url('images/landscape-1280.jpg');
+    }
+
+    /* Différentes résolutions landscape selon largeur écran */
+    @media (max-width: 640px) {
+        body {
+            background-image: url('images/landscape-640.webp'), url('images/landscape-640.jpg');
+        }
+    }
+
+    @media (min-width: 641px) and (max-width: 896px) {
+        body {
+            background-image: url('images/landscape-896.webp'), url('images/landscape-896.jpg');
+        }
+    }
+
+    @media (min-width: 897px) and (max-width: 1440px) {
+        body {
+            background-image: url('images/landscape-1440.webp'), url('images/landscape-1440.jpg');
+        }
+    }
+
+    @media (min-width: 1441px) and (max-width: 1920px) {
+        body {
+            background-image: url('images/landscape-1920.webp'), url('images/landscape-1920.jpg');
+        }
+    }
+
+    @media (min-width: 1921px) and (max-width: 2560px) {
+        body {
+            background-image: url('images/landscape-2560.webp'), url('images/landscape-2560.jpg');
+        }
+    }
+
+    @media (min-width: 2561px) {
+        body {
+            background-image: url('images/landscape-3840.webp'), url('images/landscape-3840.jpg');
+        }
+    }
+}
