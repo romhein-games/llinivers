@@ -108,7 +108,7 @@ header {
 
 /* Logo responsive */
 .logo {
-    width: clamp(60px, 12vw, 180px); /* min 60px, max 180px, idéal 12% largeur écran */
+    width: clamp(100px, 20vw, 300px); /* min 60px, max 180px, idéal 12% largeur écran */
     height: auto;
 }
 
@@ -119,9 +119,10 @@ header {
 }
 @media (orientation: landscape) {
   .logo {
-    width: clamp(60px, 12vw, 150px);
+    width: clamp(100px, 20vw, 250px);
   }
 }
+
 
 
 
