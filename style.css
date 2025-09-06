@@ -165,7 +165,7 @@ header {
     animation-delay: 0.2s;
 
     color: white; /* texte blanc */
-    font-size: clamp(2rem, 5vw, 4.5rem); /* taille responsive comme logo */
+    font-size: clamp(2rem, 5vw, 4rem); /* taille responsive comme logo */
     text-shadow: 
         0 0 3px rgba(255,255,255,0.7),
         0 0 8px rgba(173,216,230,0.3),
@@ -251,6 +251,7 @@ header {
         padding: 10px;
     }
 }
+
 
 
 
