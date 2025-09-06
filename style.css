@@ -142,7 +142,6 @@ header {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5); /* overlay sombre pour lisibilité */
 }
 
 .hero-content {
@@ -163,12 +162,12 @@ header {
     animation-delay: 0.2s;
 
     /* glow cosmique blanc/bleu */
-    color: white;
+    color: #d0f0ff; /* bleu clair un peu plus doux */
     text-shadow: 
-        0 0 5px rgba(255,255,255,0.8),
-        0 0 10px rgba(173,216,230,0.6),
-        0 0 20px rgba(173,216,230,0.4),
-        0 0 40px rgba(173,216,230,0.2);
+        0 0 3px rgba(208,240,255,0.7),
+        0 0 8px rgba(208,240,255,0.5),
+        0 0 15px rgba(173,216,230,0.3),
+        0 0 30px rgba(173,216,230,0.2);
     animation: fadeInUp 1s ease forwards, neonPulse 2s infinite alternate;
 }
 
@@ -176,9 +175,9 @@ header {
     animation: fadeInUp 1s ease forwards;
     animation-delay: 0.4s;
 
-    color: #e0f7ff;
-    text-shadow: 0 0 5px rgba(224,247,255,0.5),
-                 0 0 10px rgba(224,247,255,0.3);
+    color: #b0e0ff; /* bleu pâle plus doux */
+    text-shadow: 0 0 3px rgba(176,224,255,0.5),
+                 0 0 6px rgba(176,224,255,0.3);
 }
 
 .hero-content .btn {
@@ -193,6 +192,8 @@ header {
     font-weight: bold;
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
     transition: all 0.3s ease;
+
+    margin-top: 20px; /* ajoute un espace entre le paragraphe et le bouton */
 }
 
 .hero-content .btn:hover {
@@ -249,3 +250,4 @@ header {
         font-size: 0.9rem;
     }
 }
+
