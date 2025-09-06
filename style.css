@@ -168,11 +168,13 @@ header {
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.7); /* effet lumineux */
     transition: background 0.3s ease;
 }
 
 .btn:hover {
-    background: #e60000;
+    background: #0a74da; /* bleu plus foncé au hover */
+    box-shadow: 0 0 25px rgba(30, 144, 255, 1); /* glow renforcé */
 }
 
 /* 📱 Version responsive mobile */
@@ -206,6 +208,7 @@ header {
         font-size: 0.9rem;
     }
 }
+
 
 
 
