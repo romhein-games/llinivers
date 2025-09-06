@@ -148,7 +148,7 @@ header {
     position: relative;
     z-index: 1;
     max-width: 800px;
-    padding: 20px;
+    padding: 20px 20px;
     margin-top: 0px;
 
     /* fade-in */
@@ -248,6 +248,7 @@ header {
         font-size: 0.9rem;
     }
 }
+
 
 
 
