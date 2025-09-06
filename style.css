@@ -104,7 +104,6 @@ header {
     align-items: flex-start; /* place le logo en haut */
     padding-top: 0; /* aucune marge avec le bord supérieur */
     padding-bottom: 10px;
-    background: rgba(0, 0, 0, 0.7); /* overlay sombre pour lisibilité */
 }
 
 /* Logo responsive */
@@ -143,7 +142,6 @@ header {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5); /* overlay sombre pour lisibilité */
 }
 
 .hero-content {
@@ -251,6 +249,7 @@ header {
         padding: 10px;
     }
 }
+
 
 
 
