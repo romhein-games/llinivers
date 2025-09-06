@@ -150,8 +150,8 @@ header {
     position: relative;
     z-index: 1;
     max-width: 1000px;
-    padding: 0px;
-    margin-top: 0px;
+    padding: 0;
+    margin-top: 0;
 
     /* fade-in */
     opacity: 0;
@@ -234,10 +234,11 @@ header {
 /* Responsive supplémentaire si besoin */
 @media (max-width: 480px) {
     .hero-content {
-        margin-top: 10px; /* encore plus proche du haut */
-        padding: 15px;
+        margin-top: 0; /* encore plus proche du haut */
+        padding: 0;
     }
 }
+
 
 
 
