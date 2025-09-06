@@ -264,4 +264,6 @@ header {
 
 .games {
     padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* noir avec 50% d'opacité */
 }
+
