@@ -130,7 +130,7 @@ header {
     height: 100vh; /* pleine hauteur */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: felx-start;
     text-align: center;
     color: white;
     background-size: cover;
@@ -141,7 +141,7 @@ header {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5); /* assombrit pour que le texte reste lisible */
+    /*background: rgba(0, 0, 0, 0.5); /* assombrit pour que le texte reste lisible */
 }
 
 .hero-content {
@@ -206,6 +206,7 @@ header {
         font-size: 0.9rem;
     }
 }
+
 
 
 
