@@ -149,7 +149,7 @@ header {
 .hero-content {
     position: relative;
     z-index: 1;
-    width: 90%; /* largeur adaptative */
+    width: 95%; /* largeur adaptative */
     max-width: clamp(800px, 80%, 2000px); /* min 800px, max 1800px */
     padding: 0;
     margin-top: 0;
@@ -251,4 +251,5 @@ header {
         padding: 10px;
     }
 }
+
 
