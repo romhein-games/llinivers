@@ -162,6 +162,7 @@ header {
     animation-delay: 0.2s;
 
     color: white; /* texte blanc */
+    font-size: clamp(2rem, 5vw, 4rem); /* taille responsive comme logo */
     text-shadow: 
         0 0 3px rgba(255,255,255,0.7),
         0 0 8px rgba(173,216,230,0.3),
@@ -174,6 +175,7 @@ header {
     animation-delay: 0.4s;
 
     color: white; /* texte blanc */
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive */
     text-shadow: 0 0 3px rgba(255,255,255,0.5),
                  0 0 6px rgba(173,216,230,0.2);
 }
@@ -184,7 +186,8 @@ header {
 
     background: #1e90ff;
     color: white;
-    padding: 12px 24px;
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem); /* taille responsive */
+    padding: clamp(10px, 1.5vw, 15px) clamp(20px, 3vw, 30px); /* padding responsive */
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
@@ -226,28 +229,14 @@ header {
     }
 }
 
-/* responsive */
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    .hero-content p {
-        font-size: 1rem;
-    }
-    .hero-content .btn {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+/* Responsive supplémentaire si besoin */
+@media (max-width: 480px) {
+    .hero-content {
+        margin-top: 10px; /* encore plus proche du haut */
+        padding: 15px;
     }
 }
 
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 1.6rem;
-    }
-    .hero-content p {
-        font-size: 0.9rem;
-    }
-}
 
 
 
