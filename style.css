@@ -184,6 +184,7 @@ header {
                  0 0 6px rgba(173,216,230,0.2);
     word-break: break-word;
     overflow-wrap: break-word;
+    margin-bottom : 40px; /* ajoute un espace entre le paragraphe et le bouton */
 }
 
 .hero-content .btn {
@@ -200,7 +201,7 @@ header {
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
     transition: all 0.3s ease;
 
-    margin-top: 50px; /* ajoute un espace entre le paragraphe et le bouton */
+    margin-top: 40px; /* ajoute un espace entre le paragraphe et le bouton */
 }
 
 .hero-content .btn:hover {
@@ -249,6 +250,7 @@ header {
         padding: 10px;
     }
 }
+
 
 
 
