@@ -150,7 +150,7 @@ header {
     position: relative;
     z-index: 1;
     width: 90%; /* largeur adaptative */
-    max-width: 2000px; /* suffisamment large pour H1 paysage desktop */
+    max-width: clamp(800px, 80%, 2000px); /* min 800px, max 1800px */
     padding: 0;
     margin-top: 0;
 
@@ -172,9 +172,8 @@ header {
         0 0 15px rgba(173,216,230,0.2);
     animation: fadeInUp 1s ease forwards, neonPulse 2s infinite alternate;
 
-    white-space: nowrap; /* force H1 sur une seule ligne */
-    overflow: hidden;
-    text-overflow: ellipsis; /* sécurité si viewport trop petit */
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .hero-content p {
@@ -238,14 +237,11 @@ header {
     }
 }
 
-/* responsive supplémentaire */
+/* Responsive */
 @media (max-width: 768px) {
     .hero-content {
         margin-top: 15px;
         padding: 15px;
-    }
-    .hero-content h1 {
-        white-space: normal; /* autoriser retour à la ligne sur tablette */
     }
 }
 
@@ -254,8 +250,5 @@ header {
         margin-top: 10px;
         padding: 10px;
     }
-    .hero-content h1 {
-        font-size: clamp(1.6rem, 5vw, 3rem);
-        white-space: normal; /* retour ligne autorisé sur mobile */
-    }
 }
+
