@@ -152,10 +152,6 @@ header {
     padding: 0;
     margin-top: 0;
 
-    display: flex;           /* ajouter */
-    flex-direction: column;  /* empiler verticalement */
-    gap: 20px;               /* espace entre le paragraphe et le bouton */
-    
     /* fade-in */
     opacity: 0;
     transform: translateY(20px);
@@ -204,7 +200,7 @@ header {
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
     transition: all 0.3s ease;
 
-    margin-top: 0; /* ajoute un espace entre le paragraphe et le bouton */
+    margin-top: 50px; /* ajoute un espace entre le paragraphe et le bouton */
 }
 
 .hero-content .btn:hover {
@@ -253,6 +249,7 @@ header {
         padding: 10px;
     }
 }
+
 
 
 
