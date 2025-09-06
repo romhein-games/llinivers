@@ -149,7 +149,8 @@ header {
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 1000px;
+    width: 90%; /* largeur adaptative */
+    max-width: clamp(800px, 70%, 1400px); /* min 800px, max 1400px */
     padding: 0;
     margin-top: 0;
 
@@ -164,7 +165,7 @@ header {
     animation-delay: 0.2s;
 
     color: white; /* texte blanc */
-    font-size: clamp(2rem, 5vw, 4rem); /* taille responsive comme logo */
+    font-size: clamp(2rem, 5vw, 4.5rem); /* taille responsive comme logo */
     text-shadow: 
         0 0 3px rgba(255,255,255,0.7),
         0 0 8px rgba(173,216,230,0.3),
@@ -180,6 +181,8 @@ header {
     font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive */
     text-shadow: 0 0 3px rgba(255,255,255,0.5),
                  0 0 6px rgba(173,216,230,0.2);
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .hero-content .btn {
@@ -231,11 +234,18 @@ header {
     }
 }
 
-/* Responsive supplémentaire si besoin */
+/* responsive supplémentaire */
+@media (max-width: 768px) {
+    .hero-content {
+        margin-top: 15px;
+        padding: 15px;
+    }
+}
+
 @media (max-width: 480px) {
     .hero-content {
-        margin-top: 0; /* encore plus proche du haut */
-        padding: 0;
+        margin-top: 10px;
+        padding: 10px;
     }
 }
 
