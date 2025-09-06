@@ -148,7 +148,7 @@ header {
     position: relative;
     z-index: 1;
     width: 90%; /* largeur adaptative */
-    max-width: clamp(800px, 70%, 1800px); /* min 800px, max 1800px */
+    max-width: clamp(800px, 75%, 2000px); /* min 800px, max 2000px */
     padding: 0;
     margin-top: 0;
 
@@ -249,6 +249,7 @@ header {
         padding: 10px;
     }
 }
+
 
 
 
