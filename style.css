@@ -105,8 +105,9 @@ header {
     position : sticky;
     padding-top: 0; /* aucune marge avec le bord supérieur */
     padding-bottom: 10px;
-    background-color: rgba(1, 0, 0, 0.5); /* noir avec 50% d'opacité */
+    background-color: rgba(255, 0, 0, 0.5); /* noir avec 50% d'opacité */
 }
+
 
 
 
