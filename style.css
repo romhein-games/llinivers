@@ -34,7 +34,7 @@ header {
     align-items: flex-start; /* place le logo en haut */
     position : sticky;
 
-    background-color: rgba(255, 0, 0, 0.1); /* noir avec 50% d'opacité */
+    background-color: rgba(255, 0, 0, 0.1);
 }
 
 /* ------ Logo responsive ------ */
@@ -43,6 +43,21 @@ header {
     height: auto;
     margin-top: clamp(10px, 2vw, 25px);
 }
+
+/* --------------- */
+/* Main et contenu */
+/* --------------- */
+main {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+/* ----------------- */
+/* Footer et contenu */
+/* ----------------- */
+footer {
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
 
 
 /* ------------------------------------------------------- */
@@ -131,6 +146,7 @@ header {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
