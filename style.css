@@ -1,4 +1,6 @@
+/* ------------------------------------------------- */
 /* Body centré avec Flexbox et background responsive */
+/* ------------------------------------------------- */
 body {
     display: flex;
     flex-direction: column;
@@ -22,7 +24,31 @@ body {
     background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
 }
 
-/* Portrait responsive selon largeur écran */
+/* ------------------------- */
+/* Header et logo responsive */
+/* ------------------------- */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: flex-start; /* place le logo en haut */
+    position : sticky;
+
+    background-color: rgba(255, 0, 0, 0.1); /* noir avec 50% d'opacité */
+}
+
+/* ------ Logo responsive ------ */
+.logo {
+    width: clamp(100px, 20vw, 300px); /* min 60px, max 180px, idéal 12% largeur écran */
+    height: auto;
+    margin-top: clamp(10px, 2vw, 25px);
+}
+
+
+/* ------------------------------------------------------- */
+/* Media querries => Responsive selon la taille de l'écran */
+/* ------------------------------------------------------- */
+/* ------ Portrait responsive selon largeur écran ------ */
 @media (max-width: 480px) {
     body {
         background-image: url('images/portrait-480.webp'), url('images/portrait-480.jpg');
@@ -44,7 +70,7 @@ body {
     }
 }
 
-/* Landscape responsive via orientation */
+/* ------ Landscape responsive via orientation ------ */
 @media (orientation: landscape) {
     /* Fallback JPEG landscape */
     body {
@@ -94,24 +120,7 @@ body {
     }
 }
 
-/* ---------------------- */
-/* Header et logo responsive */
-/* ---------------------- */
-header {
-    width: 100%;
-    display: flex;
-    justify-content: center; /* centre horizontalement */
-    align-items: flex-start; /* place le logo en haut */
-    position : sticky;
-}
-
-/* Logo responsive */
-.logo {
-    width: clamp(100px, 20vw, 300px); /* min 60px, max 180px, idéal 12% largeur écran */
-    height: auto;
-    margin-top: clamp(10px, 2vw, 25px);
-}
-
+/* ------ Logo responsive ------ */
 @media (orientation: portrait) {
   .logo {
     width: clamp(180px, 25vw, 280px);
@@ -122,6 +131,7 @@ header {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
