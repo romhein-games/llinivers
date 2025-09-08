@@ -113,6 +113,24 @@ header {
     background-color: rgba(255, 0, 0, 0.3); /* noir avec 50% d'opacité */
 }
 
+/* Logo responsive */
+.logo {
+    width: clamp(100px, 20vw, 300px); /* min 60px, max 180px, idéal 12% largeur écran */
+    height: auto;
+    margin-top: 15px;
+}
+
+@media (orientation: portrait) {
+  .logo {
+    width: clamp(180px, 25vw, 280px);
+  }
+}
+@media (orientation: landscape) {
+  .logo {
+    width: clamp(160px, 20vw, 260px);
+  }
+}
+
 
 
 
