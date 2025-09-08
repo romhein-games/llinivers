@@ -103,10 +103,16 @@ header {
     justify-content: center; /* centre horizontalement */
     align-items: flex-start; /* place le logo en haut */
     position : sticky;
-    padding-top: 0; /* aucune marge avec le bord supérieur */
-    padding-bottom: 10px;
-    background-color: rgba(255, 0, 0, 0.5); /* noir avec 50% d'opacité */
+    
+    /* Hauteur adaptative */
+    min-height: clamp(60px, 8vh, 100px);
+
+    /* Padding adaptatif */
+    padding: clamp(8px, 2vw, 16px) clamp(16px, 4vw, 32px);
+    
+    background-color: rgba(255, 0, 0, 0.3); /* noir avec 50% d'opacité */
 }
+
 
 
 
