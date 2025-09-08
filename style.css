@@ -48,6 +48,12 @@ header {
 /* Main et contenu */
 /* --------------- */
 main {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: flex-start; /* place le logo en haut */
+    position : sticky;
+
     background-color: rgba(0, 255, 0, 0.1);
 }
 
@@ -55,10 +61,14 @@ main {
 /* Footer et contenu */
 /* ----------------- */
 footer {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: flex-start; /* place le logo en haut */
+    position : sticky;
+
     background-color: rgba(0, 0, 255, 0.1);
 }
-
-
 
 /* ------------------------------------------------------- */
 /* Media querries => Responsive selon la taille de l'écran */
@@ -146,6 +156,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
