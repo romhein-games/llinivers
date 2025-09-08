@@ -103,21 +103,13 @@ header {
     justify-content: center; /* centre horizontalement */
     align-items: flex-start; /* place le logo en haut */
     position : sticky;
-    
-    /* Hauteur adaptative */
-    min-height: clamp(60px, 8vh, 100px);
-
-    /* Padding adaptatif */
-    padding: clamp(8px, 2vw, 16px) clamp(16px, 4vw, 32px);
-    
-    background-color: rgba(255, 0, 0, 0.3); /* noir avec 50% d'opacité */
 }
 
 /* Logo responsive */
 .logo {
     width: clamp(100px, 20vw, 300px); /* min 60px, max 180px, idéal 12% largeur écran */
     height: auto;
-    margin-top: 15px;
+    margin-top: clamp(10px, 2vw, 25px);
 }
 
 @media (orientation: portrait) {
@@ -130,6 +122,7 @@ header {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
