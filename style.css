@@ -11,25 +11,18 @@ body {
     font-family: Arial, sans-serif;
     color: white;
     text-align: center;
-}
 
-.page-bg {
-    position: absolute;          
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-color: #0a0a2a;
-    background-position: left top;
     background-size: cover;
+    background-position: left top;
     background-repeat: no-repeat;
-    z-index: -1;               /* derrière tout le contenu */
 
     /* Fallback portrait JPEG par défaut */
     background-image: url('images/portrait-720.jpg');
 
     /* Portrait WebP si supporté */
     background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
+
 }
 
 /* ------------------------- */
@@ -206,22 +199,22 @@ footer {
 /* ------------------------------------------------------- */
 /* ------ Portrait responsive selon largeur écran ------ */
 @media (max-width: 480px) {
-    .page-bg {
+    body {
         background-image: url('images/portrait-480.webp'), url('images/portrait-480.jpg');
     }
 }
 @media (min-width: 481px) and (max-width: 720px) {
-    .page-bg {
+    body {
         background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
     }
 }
 @media (min-width: 721px) and (max-width: 1080px) {
-    .page-bg {
+    body {
         background-image: url('images/portrait-1080.webp'), url('images/portrait-1080.jpg');
     }
 }
 @media (min-width: 1081px) {
-    .page-bg {
+    body {
         background-image: url('images/portrait-1536.webp'), url('images/portrait-1536.jpg');
     }
 }
@@ -229,48 +222,48 @@ footer {
 /* ------ Landscape responsive via orientation ------ */
 @media (orientation: landscape) {
     /* Fallback JPEG landscape */
-    .page-bg {
+    body {
         background-image: url('images/landscape-1280.jpg');
     }
 
     /* WebP landscape si supporté */
-    .page-bg {
+    body {
         background-image: url('images/landscape-1280.webp'), url('images/landscape-1280.jpg');
     }
 
     /* Landscape selon largeur écran */
     @media (max-width: 640px) {
-        .page-bg {
+        body {
             background-image: url('images/landscape-640.webp'), url('images/landscape-640.jpg');
         }
     }
     @media (min-width: 641px) and (max-width: 896px) {
-        .page-bg {
+        body {
             background-image: url('images/landscape-896.webp'), url('images/landscape-896.jpg');
         }
     }
     @media (min-width: 897px) and (max-width: 1280px) {
-        .page-bg {
+        body {
             background-image: url('images/landscape-1280.webp'), url('images/landscape-1280.jpg');
         }
     }
     @media (min-width: 1281px) and (max-width: 1440px) {
-        .page-bg {
+        body {
             background-image: url('images/landscape-1440.webp'), url('images/landscape-1440.jpg');
         }
     }
     @media (min-width: 1441px) and (max-width: 1920px) {
-        .page-bg {
+        body {
             background-image: url('images/landscape-1920.webp'), url('images/landscape-1920.jpg');
         }
     }
     @media (min-width: 1921px) and (max-width: 2560px) {
-        .page-bg {
+        body {
             background-image: url('images/landscape-2560.webp'), url('images/landscape-2560.jpg');
         }
     }
     @media (min-width: 2561px) {
-        .page-bg {
+        body {
             background-image: url('images/landscape-3840.webp'), url('images/landscape-3840.jpg');
         }
     }
@@ -302,6 +295,7 @@ footer {
         padding: 10px;
     }
 }
+
 
 
 
