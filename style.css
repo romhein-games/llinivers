@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: auto;
+    height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
@@ -295,6 +295,7 @@ footer {
         padding: 10px;
     }
 }
+
 
 
 
