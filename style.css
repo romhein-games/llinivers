@@ -201,21 +201,25 @@ footer {
 @media (max-width: 480px) {
     body {
         background-image: url('images/portrait-480.webp'), url('images/portrait-480.jpg');
+        background-attachment: scroll;
     }
 }
 @media (min-width: 481px) and (max-width: 720px) {
     body {
         background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
+        background-attachment: scroll;
     }
 }
 @media (min-width: 721px) and (max-width: 1080px) {
     body {
         background-image: url('images/portrait-1080.webp'), url('images/portrait-1080.jpg');
+        background-attachment: scroll;
     }
 }
 @media (min-width: 1081px) {
     body {
         background-image: url('images/portrait-1536.webp'), url('images/portrait-1536.jpg');
+        background-attachment: scroll;
     }
 }
 
@@ -295,6 +299,7 @@ footer {
         padding: 10px;
     }
 }
+
 
 
 
