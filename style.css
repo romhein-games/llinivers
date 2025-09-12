@@ -214,22 +214,22 @@ footer {
 /* ------------------------------------------------------- */
 /* ------ Portrait responsive selon largeur écran ------ */
 @media (max-width: 480px) {
-    body {
+    .page-bg {
         background-image: url('images/portrait-480.webp'), url('images/portrait-480.jpg');
     }
 }
 @media (min-width: 481px) and (max-width: 720px) {
-    body {
+    .page-bg {
         background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
     }
 }
 @media (min-width: 721px) and (max-width: 1080px) {
-    body {
+    .page-bg {
         background-image: url('images/portrait-1080.webp'), url('images/portrait-1080.jpg');
     }
 }
 @media (min-width: 1081px) {
-    body {
+    .page-bg {
         background-image: url('images/portrait-1536.webp'), url('images/portrait-1536.jpg');
     }
 }
@@ -310,6 +310,7 @@ footer {
         padding: 10px;
     }
 }
+
 
 
 
