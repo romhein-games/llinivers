@@ -13,8 +13,16 @@ body {
     text-align: center;
 }
 
+.page-bg-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;
+}
+
 .page-bg {
-    position: fixed;           /* reste fixe même sur mobile */
+    position: absolute;          
     top: 0;
     left: 0;
     width: 100%;
@@ -302,6 +310,7 @@ footer {
         padding: 10px;
     }
 }
+
 
 
 
