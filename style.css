@@ -59,7 +59,7 @@ main {
 
 * ------ Partie texte d'accroche et bouton ------ */
 .hero {
-    width: 90%;
+    width: 70%;
     display: flex;
     justify-content: center; /* centre horizontalement */
     align-items: flex-start; /* place le logo en haut */
@@ -166,4 +166,5 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
