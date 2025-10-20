@@ -120,7 +120,7 @@ main {
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
     transition: all 0.3s ease;
 
-    margin-top: 20px; /* ajoute un espace entre le paragraphe et le bouton */
+    margin-top: 10px; /* ajoute un espace entre le paragraphe et le bouton */
 
     cursor: pointer;
 
@@ -265,6 +265,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
