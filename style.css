@@ -103,7 +103,7 @@ main {
                  0 0 6px rgba(173,216,230,0.2);
     word-break: break-word;
     overflow-wrap: break-word;
-    margin-bottom : 40px; /* ajoute un espace entre le paragraphe et le bouton */
+    margin-bottom : 20px; /* ajoute un espace entre le paragraphe et le bouton */
 }
 
 .hero .btn {
@@ -265,6 +265,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
