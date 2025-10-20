@@ -67,8 +67,7 @@ main {
     align-items: center; /* place le logo en haut */
     position : relative;
     text-align: center;
-    margin : 0 /*clamp(4px, 1vw, 12px);*/
-    /*gap: clamp(4px, 1vw, 12px);
+    gap: clamp(4px, 1vw, 12px);
 
     /*background-color: rgba(0, 255, 255, 0.5);*/
 }
@@ -82,7 +81,7 @@ main {
 .hero h1 {
     animation: fadeInUp 1s ease forwards;
     animation-delay: 0.2s;
-
+    margin: 0;
     color: white; /* texte blanc */
     font-size: clamp(2rem, 3.5vw, 2.5rem); /* taille responsive comme logo */
     text-shadow: 
@@ -98,7 +97,7 @@ main {
 .hero p {
     animation: fadeInUp 1s ease forwards;
     animation-delay: 0.4s;
-
+    margin: 0;
     color: white; /* texte blanc */
     font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive */
     text-shadow: 0 0 3px rgba(255,255,255,0.5),
@@ -111,7 +110,7 @@ main {
 .hero .btn {
     animation: fadeInUp 1s ease forwards;
     animation-delay: 0.6s;
-
+    margin: 0;
     background: #1e90ff;
     color: white;
     font-size: clamp(0.9rem, 1.5vw, 1.2rem); /* taille responsive */
@@ -267,6 +266,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
