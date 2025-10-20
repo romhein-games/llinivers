@@ -1,4 +1,4 @@
-tive/* ------------------------------------------------- */
+/* ------------------------------------------------- */
 /* Body centré avec Flexbox et background responsive */
 /* ------------------------------------------------- */
 body {
@@ -52,7 +52,7 @@ main {
     display: flex;
     justify-content: center; /* centre horizontalement */
     align-items: flex-start; /* place le logo en haut */
-    position : sticky;
+    position : relative;
 
     background-color: rgba(0, 255, 0, 0.1);
 }
