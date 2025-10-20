@@ -60,7 +60,7 @@ main {
 
 /* ------ Partie texte d'accroche et bouton ------ */
 .hero {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center; /* centre horizontalement */
@@ -265,6 +265,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
