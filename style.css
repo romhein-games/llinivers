@@ -132,7 +132,7 @@ main {
 }
 
 /* ------ Focus (clavier, accessibilité) ------ */
-.hero-content .btn:focus {
+.hero .btn:focus {
     outline: 2px solid white;        /* ou autre couleur contrastée */
     outline-offset: 4px;
 }
@@ -262,6 +262,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
