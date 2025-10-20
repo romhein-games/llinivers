@@ -185,7 +185,6 @@ main {
     position : relative;
     text-align: center;
     gap: clamp(4px, 1vw, 12px);
-    background-color: rgba(0, 0, 0, 0.5); /* noir avec 50% d'opacité */
     /*background-color: rgba(255, 0, 0, 0.3);*/
 }
 
@@ -293,6 +292,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
