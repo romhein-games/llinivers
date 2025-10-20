@@ -134,13 +134,13 @@ main {
     transform: scale(1.05);
 }
 
-/* ------ Focus (clavier, accessibilité) ------ */
+/* Focus (clavier, accessibilité) */
 .hero .btn:focus {
     outline: 2px solid white;        /* ou autre couleur contrastée */
     outline-offset: 4px;
 }
 
-/* ------ fade-in keyframes ------ */
+/* fade-in keyframes */
 @keyframes fadeInUp {
     to {
         opacity: 1;
@@ -148,7 +148,7 @@ main {
     }
 }
 
-/* ------ effet glow pulse pour le titre ------ */
+/* effet glow pulse pour le titre */
 @keyframes neonPulse {
     0% {
         text-shadow: 
@@ -164,6 +164,20 @@ main {
             0 0 30px rgba(173,216,230,0.4),
             0 0 60px rgba(173,216,230,0.2);
     }
+}
+
+/* ------ Partie carte et jeux ------ */
+.hero2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centre horizontalement */
+    align-items: center; /* place le logo en haut */
+    position : relative;
+    text-align: center;
+    gap: clamp(4px, 1vw, 12px);
+
+    background-color: rgba(0, 255, 0, 0.3);
 }
 
 /* ----------------- */
@@ -263,6 +277,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
