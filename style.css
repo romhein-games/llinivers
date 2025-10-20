@@ -109,7 +109,7 @@ main {
     overflow-wrap: break-word;
 }
 
-.hero .btn {
+.btn {
     animation: fadeInUp 1s ease forwards;
     animation-delay: 0.6s;
 
@@ -129,20 +129,20 @@ main {
     outline: none; /* supprime le contour natif */
 }
 
-.hero .btn:hover {
+.btn:hover {
     background: #0a74da;
     box-shadow: 0 0 25px rgba(30, 144, 255, 1);
     transform: scale(1.05);
 }
 
 /* Focus (clavier, accessibilité) */
-.hero .btn:focus {
+.btn:focus {
     outline: 2px solid white;        /* ou autre couleur contrastée */
     outline-offset: 4px;
 }
 
 /* Tap / click mobile */
-.hero .btn:active {
+.btn:active {
     background: #0a74da;
     box-shadow: 0 0 25px rgba(30, 144, 255, 1);
     transform: scale(0.97); /* léger effet “pressé” */
@@ -292,6 +292,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
