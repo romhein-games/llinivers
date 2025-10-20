@@ -32,7 +32,7 @@ header {
     display: flex;
     justify-content: center; /* centre horizontalement */
     align-items: flex-start; /* place le logo en haut */
-    position : sticky;
+    position : relative;
 
     background-color: rgba(255, 0, 0, 0.1);
 }
@@ -63,7 +63,7 @@ main {
     display: flex;
     justify-content: center; /* centre horizontalement */
     align-items: flex-start; /* place le logo en haut */
-    position : sticky;
+    position : relative;
 
     background-color: rgba(0, 255, 255, 0.5);
 }
@@ -262,6 +262,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
