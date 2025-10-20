@@ -180,6 +180,13 @@ main {
     background-color: rgba(255, 0, 0, 0.3);
 }
 
+.hero2 h1 {
+    margin: 0;
+    color: white; /* texte blanc */
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive comme logo */
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
 /* ----------------- */
 /* Footer et contenu */
 /* ----------------- */
@@ -277,6 +284,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
