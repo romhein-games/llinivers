@@ -57,6 +57,16 @@ main {
     background-color: rgba(0, 255, 0, 0.1);
 }
 
+* ------ Partie texte d'accroche et bouton ------ */
+.hero {
+    width: 90%;
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: flex-start; /* place le logo en haut */
+    position : sticky;
+
+    background-color: rgba(0, 255, 0, 0.45);
+}
 /* ----------------- */
 /* Footer et contenu */
 /* ----------------- */
@@ -156,3 +166,4 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
