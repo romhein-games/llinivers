@@ -97,7 +97,8 @@ main {
 .hero p {
     animation: fadeInUp 1s ease forwards;
     animation-delay: 0.4s;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: clamp(6px, 1.5vw, 18px)
     color: white; /* texte blanc */
     font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive */
     text-shadow: 0 0 3px rgba(255,255,255,0.5),
@@ -266,6 +267,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
