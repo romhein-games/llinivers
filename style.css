@@ -167,7 +167,7 @@ main {
 /* Footer et contenu */
 /* ----------------- */
 footer {
-    width: 100%;
+    width: 40%;
     display: flex;
     justify-content: center; /* centre horizontalement */
     align-items: flex-start; /* place le logo en haut */
@@ -262,6 +262,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
