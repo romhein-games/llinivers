@@ -82,7 +82,7 @@ main {
     animation-delay: 0.2s;
 
     color: white; /* texte blanc */
-    font-size: clamp(2rem, 3vw, 4rem); /* taille responsive comme logo */
+    font-size: clamp(2rem, 3.5vw, 2.5rem); /* taille responsive comme logo */
     text-shadow: 
         0 0 3px rgba(255,255,255,0.7),
         0 0 8px rgba(173,216,230,0.3),
@@ -265,6 +265,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
