@@ -65,7 +65,7 @@ main {
     align-items: flex-start; /* place le logo en haut */
     position : sticky;
 
-    background-color: rgba(0, 255, 0, 0.45);
+    background-color: rgba(0, 255, 255, 0.5);
 }
 /* ----------------- */
 /* Footer et contenu */
@@ -166,5 +166,6 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
