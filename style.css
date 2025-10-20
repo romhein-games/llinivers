@@ -53,7 +53,7 @@ main {
     align-items: center; /* place le logo en haut */
     position : relative;
 
-    background-color: rgba(0, 255, 0, 0.1);
+    background-color: rgba(0, 0, 255, 0.1);
 }
 
 /* ------ Partie texte d'accroche et bouton ------ */
@@ -66,7 +66,8 @@ main {
     position : relative;
     text-align: center;
     gap: clamp(4px, 1vw, 12px);
-    background-color: rgba(0, 0, 255, 0.3);
+
+    background-color: rgba(0, 255, 0, 0.3);
 }
 
 .hero::after {
@@ -174,8 +175,6 @@ footer {
     justify-content: center; /* centre horizontalement */
     align-items: flex-start; /* place le logo en haut */
     position : relative;
-
-    background-color: rgba(0, 0, 255, 0.1);
 }
 
 /* ------------------------------------------------------- */
@@ -264,4 +263,5 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
