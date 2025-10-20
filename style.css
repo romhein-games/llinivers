@@ -68,14 +68,14 @@ main {
     position : relative;
     text-align: center;
 
-    background-color: rgba(0, 255, 255, 0.5);
+    /*background-color: rgba(0, 255, 255, 0.5);
 }
 
-/*.hero::after {
- /*   content: "";
-  /*  position: absolute;
-  /*  inset: 0;
-/*}
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
 
 .hero h1 {
     animation: fadeInUp 1s ease forwards;
@@ -265,6 +265,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
