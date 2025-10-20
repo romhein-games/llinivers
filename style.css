@@ -78,6 +78,7 @@ main {
     content: "";
     position: absolute;
     inset: 0;
+    z-index: -1; /* <- ici, derrière le contenu */
 }
 
 .hero h1 {
@@ -292,6 +293,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
