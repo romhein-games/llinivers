@@ -67,6 +67,62 @@ main {
 
     background-color: rgba(0, 255, 255, 0.5);
 }
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.hero h1 {
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.2s;
+
+    color: white; /* texte blanc */
+    font-size: clamp(2rem, 5vw, 4rem); /* taille responsive comme logo */
+    text-shadow: 
+        0 0 3px rgba(255,255,255,0.7),
+        0 0 8px rgba(173,216,230,0.3),
+        0 0 15px rgba(173,216,230,0.2);
+    animation: fadeInUp 1s ease forwards, neonPulse 2s infinite alternate;
+
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+
+/* ------ Focus (clavier, accessibilité) ------ */
+.hero-content .btn:focus {
+    outline: 2px solid white;        /* ou autre couleur contrastée */
+    outline-offset: 4px;
+}
+
+/* ------ fade-in keyframes ------ */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ------ effet glow pulse pour le titre ------ */
+@keyframes neonPulse {
+    0% {
+        text-shadow: 
+            0 0 5px rgba(255,255,255,0.8),
+            0 0 10px rgba(173,216,230,0.6),
+            0 0 20px rgba(173,216,230,0.4),
+            0 0 40px rgba(173,216,230,0.2);
+    }
+    100% {
+        text-shadow: 
+            0 0 10px rgba(255,255,255,0.8),
+            0 0 20px rgba(173,216,230,0.6),
+            0 0 30px rgba(173,216,230,0.4),
+            0 0 60px rgba(173,216,230,0.2);
+    }
+}
+
 /* ----------------- */
 /* Footer et contenu */
 /* ----------------- */
@@ -166,6 +222,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
