@@ -67,7 +67,8 @@ main {
     align-items: center; /* place le logo en haut */
     position : relative;
     text-align: center;
-    gap: clamp(4px, 1vw, 12px);
+    margin : clamp(4px, 1vw, 12px);
+    /*gap: clamp(4px, 1vw, 12px);
 
     /*background-color: rgba(0, 255, 255, 0.5);*/
 }
@@ -266,6 +267,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
