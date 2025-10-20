@@ -53,7 +53,7 @@ main {
     align-items: center; /* place le logo en haut */
     position : relative;
     gap: clamp(20px, 5vw, 60px);
-    background-color: rgba(0, 0, 255, 0.1);
+    background-color: rgba(0, 0, 255, 0.4);
 }
 
 /* ------ Partie texte d'accroche et bouton ------ */
@@ -177,7 +177,7 @@ main {
     text-align: center;
     gap: clamp(4px, 1vw, 12px);
 
-    background-color: rgba(0, 255, 0, 0.3);
+    background-color: rgba(255, 0, 0, 0.3);
 }
 
 /* ----------------- */
@@ -277,6 +277,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
