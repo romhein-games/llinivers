@@ -33,8 +33,6 @@ header {
     justify-content: center; /* centre horizontalement */
     align-items: center; /* place le logo en haut */
     position : relative;
-
-    background-color: rgba(255, 0, 0, 0.1);
 }
 
 /* ------ Logo responsive ------ */
@@ -68,8 +66,6 @@ main {
     position : relative;
     text-align: center;
     gap: clamp(4px, 1vw, 12px);
-
-    /*background-color: rgba(0, 255, 255, 0.5);*/
 }
 
 .hero::after {
@@ -267,52 +263,3 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
