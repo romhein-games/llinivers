@@ -90,6 +90,18 @@ main {
     overflow-wrap: break-word;
 }
 
+.hero-content p {
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.4s;
+
+    color: white; /* texte blanc */
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive */
+    text-shadow: 0 0 3px rgba(255,255,255,0.5),
+                 0 0 6px rgba(173,216,230,0.2);
+    word-break: break-word;
+    overflow-wrap: break-word;
+    margin-bottom : 40px; /* ajoute un espace entre le paragraphe et le bouton */
+}
 
 /* ------ Focus (clavier, accessibilité) ------ */
 .hero-content .btn:focus {
@@ -222,6 +234,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
