@@ -195,6 +195,21 @@ main {
     word-break: break-word;
     overflow-wrap: break-word;
 }
+
+.game-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+}
 /* ----------------- */
 /* Footer et contenu */
 /* ----------------- */
@@ -292,6 +307,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
