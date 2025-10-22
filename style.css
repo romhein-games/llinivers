@@ -218,6 +218,7 @@ footer {
     display: flex;
     justify-content: center; /* centre horizontalement */
     align-items: flex-start; /* place le logo en haut */
+    gap: 50px;
     position : relative;
 }
 
@@ -307,6 +308,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
