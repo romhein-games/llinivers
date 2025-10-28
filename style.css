@@ -225,7 +225,7 @@ main {
 
 .game-card h3 {
 position: absolute;
-  bottom: 10px; /* position sur la base de l’image */
+  bottom: 60px; /* position sur la base de l’image */
   left: 0;
   width: 100%;
   text-align: center;
@@ -337,6 +337,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
