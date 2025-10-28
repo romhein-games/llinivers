@@ -224,16 +224,13 @@ main {
 }
 
 .game-card h3 {
-   position: absolute;
-  bottom: 30px; /* position sur la base de l’image */
+position: absolute;
+  bottom: 10px; /* position sur la base de l’image */
   left: 0;
   width: 100%;
   text-align: center;
   color: white;
   font-size: 1.2em;
-  /*background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
-  padding: 10px 0;
-  border-radius: 0 0 8px 8px; /* suit la courbe de l’image */
   margin: 0;
 }
 
@@ -340,6 +337,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
