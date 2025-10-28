@@ -199,14 +199,14 @@ main {
 .game-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: clamp(4px, 1vw, 20px);
     flex-wrap: wrap;
 }
 
 .game-card {
-    /*background: rgba(255, 255, 255, 0.05);*/
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    padding: 20px;
+    padding: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 250px;
 }
@@ -319,4 +319,5 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
