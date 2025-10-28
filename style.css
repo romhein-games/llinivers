@@ -184,7 +184,7 @@ main {
     align-items: center; /* place le logo en haut */
     position : relative;
     text-align: center;
-    gap: clamp(6px, 2vw, 12px);
+    gap: clamp(8px, 3vw, 12px);
     /*background-color: rgba(255, 0, 0, 0.3);*/
 }
 
@@ -319,6 +319,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
