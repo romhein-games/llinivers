@@ -199,7 +199,7 @@ main {
 .game-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -220,6 +220,7 @@ main {
 
 .game-card:hover {
     /*transform: translateY(-10px);*/
+    padding: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -337,6 +338,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
