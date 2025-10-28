@@ -204,11 +204,13 @@ main {
 }
 
 .game-card {
+    position: relative; /* nécessaire pour positionner le texte à l’intérieur */
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 250px;
+    overflow: hidden; /* empêche le texte de dépasser */
 }
 
 .game-card img {
@@ -222,11 +224,21 @@ main {
 }
 
 .game-card h3 {
-    gap: -20px;
+   position: absolute;
+  bottom: 30px; /* position sur la base de l’image */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  padding: 10px 0;
+  border-radius: 0 0 8px 8px; /* suit la courbe de l’image */
+  margin: 0;
 }
 
 .platforms img {
-    height: 24px;
+    height: 12px;
     margin: 5px;
 }
 
@@ -328,6 +340,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
