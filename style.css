@@ -210,6 +210,17 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 250px;
 }
+
+.game-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
 /* ----------------- */
 /* Footer et contenu */
 /* ----------------- */
@@ -308,19 +319,3 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
