@@ -204,7 +204,7 @@ main {
 }
 
 .game-card {
-    background: rgba(255, 255, 255, 0.05);
+    /*background: rgba(255, 255, 255, 0.05);*/
     border-radius: 12px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -217,7 +217,7 @@ main {
 }
 
 .game-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -319,3 +319,4 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
