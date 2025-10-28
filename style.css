@@ -221,6 +221,10 @@ main {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+.game-card h3 {
+    gap: -20px;
+}
+
 .platforms img {
     height: 24px;
     margin: 5px;
@@ -324,6 +328,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
