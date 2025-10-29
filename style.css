@@ -243,6 +243,11 @@ main {
     width: 10%;
 }
 
+/* ------ Partie about ------ */
+.about {
+    padding: 50px 20px;
+}
+
 /* ----------------- */
 /* Footer et contenu */
 /* ----------------- */
@@ -341,29 +346,3 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
