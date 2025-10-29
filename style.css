@@ -224,8 +224,8 @@ main {
 }
 
 .game-card h3 {
-position: absolute;
-  bottom: 10px; /* position sur la base de l’image */
+  position: relative;
+  /*bottom: 10px; /* position sur la base de l’image */
   left: 0;
   width: 100%;
   text-align: center;
@@ -234,10 +234,13 @@ position: absolute;
   margin: 0;
 }
 
+.platforms {
+    margin-top: 5px;
+}
+
 .platforms img {
-    position: absolute;
-    width: 10%;
-    margin: 10px;
+    position: relative;
+    width: 40px;
 }
 
 /* ----------------- */
