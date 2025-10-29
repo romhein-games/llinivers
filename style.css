@@ -225,7 +225,7 @@ main {
 
 .game-card h3 {
   position: relative;
-  /*bottom: 10px; /* position sur la base de l’image */
+  bottom: 10px; /* position sur la base de l’image */
   left: 0;
   width: 100%;
   text-align: center;
@@ -240,7 +240,7 @@ main {
 
 .platforms img {
     position: relative;
-    width: 40px;
+    width: 10%;
 }
 
 /* ----------------- */
@@ -341,6 +341,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
