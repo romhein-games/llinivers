@@ -235,7 +235,7 @@ main {
 }
 
 .platforms {
-    margin-top: 5px;
+    /*margin-top: 5px;*/
 }
 
 .platforms img {
@@ -341,6 +341,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
