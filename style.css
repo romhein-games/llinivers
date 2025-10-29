@@ -235,8 +235,9 @@ position: absolute;
 }
 
 .platforms img {
+    position: absolute;
     width: 10%;
-    margin: 50px;
+    margin: 10px;
 }
 
 /* ----------------- */
@@ -337,6 +338,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
