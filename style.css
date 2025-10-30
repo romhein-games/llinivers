@@ -1,6 +1,5 @@
 /* Défilement doux pour tout le site */
 html {
-    -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
 }
 /* ------------------------------------------------- */
@@ -380,5 +379,6 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
