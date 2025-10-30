@@ -262,7 +262,11 @@ main {
 }
 
 .community h2 {
-    margin-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+.community p {
+    margin-top: 5px;
 }
 
 .about img {
@@ -376,6 +380,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
