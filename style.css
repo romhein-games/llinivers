@@ -40,6 +40,7 @@ header {
     justify-content: center; /* centre horizontalement */
     align-items: center; /* place le logo en haut */
     position : relative;
+    background: rgba(255, 0, 0, 0.5);
 }
 
 /* ------ Logo responsive ------ */
@@ -47,6 +48,7 @@ header {
     width: clamp(100px, 20vw, 300px); /* min 60px, max 180px, idéal 12% largeur écran */
     height: auto;
     margin-top: clamp(10px, 2vw, 25px);
+     background: rgba(255, 0, 0, 0.8);
 }
 
 /* --------------- */
@@ -377,6 +379,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
