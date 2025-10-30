@@ -186,6 +186,7 @@ main {
     position : relative;
     text-align: center;
     gap: clamp(4px, 1vw, 10px);
+    background: rgba(255, 0, 0, 0.8);
 }
 
 .games h2 {
@@ -366,6 +367,7 @@ footer {
         }
     }
 }
+
 
 
 
