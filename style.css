@@ -268,7 +268,7 @@ main {
 
 /* Bouton */
 .about-text .btn {
-    display: inline-block;
+    /*display: inline-block;*/
     padding: 10px 20px;
     background-color: #0078ff;
     color: #fff;
@@ -392,4 +392,5 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
