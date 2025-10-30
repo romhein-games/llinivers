@@ -205,7 +205,7 @@ main {
 
 .game-card {
     position: relative; /* nécessaire pour positionner le texte à l’intérieur */
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 12px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -246,10 +246,10 @@ main {
 /* ------ Partie about ------ */
 .about {
     display: flex;
-    align-items: center;           /* aligne verticalement le texte et l'image */
+    /*align-items: center;           /* aligne verticalement le texte et l'image */
     padding: 20px;
     gap: clamp(8px, 1.5vw, 20px); 
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .community {
@@ -364,6 +364,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
