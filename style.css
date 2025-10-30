@@ -62,7 +62,7 @@ main {
     justify-content: center; /* centre horizontalement */
     align-items: center; /* place le logo en haut */
     position : relative;
-    /*gap: clamp(20px, 5vw, 60px);*/
+    gap: clamp(20px, 5vw, 60px);
 }
 
 /* ------ Partie texte d'accroche et bouton ------ */
@@ -382,6 +382,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
