@@ -40,7 +40,6 @@ header {
     justify-content: center; /* centre horizontalement */
     align-items: center; /* place le logo en haut */
     position : relative;
-    background: rgba(255, 0, 0, 0.5);
 }
 
 /* ------ Logo responsive ------ */
@@ -57,7 +56,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center; /* centre horizontalement */
-    align-items: center; /* place le logo en haut */
+    align-items: center; /* place le logo au milieu */
     position : relative;
     gap: clamp(20px, 5vw, 60px);
     background: rgba(0, 255, 0, 0.5);
@@ -73,6 +72,7 @@ main {
     position : relative;
     text-align: center;
     gap: clamp(4px, 1vw, 12px);
+    background: rgba(0, 255, 0, 0.8);
 }
 
 .hero::after {
@@ -366,3 +366,4 @@ footer {
         }
     }
 }
+
