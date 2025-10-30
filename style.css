@@ -254,7 +254,7 @@ main {
 .community {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .about img {
@@ -360,6 +360,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
