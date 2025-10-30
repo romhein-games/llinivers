@@ -263,6 +263,9 @@ main {
 
 .about img {
     width: 100%;
+    height: auto;              /* garde le bon ratio */
+    max-width: 300px;          /* limite la taille sur grands écrans */
+    object-fit: contain;       /* évite toute déformation */
     border-radius: 8px;
 }
 
@@ -369,6 +372,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
