@@ -47,8 +47,6 @@ header {
 .logo {
     width: clamp(160px, 20vw, 300px); /* min 160px, max 300px, idéal 20% largeur écran */
     height: auto;
-    /*margin-top: clamp(10px, 2vw, 25px);*/
-    background: rgba(255, 0, 0, 0.8);
 }
 
 /* --------------- */
@@ -62,6 +60,7 @@ main {
     align-items: center; /* place le logo en haut */
     position : relative;
     gap: clamp(20px, 5vw, 60px);
+    background: rgba(0, 255, 0, 0.5);
 }
 
 /* ------ Partie texte d'accroche et bouton ------ */
@@ -367,23 +366,3 @@ footer {
         }
     }
 }
-
-/* ------ Logo responsive ------ */
-@media (orientation: portrait) {
-  .logo {
-    /*width: clamp(160px, 20vw, 260px);*/
-  }
-}
-@media (orientation: landscape) {
-  .logo {
-    /*width: clamp(160px, 20vw, 260px);*/
-  }
-}
-
-
-
-
-
-
-
-
