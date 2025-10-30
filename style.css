@@ -205,7 +205,6 @@ main {
 
 .game-card {
     position: relative; /* nécessaire pour positionner le texte à l’intérieur */
-    background: rgba(0, 0, 0, 0.3);
     border-radius: 12px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -369,6 +368,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
