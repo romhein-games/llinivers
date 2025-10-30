@@ -1,5 +1,5 @@
 // === Effet Parallax ===
-const bg = document.querySelector('.main');
+const bg = document.querySelector('main');
 window.addEventListener('scroll', () => {
   const vitesse = 0.4; // Ajuste la vitesse du défilement
   const offset = window.scrollY * vitesse;
