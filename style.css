@@ -266,6 +266,11 @@ main {
     border-radius: 8px;
 }
 
+.about:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
 /* ----------------- */
 /* Footer et contenu */
 /* ----------------- */
@@ -364,6 +369,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
