@@ -55,7 +55,7 @@ main {
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* centre horizontalement */
+    justify-content: flex-start;
     align-items: center; /* centre verticalement */
     position : relative;
     gap: clamp(20px, 5vw, 60px);
@@ -67,8 +67,8 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* centre horizontalement */
-    align-items: center; /* place le logo en haut */
+    justify-content: flex-Start; 
+    align-items: center; /* Centre verticalement */
     position : relative;
     text-align: center;
     gap: clamp(4px, 1vw, 12px);
@@ -96,6 +96,7 @@ main {
 
     word-break: break-word;
     overflow-wrap: break-word;
+    background: rgba(0, 0, 255, 0.3);
 }
 
 .hero p {
@@ -109,6 +110,7 @@ main {
                  0 0 6px rgba(173,216,230,0.2);
     word-break: break-word;
     overflow-wrap: break-word;
+    background: rgba(0, 0, 255, 0.6);
 }
 
 .hero .btn {
@@ -129,6 +131,7 @@ main {
 
     -webkit-tap-highlight-color: transparent; /* supprime le carré bleu sur mobile */
     outline: none; /* supprime le contour natif */
+    background: rgba(0, 0, 255, 0.9);
 }
 
 .hero .btn:hover {
@@ -366,6 +369,7 @@ footer {
         }
     }
 }
+
 
 
 
