@@ -187,7 +187,7 @@ main {
     align-items: center; /* place le logo en haut */
     position : relative;
     text-align: center;
-    gap: clamp(4px, 1vw, 10px);
+    /*gap: clamp(4px, 1vw, 10px);*/
 }
 
 .games h2 {
@@ -247,7 +247,6 @@ main {
 /* ------ Partie about ------ */
 .about {
     display: flex;
-    marging-top: 5px;
     padding: 20px;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -377,6 +376,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
