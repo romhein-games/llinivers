@@ -20,6 +20,9 @@ body {
     background-size: cover;
     background-position: left top;
     background-repeat: no-repeat;
+    
+    /* Fond fixe */
+    background-attachment: fixed;
 
     /* Fallback portrait JPEG par défaut */
     background-image: url('images/portrait-720.jpg');
@@ -363,4 +366,5 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
