@@ -246,9 +246,9 @@ main {
 /* ------ Partie about ------ */
 .about {
     display: flex;
-    /*align-items: center;           /* aligne verticalement le texte et l'image */
     padding: 20px;
-    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .community {
@@ -369,6 +369,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
