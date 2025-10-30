@@ -45,10 +45,10 @@ header {
 
 /* ------ Logo responsive ------ */
 .logo {
-    width: clamp(100px, 20vw, 300px); /* min 60px, max 180px, idéal 12% largeur écran */
+    width: clamp(160px, 20vw, 300px); /* min 60px, max 180px, idéal 12% largeur écran */
     height: auto;
     margin-top: clamp(10px, 2vw, 25px);
-     background: rgba(255, 0, 0, 0.8);
+    background: rgba(255, 0, 0, 0.8);
 }
 
 /* --------------- */
@@ -371,14 +371,15 @@ footer {
 /* ------ Logo responsive ------ */
 @media (orientation: portrait) {
   .logo {
-    width: clamp(160px, 20vw, 260px);
+    /*width: clamp(160px, 20vw, 260px);*/
   }
 }
 @media (orientation: landscape) {
   .logo {
-    width: clamp(160px, 20vw, 260px);
+    /*width: clamp(160px, 20vw, 260px);*/
   }
 }
+
 
 
 
