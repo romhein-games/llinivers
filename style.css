@@ -87,7 +87,7 @@ main {
     animation-delay: 0.2s;
     margin: 0;
     color: white; /* texte blanc */
-    font-size: clamp(1.5rem, 3.5vw, 2.5rem); /* taille responsive comme logo */
+    font-size: clamp(1.3rem, 3.5vw, 2.5rem); /* taille responsive comme logo */
     text-shadow: 
         0 0 3px rgba(255,255,255,0.7),
         0 0 8px rgba(173,216,230,0.3),
@@ -96,7 +96,6 @@ main {
 
     word-break: break-word;
     overflow-wrap: break-word;
-    background: rgba(0, 0, 255, 0.3);
 }
 
 .hero p {
@@ -110,7 +109,6 @@ main {
                  0 0 6px rgba(173,216,230,0.2);
     word-break: break-word;
     overflow-wrap: break-word;
-    background: rgba(0, 0, 255, 0.6);
 }
 
 .hero .btn {
@@ -131,7 +129,6 @@ main {
 
     -webkit-tap-highlight-color: transparent; /* supprime le carré bleu sur mobile */
     outline: none; /* supprime le contour natif */
-    background: rgba(0, 0, 255, 0.9);
 }
 
 .hero .btn:hover {
@@ -369,6 +366,7 @@ footer {
         }
     }
 }
+
 
 
 
