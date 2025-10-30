@@ -240,7 +240,6 @@ main {
 
 /* ------ Partie about ------ */
 .about {
-    width: 80%;
     display: flex;
     padding: 20px;
     border-radius: 12px;
@@ -364,3 +363,4 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
