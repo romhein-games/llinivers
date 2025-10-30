@@ -248,7 +248,6 @@ main {
 .about {
     display: flex;
     padding: 20px;
-    margin-top: 5px
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -381,4 +380,5 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
