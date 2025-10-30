@@ -187,8 +187,7 @@ main {
     align-items: center; /* place le logo en haut */
     position : relative;
     text-align: center;
-    margin-bottom: 0px
-    /*gap: clamp(4px, 1vw, 10px);*/
+    gap: clamp(4px, 1vw, 10px);
 }
 
 .games h2 {
@@ -382,3 +381,4 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
