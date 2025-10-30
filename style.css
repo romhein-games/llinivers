@@ -29,8 +29,6 @@ body {
 
     /* Portrait WebP si supporté */
     background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
-
-    overscroll-behavior: none;
 }
 
 /* ------------------------- */
@@ -379,6 +377,7 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
 
