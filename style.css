@@ -246,6 +246,7 @@ main {
 /* ------ Partie about ------ */
 .about {
     display: flex;
+    flex-direction: column;
     align-items: center;           /* aligne verticalement le texte et l'image */
     justify-content: space-between;/* espace entre texte et image */
     padding: 50px 20px;
@@ -392,5 +393,6 @@ footer {
     width: clamp(160px, 20vw, 260px);
   }
 }
+
 
 
