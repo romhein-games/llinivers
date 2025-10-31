@@ -202,13 +202,12 @@ main {
     justify-content: center;
     gap: clamp(4px, 1vw, 12px);
     flex-wrap: wrap;
-    background: rgba(0, 255, 0, 0.8);
 }
 
 .game-card {
     position: relative; /* nécessaire pour positionner le texte à l’intérieur */
-    border-radius: 12px;
-    padding: 20px;
+    border-radius: clamp(10px, 1vw, 12px) /*12px;*/
+    padding: clamp(10px, 1vw, 20px) /*20px;*/
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: clamp(250px, 50vw, 500px); /*250px;*/
     overflow: hidden; /* empêche le texte de dépasser */
@@ -216,7 +215,7 @@ main {
 
 .game-card img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: clamp(8px, 1vw, 10px) /*8px;*/
 }
 
 .game-card:hover {
@@ -369,6 +368,7 @@ footer {
         }
     }
 }
+
 
 
 
