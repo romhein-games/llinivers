@@ -6,59 +6,31 @@ html {
 /* Body centré avec Flexbox et background responsive */
 /* ------------------------------------------------- */
 body {
-    /*display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;*/
+    align-items: center;
     height: 100vh;
     margin: 0;
-    /*font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
     color: white;
-    text-align: center;*/
+    text-align: center;
 
-    /*background-color: #0a0a2a;
+    background-color: #0a0a2a;
     background-size: cover;
     background-position: left top;
     background-repeat: no-repeat; 
     
-    /* Fond fixe 
+    /* Fond fixe */
     background-attachment: fixed;
 
-    /* Fallback portrait JPEG par défaut 
-    background-image: url('images/portrait-720.jpg');
-
-    /* Portrait WebP si supporté 
-    background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');*/
-}
-
-.bg-fixed {
-    position: fixed;
-    background-color: #0a0a2a;
-    background-size: cover;
-    background-position: left top;
-    background-repeat: no-repeat;
-    
     /* Fallback portrait JPEG par défaut */
     background-image: url('images/portrait-720.jpg');
 
     /* Portrait WebP si supporté */
     background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
-    
-    z-index: -1; /* derrière le contenu */
 }
 
-.content {
-  position: relative;
-  z-index: 1;
-  /* ton contenu normal ici */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  color: white;
-  text-align: center;
-}
 /* ------------------------- */
 /* Header et logo responsive */
 /* ------------------------- */
@@ -365,22 +337,22 @@ nav a:hover {
 /* ------------------------------------------------------- */
 /* ------ Portrait responsive selon largeur écran ------ */
 @media (max-width: 480px) {
-    bg-fixed {
+    body {
         background-image: url('images/portrait-480.webp'), url('images/portrait-480.jpg');
     }
 }
 @media (min-width: 481px) and (max-width: 720px) {
-    bg-fixed {
+    body {
         background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
     }
 }
 @media (min-width: 721px) and (max-width: 1080px) {
-    bg-fixed {
+    body {
         background-image: url('images/portrait-1080.webp'), url('images/portrait-1080.jpg');
     }
 }
 @media (min-width: 1081px) {
-    bg-fixed {
+    body {
         background-image: url('images/portrait-1536.webp'), url('images/portrait-1536.jpg');
     }
 }
@@ -388,49 +360,50 @@ nav a:hover {
 /* ------ Landscape responsive via orientation ------ */
 @media (orientation: landscape) {
     /* Fallback JPEG landscape */
-    bg-fixed {
+    body {
         background-image: url('images/landscape-1280.jpg');
     }
 
     /* WebP landscape si supporté */
-    bg-fixed {
+    body {
         background-image: url('images/landscape-1280.webp'), url('images/landscape-1280.jpg');
     }
 
     /* Landscape selon largeur écran */
     @media (max-width: 640px) {
-        bg-fixed {
+        body {
             background-image: url('images/landscape-640.webp'), url('images/landscape-640.jpg');
         }
     }
     @media (min-width: 641px) and (max-width: 896px) {
-        bg-fixed {
+        body {
             background-image: url('images/landscape-896.webp'), url('images/landscape-896.jpg');
         }
     }
     @media (min-width: 897px) and (max-width: 1280px) {
-        bg-fixed {
+        body {
             background-image: url('images/landscape-1280.webp'), url('images/landscape-1280.jpg');
         }
     }
     @media (min-width: 1281px) and (max-width: 1440px) {
-        bg-fixed {
+        body {
             background-image: url('images/landscape-1440.webp'), url('images/landscape-1440.jpg');
         }
     }
     @media (min-width: 1441px) and (max-width: 1920px) {
-        bg-fixed {
+        body {
             background-image: url('images/landscape-1920.webp'), url('images/landscape-1920.jpg');
         }
     }
     @media (min-width: 1921px) and (max-width: 2560px) {
-        bg-fixed {
+        body {
             background-image: url('images/landscape-2560.webp'), url('images/landscape-2560.jpg');
         }
     }
     @media (min-width: 2561px) {
-        bg-fixed {
+        body {
             background-image: url('images/landscape-3840.webp'), url('images/landscape-3840.jpg');
         }
     }
 }
+
