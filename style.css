@@ -182,7 +182,7 @@ main {
     align-items: center; 
     position : relative;
     text-align: center;
-    gap: clamp(12px, 2vw, 20px);
+    gap: clamp(17px, 2.5vw, 25px);
     margin-bottom: clamp(14px, 2vw, 22px);
 }
 
@@ -244,6 +244,7 @@ main {
 .about {
     display: flex;
     margin-top: 3px;
+    gap: clamp(4px, 1vw, 12px);
     border-radius: clamp(10px, 1vw, 12px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -272,7 +273,7 @@ main {
 .about img {
     width: 100%;
     height: auto;              /* garde le bon ratio */
-    /*max-width: 300px;           limite la taille sur grands écrans */
+    max-width: 300px;          /* limite la taille sur grands écrans */
     object-fit: contain;       /* évite toute déformation */
     border-radius: clamp(10px, 1.1vw, 12px);
 }
@@ -368,6 +369,7 @@ footer {
         }
     }
 }
+
 
 
 
