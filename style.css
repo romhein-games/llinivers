@@ -184,6 +184,7 @@ main {
     text-align: center;
     gap: clamp(12px, 2vw, 20px);
     background: rgba(255, 0, 0, 0.8);
+    margin-bottom: clamp(14px, 2vw, 22px);
 }
 
 .games h2 {
@@ -255,7 +256,7 @@ main {
     align-items: flex-start;
     text-align: left;   
     width: 100%; 
-    /*background: rgba(0, 255, 0, 0.8);*/
+    background: rgba(0, 255, 0, 0.8);
 }
 
 .community h2 {
@@ -266,7 +267,7 @@ main {
 
 .community p {
     margin-top: 5px;
-    font-size: clamp(0.5rem, 2vw, 1rem); /* taille responsive 1.2em; */
+    font-size: clamp(0.6rem, 2.1vw, 1.1rem); /* taille responsive 1.2em; */
 }
 
 .about img {
@@ -368,6 +369,7 @@ footer {
         }
     }
 }
+
 
 
 
