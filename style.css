@@ -294,7 +294,7 @@ footer {
     justify-content: space-between; /* espace entre le texte et le menu */
     align-items: center; /* centre verticalement */
     flex-wrap: nowrap; /* empêche le passage à la ligne */
-    padding: 10px 20px;
+    padding: 5px 20px;
     box-sizing: border-box;
     overflow-x: auto; /* permet de défiler si trop serré */
     overflow-y: hidden; /* empêche le scroll vertical */
@@ -399,6 +399,7 @@ nav a {
         }
     }
 }
+
 
 
 
