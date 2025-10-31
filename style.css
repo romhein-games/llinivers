@@ -208,6 +208,7 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: clamp(250px, 50vw, 500px);
     overflow: hidden; /* empêche le texte de dépasser */
+    background: rgba(0, 0, 255, 0.8);
 }
 
 .game-card img {
@@ -229,6 +230,7 @@ main {
   color: white;
   font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
   margin: 0;
+  background: rgba(0, 255, 0, 0.8);
 }
 
 .platforms {
@@ -238,7 +240,7 @@ main {
 
 .platforms img {
     position: relative;
-    width: clamp(0.5rem, 8vw, 2rem) /*10%;*/
+    width: clamp(0.6rem, 7vw, 1.5rem) /*10%;*/
 }
 
 /* ------ Partie about ------ */
@@ -366,6 +368,7 @@ footer {
         }
     }
 }
+
 
 
 
