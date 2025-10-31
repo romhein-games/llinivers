@@ -208,7 +208,6 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: clamp(250px, 50vw, 500px);
     overflow: hidden; /* empêche le texte de dépasser */
-    background: rgba(0, 0, 255, 0.8);
 }
 
 .game-card img {
@@ -368,6 +367,7 @@ footer {
         }
     }
 }
+
 
 
 
