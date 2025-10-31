@@ -295,10 +295,9 @@ footer {
     align-items: center; /* centre verticalement */
     flex-wrap: nowrap; /* empêche le passage à la ligne */
     padding: 10px 20px;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     overflow-x: auto; /* permet de défiler si trop serré */
     overflow-y: hidden; /* empêche le scroll vertical */
-    background: rgba(255,0,0,0.8)
     flex-shrink: 0; /* empêche le footer d’être réduit */
 }
 
@@ -400,6 +399,7 @@ nav a {
         }
     }
 }
+
 
 
 
