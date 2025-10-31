@@ -259,11 +259,14 @@ main {
 }
 
 .community h2 {
+    margin-top: 0px;
     margin-bottom: 5px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
 }
 
 .community p {
     margin-top: 5px;
+    font-size: clamp(0.5rem, 2vw, 1rem); /* taille responsive 1.2em; */
 }
 
 .about img {
@@ -271,7 +274,7 @@ main {
     height: auto;              /* garde le bon ratio */
     /*max-width: 300px;           limite la taille sur grands écrans */
     object-fit: contain;       /* évite toute déformation */
-    border-radius: clamp(10px, 1vw, 12px);
+    border-radius: clamp(10px, 1.1vw, 12px);
 }
 
 .about:hover {
@@ -365,6 +368,7 @@ footer {
         }
     }
 }
+
 
 
 
