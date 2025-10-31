@@ -58,6 +58,7 @@ main {
     justify-content: flex-start;
     align-items: center; /* centre verticalement */
     position : relative;
+    flex: 1;
 }
 
 /* ------ Partie texte d'accroche et bouton ------ */
@@ -298,6 +299,7 @@ footer {
     overflow-x: auto; /* permet de défiler si trop serré */
     overflow-y: hidden; /* empêche le scroll vertical */
     background: rgba(255,0,0,0.8)
+    flex-shrink: 0; /* empêche le footer d’être réduit */
 }
 
 footer p {
@@ -398,6 +400,7 @@ nav a {
         }
     }
 }
+
 
 
 
