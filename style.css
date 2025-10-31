@@ -129,24 +129,26 @@ main {
     outline: none; /* supprime le contour natif */
 }
 
-.hero .btn:hover {
+.hero .btn:hover,
+.hero .btn:active,
+.hero .btn:focus{
     background: #0a74da;
     box-shadow: 0 0 25px rgba(30, 144, 255, 1);
     transform: scale(1.05);
 }
 
-/* Focus (clavier, accessibilité) */
+/* Focus (clavier, accessibilité) 
 .hero .btn:focus {
-    outline: 2px solid white;        /* ou autre couleur contrastée */
+    outline: 2px solid white;        /* ou autre couleur contrastée 
     outline-offset: 4px;
-}
+}*/
 
-/* Tap / click mobile */
+/* Tap / click mobile 
 .hero .btn:active {
     background: #0a74da;
     box-shadow: 0 0 25px rgba(30, 144, 255, 1);
-    transform: scale(0.97); /* léger effet “pressé” */
-}
+    transform: scale(0.97); /* léger effet “pressé” 
+}*/
 
 /* fade-in keyframes */
 @keyframes fadeInUp {
@@ -414,3 +416,4 @@ nav a:active {
         }
     }
 }
+
