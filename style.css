@@ -330,6 +330,9 @@ nav a:hover {
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(1.05);
     color: #fff; /* pour s’assurer que le texte reste visible */
+
+    -webkit-tap-highlight-color: transparent; /* supprime le carré bleu sur mobile */
+    outline: none; /* supprime le contour natif */
 }
 
 /* ------------------------------------------------------- */
@@ -406,4 +409,5 @@ nav a:hover {
         }
     }
 }
+
 
