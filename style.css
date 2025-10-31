@@ -316,7 +316,7 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 10px 10px;
     white-space: nowrap; /* empêche les liens de se couper */
 }
 
@@ -394,3 +394,4 @@ nav a {
         }
     }
 }
+
