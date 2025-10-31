@@ -181,7 +181,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center; /* centre horizontalement */
-    align-items: center; /* place le logo en haut */
+    align-items: center; 
     position : relative;
     text-align: center;
     gap: clamp(4px, 1vw, 12px);
@@ -192,7 +192,7 @@ main {
     margin-bottom: 0;
     margin-top: clamp(4px, 1vw, 12px);
     color: white; /* texte blanc */
-    font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive comme logo */
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive */
     word-break: break-word;
     overflow-wrap: break-word;
 }
@@ -210,7 +210,7 @@ main {
     border-radius: 12px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 250px;
+    width: clamp(250px, 50vw, 500px); /*250px;*/
     overflow: hidden; /* empêche le texte de dépasser */
 }
 
@@ -369,6 +369,7 @@ footer {
         }
     }
 }
+
 
 
 
