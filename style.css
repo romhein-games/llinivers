@@ -58,7 +58,7 @@ main {
     justify-content: flex-start;
     align-items: center; /* centre verticalement */
     position : relative;
-    gap: clamp(20px, 5vw, 60px);
+    /*gap: clamp(20px, 5vw, 60px);*/
     background: rgba(0, 255, 0, 0.5);
 }
 
@@ -368,6 +368,7 @@ footer {
         }
     }
 }
+
 
 
 
