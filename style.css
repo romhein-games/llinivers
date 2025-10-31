@@ -248,7 +248,6 @@ main {
     border-radius: clamp(10px, 1vw, 12px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: clamp(25px, 3vw, 35px);
-    background: rgba(255, 0, 0, 0.8);
 }
 
 .community {
@@ -258,6 +257,7 @@ main {
     align-items: flex-start;
     text-align: left;   
     width: 100%; 
+    margin-left: 15px;
 }
 
 .community h2 {
@@ -300,12 +300,14 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    background: rgba(255, 0, 0, 0.8);
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    background: rgba(0, 0, 255, 0.8);
 }
 
 /* ------------------------------------------------------- */
@@ -382,5 +384,3 @@ nav a {
         }
     }
 }
-
-
