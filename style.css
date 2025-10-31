@@ -227,7 +227,7 @@ main {
   width: 100%;
   text-align: center;
   color: white;
-  font-size: clamp(0.8rem, 2.3vw, 1.3rem); /* taille responsive 1.2em; */
+  font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
   margin: 0;
 }
 
@@ -365,6 +365,7 @@ footer {
         }
     }
 }
+
 
 
 
