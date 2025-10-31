@@ -222,7 +222,7 @@ main {
 
 .game-card h3 {
   position: relative;
-  bottom: 10px; /* position sur la base de l’image */
+  bottom: 15px; /* position sur la base de l’image */
   left: 0;
   width: 100%;
   text-align: center;
@@ -365,6 +365,7 @@ footer {
         }
     }
 }
+
 
 
 
