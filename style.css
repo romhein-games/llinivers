@@ -183,7 +183,7 @@ main {
     position : relative;
     text-align: center;
     gap: clamp(17px, 2.5vw, 25px);
-    margin-bottom: clamp(14px, 2vw, 22px);
+    margin-bottom: clamp(10px, 2.2vw, 25px);
 }
 
 .games h2 {
@@ -244,7 +244,7 @@ main {
 .about {
     display: flex;
     margin-top: 3px;
-    gap: clamp(4px, 1vw, 12px);
+    gap: clamp(8px, 1.5vw, 24px);
     border-radius: clamp(10px, 1vw, 12px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -369,6 +369,7 @@ footer {
         }
     }
 }
+
 
 
 
