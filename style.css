@@ -237,7 +237,8 @@ main {
 
 .platforms img {
     position: relative;
-    width: clamp(0.5rem, 8vw, 1.6rem) /*10%;*/
+    width: clamp(0.5rem, 8vw, 2rem) /*10%;*/
+    background: rgba(255, 0, 0, 0.8);
 }
 
 /* ------ Partie about ------ */
@@ -365,6 +366,7 @@ footer {
         }
     }
 }
+
 
 
 
