@@ -183,7 +183,7 @@ main {
     position : relative;
     text-align: center;
     gap: clamp(17px, 2.5vw, 25px);
-    margin-bottom: clamp(10px, 2.2vw, 25px);
+    margin-bottom: clamp(25px, 3vw, 35px);
 }
 
 .games h2 {
@@ -256,7 +256,7 @@ main {
     align-items: flex-start;
     text-align: left;   
     width: 100%; 
-    background: rgba(0, 255, 0, 0.8);
+    /*background: rgba(0, 255, 0, 0.8);*/
 }
 
 .community h2 {
@@ -369,6 +369,7 @@ footer {
         }
     }
 }
+
 
 
 
