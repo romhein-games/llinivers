@@ -296,6 +296,7 @@ footer {
     padding: 10px 20px;
     box-sizing: border-box;
     overflow-x: auto; /* permet de défiler si trop serré */
+    overflow-y: hidden; /* empêche le scroll vertical */
     background: rgba(255,0,0,0.8)
 }
 
@@ -319,6 +320,8 @@ nav a {
     font-weight: bold;
     padding: 10px 10px;
     white-space: nowrap; /* empêche les liens de se couper */
+    display: inline-flex;
+    align-items: center;
 }
 
 /* ------------------------------------------------------- */
@@ -395,5 +398,6 @@ nav a {
         }
     }
 }
+
 
 
