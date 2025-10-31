@@ -200,7 +200,7 @@ main {
 .game-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: clamp(4px, 1vw, 12px);
     flex-wrap: wrap;
     background: rgba(0, 255, 0, 0.8);
 }
@@ -369,6 +369,7 @@ footer {
         }
     }
 }
+
 
 
 
