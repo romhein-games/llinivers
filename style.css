@@ -296,6 +296,7 @@ footer {
     padding: 10px 20px;
     box-sizing: border-box;
     overflow-x: auto; /* permet de défiler si trop serré */
+    background: rgba(255,0,0,0.8)
 }
 
 footer p {
@@ -394,4 +395,5 @@ nav a {
         }
     }
 }
+
 
