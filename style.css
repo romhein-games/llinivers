@@ -183,7 +183,6 @@ main {
     position : relative;
     text-align: center;
     gap: clamp(12px, 2vw, 20px);
-    background: rgba(255, 0, 0, 0.8);
     margin-bottom: clamp(14px, 2vw, 22px);
 }
 
@@ -369,6 +368,7 @@ footer {
         }
     }
 }
+
 
 
 
