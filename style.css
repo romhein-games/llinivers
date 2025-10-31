@@ -58,8 +58,6 @@ main {
     justify-content: flex-start;
     align-items: center; /* centre verticalement */
     position : relative;
-    /*gap: clamp(20px, 5vw, 60px);*/
-    background: rgba(0, 255, 0, 0.5);
 }
 
 /* ------ Partie texte d'accroche et bouton ------ */
@@ -185,7 +183,7 @@ main {
     position : relative;
     text-align: center;
     gap: clamp(4px, 1vw, 12px);
-    background: rgba(255, 0, 0, 0.8);
+    /*background: rgba(255, 0, 0, 0.8);*/
 }
 
 .games h2 {
@@ -368,6 +366,7 @@ footer {
         }
     }
 }
+
 
 
 
