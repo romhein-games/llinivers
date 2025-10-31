@@ -293,7 +293,6 @@ footer {
     justify-content: space-between; /* espace entre le texte et le menu */
     align-items: center; /* centre verticalement */
     flex-wrap: nowrap; /* empêche le passage à la ligne */
-    background: rgba(0, 255, 0, 0.8);
     padding: 10px 20px;
     box-sizing: border-box;
     overflow-x: auto; /* permet de défiler si trop serré */
@@ -310,7 +309,6 @@ nav ul {
     gap: 20px;
     margin: 0;
     padding: 0;
-    background: rgba(255, 0, 0, 0.8);
     flex-wrap: nowrap; /* garde tout sur une ligne */
 }
 
@@ -318,7 +316,6 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    background: rgba(0, 0, 255, 0.8);
     padding: 5px 10px;
     white-space: nowrap; /* empêche les liens de se couper */
 }
@@ -397,4 +394,3 @@ nav a {
         }
     }
 }
-
