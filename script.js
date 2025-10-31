@@ -24,3 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
     section.addEventListener('touchend', () => section.blur());
   });
 });
+
+// Reset hover/focus au retour sur la page
+window.addEventListener('pageshow', () => {
+  // Supprime le hover/focus de tous les boutons
+  document.querySelectorAll('.btn, .game-card, .about').forEach(el => {
+    el.classList.remove('hover');
+    el.blur(); // supprime le focus sur mobile
+  });
+});
