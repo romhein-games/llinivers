@@ -415,6 +415,11 @@ nav a:active {
     }
 }
 
-
-
-
+/* ------ Supprime les effets hover/active pour appareils tactiles ------ */
+@media (hover: none) and (pointer: coarse) {
+    .hero .btn:hover,
+    .hero .btn:active {
+        transform: none;
+        box-shadow: 0 0 15px rgba(30, 144, 255, 0.7); /* optionnel */
+    }
+}
