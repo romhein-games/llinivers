@@ -243,8 +243,9 @@ main {
 /* ------ Partie about ------ */
 .about {
     display: flex;
+    margin-top: 3px;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: clamp(10px, 1vw, 12px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: rgba(0, 0, 255, 0.8);
 }
@@ -366,3 +367,4 @@ footer {
         }
     }
 }
+
