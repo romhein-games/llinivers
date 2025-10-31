@@ -190,7 +190,8 @@ main {
 }
 
 .games h2 {
-    margin: 0;
+    margin-bottom: 0;
+    margin-top: clamp(10px, 2vw, 20px);
     color: white; /* texte blanc */
     font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive comme logo */
     word-break: break-word;
@@ -368,6 +369,7 @@ footer {
         }
     }
 }
+
 
 
 
