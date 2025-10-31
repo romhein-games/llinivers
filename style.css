@@ -244,7 +244,6 @@ main {
 .about {
     display: flex;
     margin-top: 3px;
-    padding: 20px;
     border-radius: clamp(10px, 1vw, 12px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -256,7 +255,7 @@ main {
     align-items: flex-start;
     text-align: left;   
     width: 100%; 
-    background: rgba(0, 255, 0, 0.8);
+    /*background: rgba(0, 255, 0, 0.8);*/
 }
 
 .community h2 {
@@ -270,9 +269,9 @@ main {
 .about img {
     width: 100%;
     height: auto;              /* garde le bon ratio */
-    max-width: 300px;          /* limite la taille sur grands écrans */
+    /*max-width: 300px;           limite la taille sur grands écrans */
     object-fit: contain;       /* évite toute déformation */
-    border-radius: 8px;
+    border-radius: clamp(10px, 1vw, 12px);
 }
 
 .about:hover {
@@ -366,5 +365,6 @@ footer {
         }
     }
 }
+
 
 
