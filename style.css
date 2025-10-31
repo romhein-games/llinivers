@@ -229,12 +229,10 @@ main {
   color: white;
   font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
   margin: 0;
-  background: rgba(0, 255, 0, 0.8);
 }
 
 .platforms {
-    margin-top: -10px;
-    background: rgba(255, 0, 0, 0.8);
+    margin-top: -15px;
 }
 
 .platforms img {
@@ -367,44 +365,3 @@ footer {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
