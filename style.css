@@ -247,6 +247,7 @@ main {
     gap: clamp(8px, 1.5vw, 24px);
     border-radius: clamp(10px, 1vw, 12px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 0, 0, 0.8);
 }
 
 .community {
@@ -256,7 +257,6 @@ main {
     align-items: flex-start;
     text-align: left;   
     width: 100%; 
-    /*background: rgba(0, 255, 0, 0.8);*/
 }
 
 .community h2 {
@@ -287,12 +287,12 @@ main {
 /* Footer et contenu */
 /* ----------------- */
 footer {
-    width: 40%;
+    width: 100%;
     display: flex;
-    justify-content: center; /* centre horizontalement */
-    align-items: flex-start; /* place le logo en haut */
-    gap: 50px;
+    justify-content: flex-start;
+    align-items: center; /* centre verticalement */
     position : relative;
+    background: rgba(0, 255, 0, 0.8);
 }
 
 /* ------------------------------------------------------- */
@@ -369,3 +369,4 @@ footer {
         }
     }
 }
+
