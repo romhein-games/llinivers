@@ -182,13 +182,13 @@ main {
     align-items: center; 
     position : relative;
     text-align: center;
-    gap: clamp(8px, 2vw, 24px);
+    gap: clamp(12px, 2vw, 20px);
     /*background: rgba(255, 0, 0, 0.8);*/
 }
 
 .games h2 {
     margin-bottom: 0;
-    margin-top: clamp(4px, 1vw, 12px);
+    margin-top: clamp(14px, 2vw, 22px);
     color: white; /* texte blanc */
     font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive */
     word-break: break-word;
@@ -365,6 +365,7 @@ footer {
         }
     }
 }
+
 
 
 
