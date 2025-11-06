@@ -17,7 +17,7 @@ body {
     text-align: center;
 
     background-color: #0a0a2a;
-    background-size: cover;
+    background-size: auto;
     background-position: left top;
     background-repeat: no-repeat; 
     
@@ -432,3 +432,4 @@ nav a:active {
         }
     }
 }
+
