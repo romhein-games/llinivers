@@ -145,7 +145,7 @@ main {
 .hero .btn:active {
     background: #0a74da;
     box-shadow: 0 0 25px rgba(30, 144, 255, 1);
-    transform: scale(0.90); /* léger effet “pressé” */
+    transform: scale(0.97); /* léger effet “pressé” */
 }
 
 /* fade-in keyframes */
@@ -219,6 +219,12 @@ main {
 .game-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.game-card:active {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    transform: scale(0.97); /* léger effet “pressé” */
 }
 
 .game-card h3 {
@@ -420,5 +426,6 @@ nav a:active {
         }
     }
 }
+
 
 
