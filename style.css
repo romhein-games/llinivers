@@ -129,9 +129,7 @@ main {
     outline: none; /* supprime le contour natif */
 }
 
-.hero .btn:hover,
-.hero .btn:active,
-.hero .btn:focus{
+.hero .btn:hover {
     background: #0a74da;
     box-shadow: 0 0 25px rgba(30, 144, 255, 1);
     transform: scale(1.05);
@@ -143,12 +141,12 @@ main {
     outline-offset: 4px;
 }*/
 
-/* Tap / click mobile 
+/* Tap / click mobile */
 .hero .btn:active {
     background: #0a74da;
     box-shadow: 0 0 25px rgba(30, 144, 255, 1);
-    transform: scale(0.97); /* léger effet “pressé” 
-}*/
+    transform: scale(0.97); /* léger effet “pressé” */
+}
 
 /* fade-in keyframes */
 @keyframes fadeInUp {
@@ -332,12 +330,18 @@ nav a {
     outline: none;
 }
 
-nav a:hover,
-nav a:focus,
-nav a:active {
+nav a:hover {
     /*background: #0a74da;*/
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(1.05);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
+
+nav a:active {
+    /*background: #0a74da;*/
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(0.97);
     color: #fff; /* pour s’assurer que le texte reste visible */
     outline: none; /* supprime le contour natif */
 }
@@ -416,4 +420,3 @@ nav a:active {
         }
     }
 }
-
