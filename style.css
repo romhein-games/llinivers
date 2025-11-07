@@ -311,7 +311,7 @@ footer {
     overflow-x: auto; /* permet de défiler si trop serré */
     overflow-y: hidden; /* empêche le scroll vertical */
     flex-shrink: 0; /* empêche le footer d’être réduit */
-    background-color: #10142B;
+    background-color: #A89373;
     position: fixed;
 }
 
@@ -438,6 +438,7 @@ nav a:active {
         }
     }
 }*/
+
 
 
 
