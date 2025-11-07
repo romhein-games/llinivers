@@ -16,7 +16,7 @@ body {
     color: white;
     text-align: center;
 
-    background-color: #0D0F1A; /*#0a0a2a;*/
+    background-color: #161B3D; /*#0a0a2a;*/
     background-size: cover;
     background-position: left top;
     background-repeat: no-repeat; 
@@ -311,7 +311,7 @@ footer {
     overflow-x: auto; /* permet de défiler si trop serré */
     overflow-y: hidden; /* empêche le scroll vertical */
     flex-shrink: 0; /* empêche le footer d’être réduit */
-    background-color: #141826;
+    background-color: #10142B;
     position: fixed;
 }
 
@@ -438,5 +438,6 @@ nav a:active {
         }
     }
 }*/
+
 
 
