@@ -25,10 +25,10 @@ body {
     background-attachment: fixed;
 
     /* Fallback portrait JPEG par défaut */
-    background-image: url('images/portrait-720.jpg');
+    /*background-image: url('images/portrait-720.jpg');*/
 
     /* Portrait WebP si supporté */
-    background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
+    /*background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');*/
 }
 
 /* ------------------------- */
@@ -362,7 +362,7 @@ nav a:active {
 /* Media querries => Responsive selon la taille de l'écran */
 /* ------------------------------------------------------- */
 /* ------ Portrait responsive selon largeur écran ------ */
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
     body {
         background-position: left bottom;
         background-image: url('images/portrait-480.webp'), url('images/portrait-480.jpg');
@@ -385,21 +385,21 @@ nav a:active {
         background-position: left bottom;
         background-image: url('images/portrait-1536.webp'), url('images/portrait-1536.jpg');
     }
-}
+}*/
 
 /* ------ Landscape responsive via orientation ------ */
-@media (orientation: landscape) {
-    /* Fallback JPEG landscape */
+/*@media (orientation: landscape) {
+    /* Fallback JPEG landscape 
     body {
         background-image: url('images/landscape-1280.jpg');
     }
 
-    /* WebP landscape si supporté */
+    /* WebP landscape si supporté 
     body {
         background-image: url('images/landscape-1280.webp'), url('images/landscape-1280.jpg');
     }
 
-    /* Landscape selon largeur écran */
+    /* Landscape selon largeur écran 
     @media (max-width: 640px) {
         body {
             background-image: url('images/landscape-640.webp'), url('images/landscape-640.jpg');
@@ -435,4 +435,5 @@ nav a:active {
             background-image: url('images/landscape-3840.webp'), url('images/landscape-3840.jpg');
         }
     }
-}
+}*/
+
