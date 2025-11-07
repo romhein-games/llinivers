@@ -59,7 +59,6 @@ main {
     align-items: center; /* centre verticalement */
     position : relative;
     /*flex: 1;*/
-    background-color: rgba(0, 0, 255, 0.5);
 }
 
 /* ------ Partie texte d'accroche et bouton ------ */
@@ -440,6 +439,7 @@ nav a:active {
         }
     }
 }*/
+
 
 
 
