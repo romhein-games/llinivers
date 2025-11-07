@@ -22,7 +22,7 @@ body {
     background-repeat: no-repeat; 
     
     /* Fond fixe */
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 
     /* Fallback portrait JPEG par défaut */
     /*background-image: url('images/portrait-720.jpg');*/
@@ -440,6 +440,7 @@ nav a:active {
         }
     }
 }*/
+
 
 
 
