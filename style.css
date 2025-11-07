@@ -16,10 +16,10 @@ body {
     color: white;
     text-align: center;
 
-    background-color: #BDAA8A; /*#0a0a2a;*/
+    background-color: #BDAA8A; /*#0a0a2a;
     background-size: cover;
-    background-position: left top;
-    background-repeat: no-repeat; 
+    background-position: center center ;
+    background-repeat: no-repeat; */
     
     /* Fond fixe */
     /*background-attachment: fixed;*/
@@ -440,6 +440,7 @@ nav a:active {
         }
     }
 }*/
+
 
 
 
