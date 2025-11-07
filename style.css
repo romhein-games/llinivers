@@ -255,7 +255,7 @@ main {
     gap: clamp(8px, 1.5vw, 24px);
     border-radius: clamp(10px, 1vw, 12px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: clamp(15px, 3vw, 70px);
+    margin-bottom: clamp(15px, 3.5vw, 70px);
 }
 
 .community {
@@ -440,6 +440,7 @@ nav a:active {
         }
     }
 }*/
+
 
 
 
