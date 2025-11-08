@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2️⃣ Redirection automatique en fonction de la langue
   // ---------------------------
   const userLang = navigator.language || navigator.userLanguage;
-  if (userLang.startsWith("fr") && !window.location.pathname.startsWith("/fr")) {
-    window.location.href = "/fr/";
+  // Si le navigateur n'est pas français et qu'on est sur la version française par défaut
+  if (!userLang.startsWith("fr") && !window.location.pathname.startsWith("/en")) {
+    window.location.href = "/en/"; // Redirige vers la version anglaise
   }
 });
