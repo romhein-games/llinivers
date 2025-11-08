@@ -265,6 +265,7 @@ main {
     text-align: left;   
     width: 100%; 
     margin-left: 15px;
+    border-radius: clamp(10px, 1vw, 12px);
 }
 
 .community h2 {
@@ -286,12 +287,12 @@ main {
     border-radius: clamp(10px, 1.1vw, 12px);
 }
 
-.about:hover {
+.community:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.about:active {
+.community:active {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     transform: scale(0.97); /* léger effet “pressé” */
@@ -312,7 +313,6 @@ footer {
     overflow-y: hidden; /* empêche le scroll vertical */
     flex-shrink: 0; /* empêche le footer d’être réduit */
     /*background-color: #A89373;*/
-    background-color:rgba(0,0,0,0.4);
     bottom: 0;
 }
 
@@ -435,5 +435,3 @@ nav a:active {
         }
     }
 }
-
-
