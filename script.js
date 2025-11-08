@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Sélectionne tous les éléments cliquables
-  const clickableElements = document.querySelectorAll('.btn, .game-card, .about');
+  const clickableElements = document.querySelectorAll('.btn, .game-card, .community');
 
   clickableElements.forEach(el => {
     // Desktop : déclenchement au relâchement de la souris
