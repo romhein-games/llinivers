@@ -318,6 +318,10 @@ footer {
     bottom: 0;
 }
 
+footer:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
 footer p {
   white-space: nowrap; /* empêche le texte de se couper */
   margin: 0;
@@ -437,4 +441,5 @@ nav a:active {
         }
     }
 }
+
 
