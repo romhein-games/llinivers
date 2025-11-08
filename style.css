@@ -10,25 +10,25 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
     text-align: center;
 
-    background-color: #BDAA8A; /*#0a0a2a;
+    background-color: #0a0a2a; /*#BDAA8A;*/
     background-size: cover;
-    background-position: center center ;
-    background-repeat: no-repeat; */
+    background-position: left top ;
+    background-repeat: no-repeat;
     
     /* Fond fixe */
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
 
     /* Fallback portrait JPEG par défaut */
-    /*background-image: url('images/portrait-720.jpg');*/
+    background-image: url('images/portrait-720.jpg');
 
     /* Portrait WebP si supporté */
-    /*background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');*/
+    background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
 }
 
 /* ------------------------- */
@@ -58,7 +58,7 @@ main {
     justify-content: flex-start;
     align-items: center; /* centre verticalement */
     position : relative;
-    /*flex: 1;*/
+    flex: 1;
 }
 
 /* ------ Partie texte d'accroche et bouton ------ */
@@ -254,7 +254,7 @@ main {
     gap: clamp(8px, 1.5vw, 24px);
     border-radius: clamp(10px, 1vw, 12px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: clamp(15px, 4vw, 100px);
+    margin-bottom: clamp(15px, 3vw, 50px);
 }
 
 .community {
@@ -312,7 +312,6 @@ footer {
     overflow-y: hidden; /* empêche le scroll vertical */
     flex-shrink: 0; /* empêche le footer d’être réduit */
     background-color: #A89373;
-    position: fixed;
     bottom: 0;
 }
 
@@ -365,7 +364,7 @@ nav a:active {
 /* Media querries => Responsive selon la taille de l'écran */
 /* ------------------------------------------------------- */
 /* ------ Portrait responsive selon largeur écran ------ */
-/*@media (max-width: 480px) {
+@media (max-width: 480px) {
     body {
         background-position: left bottom;
         background-image: url('images/portrait-480.webp'), url('images/portrait-480.jpg');
@@ -388,21 +387,21 @@ nav a:active {
         background-position: left bottom;
         background-image: url('images/portrait-1536.webp'), url('images/portrait-1536.jpg');
     }
-}*/
+}
 
 /* ------ Landscape responsive via orientation ------ */
-/*@media (orientation: landscape) {
-    /* Fallback JPEG landscape 
+@media (orientation: landscape) {
+    /* Fallback JPEG landscape */
     body {
         background-image: url('images/landscape-1280.jpg');
     }
 
-    /* WebP landscape si supporté 
+    /* WebP landscape si supporté */
     body {
         background-image: url('images/landscape-1280.webp'), url('images/landscape-1280.jpg');
     }
 
-    /* Landscape selon largeur écran 
+    /* Landscape selon largeur écran */
     @media (max-width: 640px) {
         body {
             background-image: url('images/landscape-640.webp'), url('images/landscape-640.jpg');
@@ -438,39 +437,4 @@ nav a:active {
             background-image: url('images/landscape-3840.webp'), url('images/landscape-3840.jpg');
         }
     }
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
