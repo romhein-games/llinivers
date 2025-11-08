@@ -264,7 +264,9 @@ main {
     align-items: flex-start;
     text-align: left;   
     width: 100%; 
-    margin-left: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
     border-radius: clamp(10px, 1vw, 12px);
 }
 
@@ -435,3 +437,4 @@ nav a:active {
         }
     }
 }
+
