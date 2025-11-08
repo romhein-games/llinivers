@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // ---------------------------
+  // 1️⃣ Gestion des éléments cliquables
+  // ---------------------------
   // Sélectionne tous les éléments cliquables
   const clickableElements = document.querySelectorAll('.btn, .game-card, .community');
 
@@ -26,4 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
       el.blur();
     });
   });
+
+  // ---------------------------
+  // 2️⃣ Redirection automatique en fonction de la langue
+  // ---------------------------
+  const userLang = navigator.language || navigator.userLanguage;
+  if (userLang.startsWith("fr") && !window.location.pathname.startsWith("/fr")) {
+    window.location.href = "/fr/";
+  }
 });
