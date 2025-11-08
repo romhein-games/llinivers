@@ -8,7 +8,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.llinivers.com/fr/</loc>
+    <loc>https://www.llinivers.com/en/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -20,7 +20,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.llinivers.com/fr/actualites.html</loc>
+    <loc>https://www.llinivers.com/en/actualites.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -32,7 +32,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.llinivers.com/fr/apropos.html</loc>
+    <loc>https://www.llinivers.com/en/apropos.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -44,7 +44,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.llinivers.com/fr/contact.html</loc>
+    <loc>https://www.llinivers.com/en/contact.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -56,7 +56,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.llinivers.com/fr/jeu.html</loc>
+    <loc>https://www.llinivers.com/en/jeu.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,7 +68,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.llinivers.com/fr/owlrunner.html</loc>
+    <loc>https://www.llinivers.com/en/owlrunner.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
