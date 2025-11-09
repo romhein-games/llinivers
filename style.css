@@ -300,17 +300,6 @@ main {
     transform: scale(0.97); /* léger effet “pressé” */
 }
 
-.btn-lang {
-    display: inline-flex;
-    align-items: center;
-}
-
-.btn-lang img {
-    width: 10px;
-    height: auto;
-    margin-right: 6px;
-  }
-
 /* ----------------- */
 /* Footer et contenu */
 /* ----------------- */
@@ -378,6 +367,19 @@ nav a:active {
     color: #fff; /* pour s’assurer que le texte reste visible */
     outline: none; /* supprime le contour natif */
 }
+
+.btn-lang {
+    display: inline-flex;
+    align-items: center;
+    background: none;          /* pas de fond */
+    border: none;              /* pas de bord */
+}
+
+.btn-lang img {
+    width: 10px;
+    height: auto;
+    margin-right: 6px;
+  }
 
 /* ------------------------------------------------------- */
 /* Media querries => Responsive selon la taille de l'écran */
@@ -453,6 +455,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
