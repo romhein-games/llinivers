@@ -316,6 +316,7 @@ footer {
     flex-shrink: 0; /* empêche le footer d’être réduit */
     /*background-color: #A89373;*/
     bottom: 0;
+    gap:20px;
 }
 
 footer:hover {
@@ -456,6 +457,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
