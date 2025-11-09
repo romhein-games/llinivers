@@ -377,6 +377,19 @@ nav a:active {
     color: white;
 }
 
+.btn-lang:hover {
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(1.05);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
+
+.btn-lang:active {
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(0.97);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
 .btn-lang img {
     width: 20px;
     height: auto;
@@ -457,13 +470,3 @@ nav a:active {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
