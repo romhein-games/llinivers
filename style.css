@@ -300,6 +300,17 @@ main {
     transform: scale(0.97); /* léger effet “pressé” */
 }
 
+.btn-lang {
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-lang img {
+    width: 10px;
+    height: auto;
+    margin-right: 6px;
+  }
+
 /* ----------------- */
 /* Footer et contenu */
 /* ----------------- */
@@ -442,6 +453,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
