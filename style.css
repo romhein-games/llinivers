@@ -376,7 +376,7 @@ nav a:active {
 }
 
 .btn-lang img {
-    width: 10px;
+    width: 20px;
     height: auto;
     margin-right: 6px;
   }
@@ -455,6 +455,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
