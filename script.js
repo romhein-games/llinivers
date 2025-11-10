@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('siteLang', lang);
 
       // Redirection en fonction de la langue choisie
-      redirectToLanguageVersion(lang);
+      updateLanguage(lang);
      }
     });
     
@@ -98,8 +98,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Fonction de redirection en fonction de la langue choisie
-  function redirectToLanguageVersion(lang) {
+  function updateLanguage(lang) {
     const currentPath = window.location.pathname;
+
+    // Met à jour le bouton avec la langue choisie
+    const flagSrc = lang === 'fr' ? 'images/flagFR.png' : 'images/flagEN.png';
+    const text = lang === 'fr' ? 'FR' : 'EN';
+    btn.querySelector('img').src = flagSrc;
+    btn.querySelector('.text').textContent = text;
     
     if (lang === 'fr') {
       // Si la langue est français, redirige vers la version en français
