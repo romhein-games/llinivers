@@ -48,6 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
       window.location.href = '/en/';
       return;
     }
+  } else {
+    // Si une langue est stockée, on applique cette langue sans redirection automatique
+    updateLanguage(storedLang);
   }
 
   // ---------------------------
@@ -106,6 +109,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const text = lang === 'fr' ? 'FR' : 'EN';
     btn.querySelector('img').src = flagSrc;
     btn.querySelector('.text').textContent = text;
+
+    // Si la langue est déjà appliquée, ne rien faire
+    if (currentPath.includes(lang)) return;
     
     if (lang === 'fr') {
       // Si la langue est français, redirige vers la version en français
