@@ -375,9 +375,10 @@ nav a:active {
 .btn-lang {
     display: inline-flex;
     align-items: center;
-    background: none;          /* pas de fond */
+    /*background: none;          /* pas de fond */
     border: none;              /* pas de bord */
     color: white;
+    background:rgba(0, 0, 255, 0.8);
 }
 
 .btn-lang:hover {
@@ -519,6 +520,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
