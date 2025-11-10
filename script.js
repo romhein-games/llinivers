@@ -34,9 +34,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2️⃣ Redirection automatique en fonction de la langue
   // ---------------------------
   const userLang = navigator.language || navigator.userLanguage;
+  const storedLang = localStorage.getItem('siteLang'); // Langue choisie par l’utilisateur
+  const currentPath = window.location.pathname;
+  
   // Si le navigateur n'est pas français et qu'on est sur la version française par défaut
-  if (!userLang.startsWith("fr") && !window.location.pathname.startsWith("/en")) {
-    window.location.href = "/en/"; // Redirige vers la version anglaise
+  //if (!userLang.startsWith("fr") && !window.location.pathname.startsWith("/en")) {
+  //  window.location.href = "/en/"; // Redirige vers la version anglaise
+  //}
+
+  // Redirection automatique SEULEMENT si l’utilisateur n’a pas déjà choisi une langue
+  if (!storedLang) {
+    if (!userLang.startsWith('fr') && !currentPath.startsWith('/en')) {
+      window.location.href = '/en/';
+      return;
+    }
   }
 
   // ---------------------------
