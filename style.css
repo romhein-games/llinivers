@@ -336,6 +336,7 @@ nav ul {
     margin: 0;
     padding: 0;
     flex-wrap: nowrap; /* garde tout sur une ligne */
+    background:rgba(255, 0, 0, 0.8);
 }
 
 nav a {
@@ -516,6 +517,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
