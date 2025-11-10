@@ -80,6 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
       menu.classList.remove('show');
       btn.classList.remove('open');
 
+      // Enregistre la langue choisie
+      localStorage.setItem('siteLang', lang);
+
       // Redirection en fonction de la langue choisie
       redirectToLanguageVersion(lang);
      }
