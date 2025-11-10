@@ -352,6 +352,7 @@ nav a {
     -webkit-tap-highlight-color: transparent;
     -webkit-focus-ring-color: transparent;
     outline: none;
+    background:rgba(0, 255, 0, 0.8);
 }
 
 nav a:hover {
@@ -517,6 +518,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
