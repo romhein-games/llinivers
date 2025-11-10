@@ -370,7 +370,6 @@ nav a:active {
 }
 
 .btn-lang {
-    position: relative; /* Permet au menu de se positionner par rapport à ce bouton */
     display: inline-flex;
     align-items: center;
     background: none;          /* pas de fond */
@@ -408,7 +407,6 @@ nav a:active {
 
 /* --- Menu déroulant --- */
   .lang-menu {
-    position: absolute;
     top: 100%;
     left: 100;
     background: white;
@@ -518,6 +516,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
