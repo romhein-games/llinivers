@@ -51,4 +51,5 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation(); // empêche la fermeture immédiate par le listener global
       btn.classList.toggle('open');
     });
+  }
 });
