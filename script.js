@@ -38,4 +38,18 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!userLang.startsWith("fr") && !window.location.pathname.startsWith("/en")) {
     window.location.href = "/en/"; // Redirige vers la version anglaise
   }
+
+  // ---------------------------
+  // 3️⃣ Menu de sélection de langue
+  // ---------------------------
+  const btn = document.getElementById('langButton');
+  const menu = document.getElementById('langMenu');
+
+  if (btn && menu) {
+    // Ouvre / ferme le menu
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation(); // empêche la fermeture immédiate par le listener global
+      btn.classList.toggle('open');
+      menu.classList.toggle('show');
+    });
 });
