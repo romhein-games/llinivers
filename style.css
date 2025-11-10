@@ -399,6 +399,7 @@ nav a:active {
 
 /* Style de base de la flèche */
 .btn-lang .arrow {
+  transform: rotate(90deg);
   transition: transform 0.3s ease; /* transition fluide */
 }
 
@@ -528,6 +529,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
