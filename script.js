@@ -45,11 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('langButton');
   const menu = document.getElementById('langMenu');
 
-  if (btn) {
+  if (btn && menu) {
     // Ouvre / ferme le menu
     btn.addEventListener('click', (e) => {
       e.stopPropagation(); // empêche la fermeture immédiate par le listener global
       btn.classList.toggle('open');
+      menu.classList.toggle('show');
     });
   }
 });
