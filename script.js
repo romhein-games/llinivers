@@ -52,5 +52,13 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.toggle('open');
       menu.classList.toggle('show');
     });
+    
+    // Ferme le menu si on clique ailleurs
+    document.addEventListener('click', (e) => {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove('show');
+      btn.classList.remove('open');
+     }
+   });
   }
 });
