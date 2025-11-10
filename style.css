@@ -396,6 +396,11 @@ nav a:active {
     margin-right: 6px;
   }
 
+/* Style de base de la flèche */
+.btn-lang .arrow {
+  transition: transform 0.3s ease; /* transition fluide */
+}
+
 .btn-lang.open .arrow {
     transform: rotate(180deg); /* flèche tourne vers le bas */
   }
@@ -474,6 +479,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
