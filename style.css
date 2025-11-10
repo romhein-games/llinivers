@@ -434,7 +434,18 @@ nav a:active {
   }
 
   .lang-menu li:hover {
-    background-color: #f0f0f0;
+    /*background-color: #f0f0f0;*/
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(1.05);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+  }
+
+  .lang-menu li:active {
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(0.97);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
   }
 
   .lang-menu img {
@@ -517,6 +528,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
