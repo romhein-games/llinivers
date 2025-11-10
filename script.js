@@ -52,6 +52,24 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.toggle('open');
       menu.classList.toggle('show');
     });
+
+    // Quand on choisit une langue
+    menu.addEventListener('click', (e) => {
+    if (e.target.closest('li')) {
+      const li = e.target.closest('li');
+      const lang = li.dataset.lang;
+      const flagSrc = li.querySelector('img').src;
+      const text = lang.toUpperCase();
+
+      // Change le bouton
+      btn.querySelector('img').src = flagSrc;
+      btn.querySelector('.text').textContent = text;
+
+      // Ferme le menu
+      menu.classList.remove('show');
+      btn.classList.remove('open');
+     }
+    });
     
     // Ferme le menu si on clique ailleurs
     document.addEventListener('click', (e) => {
