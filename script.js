@@ -34,23 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2️⃣ Redirection automatique en fonction de la langue
   // ---------------------------
   const userLang = navigator.language || navigator.userLanguage;
-  const storedLang = localStorage.getItem('siteLang'); // Langue choisie par l’utilisateur
-  const currentPath = window.location.pathname;
   
   // Si le navigateur n'est pas français et qu'on est sur la version française par défaut
-  //if (!userLang.startsWith("fr") && !window.location.pathname.startsWith("/en")) {
-  //  window.location.href = "/en/"; // Redirige vers la version anglaise
-  //}
-
-  // Redirection automatique SEULEMENT si l’utilisateur n’a pas déjà choisi une langue
-  if (!storedLang) {
-    if (!userLang.startsWith('fr') && !currentPath.startsWith('/en')) {
-      window.location.href = '/en/';
-      return;
-    }
-  } else {
-    // Si une langue est stockée, on applique cette langue sans redirection automatique
-    updateLanguage(storedLang);
+  if (!userLang.startsWith("fr") && !window.location.pathname.startsWith("/en")) {
+    window.location.href = "/en/"; // Redirige vers la version anglaise
   }
 
   // ---------------------------
@@ -83,11 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
       menu.classList.remove('show');
       btn.classList.remove('open');
 
-      // Enregistre la langue choisie
-      localStorage.setItem('siteLang', lang);
-
       // Redirection en fonction de la langue choisie
-      updateLanguage(lang);
+      redirectToLanguageVersion(lang);
      }
     });
     
@@ -101,17 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Fonction de redirection en fonction de la langue choisie
-  function updateLanguage(lang) {
+  function redirectToLanguageVersion(lang) {
     const currentPath = window.location.pathname;
-
-    // Met à jour le bouton avec la langue choisie
-    const flagSrc = lang === 'fr' ? 'images/flagFR.png' : 'images/flagEN.png';
-    const text = lang === 'fr' ? 'FR' : 'EN';
-    btn.querySelector('img').src = flagSrc;
-    btn.querySelector('.text').textContent = text;
-
-    // Si la langue est déjà appliquée, ne rien faire
-    if (currentPath.includes(lang)) return;
     
     if (lang === 'fr') {
       // Si la langue est français, redirige vers la version en français
