@@ -45,13 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---------------------------
   const btn = document.getElementById('langButton');
   const menu = document.getElementById('langMenu');
-
+  console.log("btn1: "+btn);
+  console.log("menu1: "+menu);
   if (btn && menu) {
+    console.log("btn2: "+btn);
+    console.log("menu2: "+menu);
     // Ouvre / ferme le menu
-    console.log("AAA");
     btn.addEventListener('click', (e) => {
       e.stopPropagation(); // empêche la fermeture immédiate par le listener global
-      console.log("BBB");
       btn.classList.toggle('open');
       menu.classList.toggle('show');
     });
