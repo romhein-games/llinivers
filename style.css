@@ -405,6 +405,26 @@ nav a:active {
     transform: rotate(180deg); /* flèche tourne vers le bas */
   }
 
+/* --- Menu déroulant --- */
+  .lang-menu {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 5px 0;
+    margin: 4px 0 0;
+    display: none;
+    z-index: 10;
+  }
+
+  .lang-menu.show {
+    display: block;
+  }
+
 /* ------------------------------------------------------- */
 /* Media querries => Responsive selon la taille de l'écran */
 /* ------------------------------------------------------- */
@@ -479,6 +499,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
