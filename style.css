@@ -317,7 +317,6 @@ footer {
     /*background-color: #A89373;*/
     bottom: 0;
     gap:20px;
-    position: relative;
 }
 
 footer:hover {
@@ -519,6 +518,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
