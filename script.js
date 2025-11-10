@@ -48,8 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (btn && menu) {
     // Ouvre / ferme le menu
+    console.log("AAA");
     btn.addEventListener('click', (e) => {
       e.stopPropagation(); // empêche la fermeture immédiate par le listener global
+      console.log("BBB");
       btn.classList.toggle('open');
       menu.classList.toggle('show');
     });
