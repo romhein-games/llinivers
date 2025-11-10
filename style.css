@@ -404,7 +404,7 @@ nav a:active {
 }
 
 .btn-lang.open .arrow {
-    transform: rotate(180deg); /* flèche tourne vers le bas */
+    transform: rotate(270deg); /* flèche tourne vers la gauche */
   }
 
 /* --- Menu déroulant --- */
@@ -529,6 +529,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
