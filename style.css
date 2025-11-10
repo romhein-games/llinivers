@@ -336,7 +336,6 @@ nav ul {
     margin: 0;
     padding: 0;
     flex-wrap: nowrap; /* garde tout sur une ligne */
-    background:rgba(255, 0, 0, 0.8);
     align-items: center;
 }
 
@@ -353,7 +352,6 @@ nav a {
     -webkit-tap-highlight-color: transparent;
     -webkit-focus-ring-color: transparent;
     outline: none;
-    background:rgba(0, 255, 0, 0.8);
 }
 
 nav a:hover {
@@ -375,10 +373,9 @@ nav a:active {
 .btn-lang {
     display: inline-flex;
     align-items: center;
-    /*background: none;          /* pas de fond */
+    background: none;          /* pas de fond */
     border: none;              /* pas de bord */
     color: white;
-    background:rgba(0, 0, 255, 0.8);
 }
 
 .btn-lang:hover {
@@ -520,6 +517,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
