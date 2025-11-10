@@ -55,6 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation(); // empêche la fermeture immédiate par le listener global
       btn.classList.toggle('open');
       menu.classList.toggle('show');
+      console.log("btn3: "+btn);
+      console.log("menu3: "+menu);
     });
 
     // Quand on choisit une langue
