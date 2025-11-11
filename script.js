@@ -79,7 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.remove('open');
 
       // Enregistre le choix de langue de l'utilisateur
-      //localStorage.setItem('preferredLanguage', lang);
+      console.log(lang);
+      localStorage.setItem('preferredLanguage', lang);
 
       // Redirection en fonction de la langue choisie
       redirectToLanguageVersion(lang);
@@ -119,21 +120,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
-  // ---------------------------
-  // 5️⃣ Synchronisation de la préférence stockée avec la page affichée
-  //    (exécutée à chaque chargement : garantit que preferredLanguage = langue affichée)
-  // ---------------------------
-  (function syncStoredLanguageWithPath() {
-    try {
-      const path = window.location.pathname;
-      if (path.startsWith('/en')) {
-        localStorage.setItem('preferredLanguage', 'en');
-      } else {
-        localStorage.setItem('preferredLanguage', 'fr');
-      }
-    } catch (err) {
-      // Si le storage est bloqué (mode incognito strict, etc.), on ignore l'erreur proprement.
-      // console.warn('localStorage not available', err);
-    }
-  })();
 });
