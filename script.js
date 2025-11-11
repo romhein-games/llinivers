@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Si le navigateur n'est pas français et qu'on est sur la version française par défaut
   if (!userLang.startsWith("fr") && !window.location.pathname.startsWith("/en")) {
-    window.location.href = "/en/"; // Redirige vers la version anglaise
+    //window.location.href = "/en/"; // Redirige vers la version anglaise
   }
 
   // ---------------------------
