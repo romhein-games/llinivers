@@ -120,9 +120,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
-
-  // Supprimer les données stockées lorsque l'utilisateur quitte la page
-  window.addEventListener('beforeunload', () => {
-  localStorage.removeItem('preferredLanguage'); // Efface la langue préférée
-  });
 });
