@@ -38,10 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Détecte le user-agent (pour éviter de rediriger les robots)
   const userAgent = navigator.userAgent.toLowerCase();
   const isBot = /bot|crawl|slurp|spider|mediapartners/i.test(userAgent);
+
+  // Vérifie si l'utilisateur a déjà choisi une langue manuellement
+  const userChoice = localStorage.getItem('preferredLanguage');
   
   // Si ce n’est pas un robot, et que la langue n’est pas le français,
   // et qu’on n’est pas déjà sur la version anglaise
-  if (!isBot && !userLang.startsWith("fr") && !window.location.pathname.startsWith("/en")) {
+  if (!isBot && !userChoice && !userLang.startsWith("fr") && !window.location.pathname.startsWith("/en")) {
     window.location.href = "/en/"; // Redirige vers la version anglaise
   }
 
@@ -74,6 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // Ferme le menu
       menu.classList.remove('show');
       btn.classList.remove('open');
+
+      // Enregistre le choix de langue de l'utilisateur
+      localStorage.setItem('preferredLanguage', lang);
 
       // Redirection en fonction de la langue choisie
       redirectToLanguageVersion(lang);
