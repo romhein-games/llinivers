@@ -1,12 +1,6 @@
 /* Défilement doux pour tout le site */
-html, body {
-    /*scroll-behavior: smooth;*/
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overscroll-behavior: none;
-    -webkit-overflow-scrolling: touch;
+html {
+    scroll-behavior: smooth;
 }
 /* ------------------------------------------------- */
 /* Body centré avec Flexbox et background responsive */
@@ -22,50 +16,19 @@ body {
     color: white;
     text-align: center;
 
-    /*background-color: #0a0a2a; /*#BDAA8A;*/
-    /*background-size: cover;
-    background-position: left top ;
-    background-repeat: no-repeat;*/
-    
-    /* Fond fixe */
-    /*background-attachment: fixed;*/
-
-    /* Fallback portrait JPEG par défaut */
-    /
-    /*background-image: url('images/portrait-720.jpg');*/
-
-    /* Portrait WebP si supporté */
-    /*background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');*/
-}
-
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-color: #0a0a2a; /*#BDAA8A;*/
     background-size: cover;
     background-position: left top ;
     background-repeat: no-repeat;
+    
+    /* Fond fixe */
+    background-attachment: fixed;
+
     /* Fallback portrait JPEG par défaut */
     background-image: url('images/portrait-720.jpg');
 
     /* Portrait WebP si supporté */
     background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
-    z-index: -1;
-    transform: translateZ(0); /* <-- empêche le zoom/déplacement sur iOS */
-    will-change: transform;
-}
-
-/* --- Désactive les effets "zoom" liés au viewport sur mobile --- */
-@supports (-webkit-touch-callout: none) {
-  body {
-    height: -webkit-fill-available;
-  }
-  html {
-    height: -webkit-fill-available;
-  }
 }
 
 /* ------------------------- */
@@ -567,6 +530,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
