@@ -1,6 +1,12 @@
 /* Défilement doux pour tout le site */
-html {
-    scroll-behavior: smooth;
+html, body {
+    /*scroll-behavior: smooth;*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
 }
 /* ------------------------------------------------- */
 /* Body centré avec Flexbox et background responsive */
@@ -48,6 +54,18 @@ body {
     /* Portrait WebP si supporté */
     background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
     z-index: -1;
+    transform: translateZ(0); /* <-- empêche le zoom/déplacement sur iOS */
+    will-change: transform;
+}
+
+/* --- Désactive les effets "zoom" liés au viewport sur mobile --- */
+@supports (-webkit-touch-callout: none) {
+  body {
+    height: -webkit-fill-available;
+  }
+  html {
+    height: -webkit-fill-available;
+  }
 }
 
 /* ------------------------- */
@@ -549,6 +567,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
