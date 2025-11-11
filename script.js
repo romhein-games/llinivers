@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Si ce n’est pas un robot, et que la langue n’est pas le français,
   // et qu’on n’est pas déjà sur la version anglaise
-  if (!isBot && !userChoice && !userLang.startsWith("fr") && !window.location.pathname.startsWith("/en")) {
+  if (!isBot && (!userChoice || userChoice === "en") && !userLang.startsWith("fr") && !window.location.pathname.startsWith("/en")) {
     window.location.href = "/en/"; // Redirige vers la version anglaise
   }
 
