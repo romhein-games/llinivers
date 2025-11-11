@@ -34,10 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2️⃣ Redirection automatique en fonction de la langue
   // ---------------------------
   const userLang = navigator.language || navigator.userLanguage;
+
+  // Détecte le user-agent (pour éviter de rediriger les robots)
+  const userAgent = navigator.userAgent.toLowerCase();
+  const isBot = /bot|crawl|slurp|spider|mediapartners/i.test(userAgent);
   
-  // Si le navigateur n'est pas français et qu'on est sur la version française par défaut
-  if (!userLang.startsWith("fr") && !window.location.pathname.startsWith("/en")) {
-    //window.location.href = "/en/"; // Redirige vers la version anglaise
+  // Si ce n’est pas un robot, et que la langue n’est pas le français,
+  // et qu’on n’est pas déjà sur la version anglaise
+  if (!isBot && !userLang.startsWith("fr") && !window.location.pathname.startsWith("/en")) {
+    window.location.href = "/en/"; // Redirige vers la version anglaise
   }
 
   // ---------------------------
