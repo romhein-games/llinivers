@@ -98,25 +98,31 @@ document.addEventListener('DOMContentLoaded', () => {
   // Fonction de redirection en fonction de la langue choisie
   function redirectToLanguageVersion(lang) {
     const currentPath = window.location.pathname;
-    
-    if (lang === 'fr') {
-      // Si la langue est français, redirige vers la version en français
-      if (currentPath.startsWith('/en/')) {
-        // Si on est sur la version anglaise, on redirige vers la racine (version française)
-        window.location.href = currentPath.replace('/en', '');
-      } else {
-        // Si on est déjà sur la version française, rien à changer
-        window.location.href = currentPath;
+
+    // Sauvegarde la préférence utilisateur avant de rediriger
+    localStorage.setItem('preferredLanguage', lang);
+
+    // Petit délai pour garantir que la valeur est bien enregistrée avant le reload
+    setTimeout(() => {
+      if (lang === 'fr') {
+        // Si la langue est français, redirige vers la version en français
+        if (currentPath.startsWith('/en/')) {
+          // Si on est sur la version anglaise, on redirige vers la racine (version française)
+          window.location.href = currentPath.replace('/en', '');
+        } else {
+          // Si on est déjà sur la version française, rien à changer
+          window.location.href = currentPath;
+        }
+      } else if (lang === 'en') {
+        // Si la langue est anglais, redirige vers la version anglaise
+        if (!currentPath.startsWith('/en/')) {
+          // Si on n'est pas déjà dans le dossier 'en', redirige vers la version anglaise
+          window.location.href = `/en${currentPath}`;
+        } else {
+          // Si on est déjà sur la version anglaise, rien à changer
+          window.location.href = currentPath;
+        }
       }
-    } else if (lang === 'en') {
-      // Si la langue est anglais, redirige vers la version anglaise
-      if (!currentPath.startsWith('/en/')) {
-        // Si on n'est pas déjà dans le dossier 'en', redirige vers la version anglaise
-        window.location.href = `/en${currentPath}`;
-      } else {
-        // Si on est déjà sur la version anglaise, rien à changer
-        window.location.href = currentPath;
-      }
-    }
-  }
+    }, 50);
+   }
 });
