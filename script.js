@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.remove('open');
 
       // Enregistre le choix de langue de l'utilisateur
-      localStorage.setItem('preferredLanguage', lang);
+      //localStorage.setItem('preferredLanguage', lang);
 
       // Redirection en fonction de la langue choisie
       redirectToLanguageVersion(lang);
@@ -99,30 +99,41 @@ document.addEventListener('DOMContentLoaded', () => {
   function redirectToLanguageVersion(lang) {
     const currentPath = window.location.pathname;
 
-    // Sauvegarde la préférence utilisateur avant de rediriger
-    localStorage.setItem('preferredLanguage', lang);
-
-    // Petit délai pour garantir que la valeur est bien enregistrée avant le reload
-    setTimeout(() => {
-      if (lang === 'fr') {
-        // Si la langue est français, redirige vers la version en français
-        if (currentPath.startsWith('/en/')) {
-          // Si on est sur la version anglaise, on redirige vers la racine (version française)
-          window.location.href = currentPath.replace('/en', '');
-        } else {
-          // Si on est déjà sur la version française, rien à changer
-          window.location.href = currentPath;
-        }
-      } else if (lang === 'en') {
-        // Si la langue est anglais, redirige vers la version anglaise
-        if (!currentPath.startsWith('/en/')) {
-          // Si on n'est pas déjà dans le dossier 'en', redirige vers la version anglaise
-          window.location.href = `/en${currentPath}`;
-        } else {
-          // Si on est déjà sur la version anglaise, rien à changer
-          window.location.href = currentPath;
-        }
+    if (lang === 'fr') {
+      // Si la langue est français, redirige vers la version en français
+      if (currentPath.startsWith('/en/')) {
+        // Si on est sur la version anglaise, on redirige vers la racine (version française)
+        window.location.href = currentPath.replace('/en', '');
+      } else {
+        // Si on est déjà sur la version française, rien à changer
+        window.location.href = currentPath;
       }
-    }, 50);
-   }
+    } else if (lang === 'en') {
+      // Si la langue est anglais, redirige vers la version anglaise
+      if (!currentPath.startsWith('/en/')) {
+        // Si on n'est pas déjà dans le dossier 'en', redirige vers la version anglaise
+        window.location.href = `/en${currentPath}`;
+      } else {
+        // Si on est déjà sur la version anglaise, rien à changer
+        window.location.href = currentPath;
+      }
+    }
+  }
+  // ---------------------------
+  // 5️⃣ Synchronisation de la préférence stockée avec la page affichée
+  //    (exécutée à chaque chargement : garantit que preferredLanguage = langue affichée)
+  // ---------------------------
+  (function syncStoredLanguageWithPath() {
+    try {
+      const path = window.location.pathname;
+      if (path.startsWith('/en')) {
+        localStorage.setItem('preferredLanguage', 'en');
+      } else {
+        localStorage.setItem('preferredLanguage', 'fr');
+      }
+    } catch (err) {
+      // Si le storage est bloqué (mode incognito strict, etc.), on ignore l'erreur proprement.
+      // console.warn('localStorage not available', err);
+    }
+  })();
 });
