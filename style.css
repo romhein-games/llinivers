@@ -461,22 +461,22 @@ nav a:active {
 /* ------------------------------------------------------- */
 /* ------ Portrait responsive selon largeur écran ------ */
 @media (max-width: 480px) {
-    .background {
+    body {
         background-image: url('images/portrait-480.webp'), url('images/portrait-480.jpg');
     }
 }
 @media (min-width: 481px) and (max-width: 720px) {
-    .background {
+    body {
         background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
     }
 }
 @media (min-width: 721px) and (max-width: 1080px) {
-    .background {
+    body {
         background-image: url('images/portrait-1080.webp'), url('images/portrait-1080.jpg');
     }
 }
 @media (min-width: 1081px) {
-    .background {
+    body {
         background-image: url('images/portrait-1536.webp'), url('images/portrait-1536.jpg');
     }
 }
@@ -484,84 +484,49 @@ nav a:active {
 /* ------ Landscape responsive via orientation ------ */
 @media (orientation: landscape) {
     /* Fallback JPEG landscape */
-    .background {
+    body {
         background-image: url('images/landscape-1280.jpg');
     }
 
     /* WebP landscape si supporté */
-    .background {
+    body {
         background-image: url('images/landscape-1280.webp'), url('images/landscape-1280.jpg');
     }
 
     /* Landscape selon largeur écran */
     @media (max-width: 640px) {
-        .background {
+        body {
             background-image: url('images/landscape-640.webp'), url('images/landscape-640.jpg');
         }
     }
     @media (min-width: 641px) and (max-width: 896px) {
-        .background {
+        body {
             background-image: url('images/landscape-896.webp'), url('images/landscape-896.jpg');
         }
     }
     @media (min-width: 897px) and (max-width: 1280px) {
-        .background {
+        body {
             background-image: url('images/landscape-1280.webp'), url('images/landscape-1280.jpg');
         }
     }
     @media (min-width: 1281px) and (max-width: 1440px) {
-        .background {
+        body {
             background-image: url('images/landscape-1440.webp'), url('images/landscape-1440.jpg');
         }
     }
     @media (min-width: 1441px) and (max-width: 1920px) {
-        .background {
+        body {
             background-image: url('images/landscape-1920.webp'), url('images/landscape-1920.jpg');
         }
     }
     @media (min-width: 1921px) and (max-width: 2560px) {
-        .background {
+        body {
             background-image: url('images/landscape-2560.webp'), url('images/landscape-2560.jpg');
         }
     }
     @media (min-width: 2561px) {
-        .background {
+        body {
             background-image: url('images/landscape-3840.webp'), url('images/landscape-3840.jpg');
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
