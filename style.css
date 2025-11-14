@@ -494,7 +494,7 @@ nav a:active {
     white-space: normal;  /* permet le retour à la ligne automatique */
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
     overflow-wrap: break-word;
-    margin-bottom: clamp(10px, 2vw, 20px);
+    margin-top: clamp(5px, 1vw, 10px);
 }
 /* ------------------------------------------------------- */
 /* Media querries => Responsive selon la taille de l'écran */
@@ -570,6 +570,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
