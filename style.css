@@ -469,6 +469,8 @@ nav a:active {
     text-align: left;
     padding-top: clamp(20px, 2vw, 30px);
     /*margin-bottom: clamp(10px, 1vw, 20px);*/
+    box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions de l'élément */
+    overflow: hidden; /* Assure que rien ne dépasse du conteneur */
     background-color: rgba(255,0,0,0.8);
 }
 
@@ -557,6 +559,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
