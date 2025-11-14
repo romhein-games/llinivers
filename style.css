@@ -467,7 +467,7 @@ nav a:active {
     align-items: center; 
     position : relative;
     text-align: left;
-    /*padding-top: clamp(20px, 2vw, 30px);*/
+    padding-top: clamp(20px, 2vw, 30px);*/
     /*margin-bottom: clamp(10px, 1vw, 20px);*/
     box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions de l'élément */
     overflow: hidden; /* Assure que rien ne dépasse du conteneur */
@@ -480,7 +480,7 @@ nav a:active {
 }
 
 .content p {
-    font-size: clamp(0.8rem, 2.1vw, 1.1rem);
+    font-size: clamp(0.8rem, 2.1vw, 1.5rem);
     margin-bottom: clamp(20px, 2vw, 30px);
     white-space: normal;  /* permet le retour à la ligne automatique */
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
@@ -488,7 +488,7 @@ nav a:active {
 }
 
 .content a {
-    font-size: clamp(0.8rem, 2.1vw, 1.1rem);
+    font-size: clamp(0.8rem, 2.1vw, 1.5rem);
     align-self: flex-start;
     text-align: left;
     white-space: normal;  /* permet le retour à la ligne automatique */
@@ -570,6 +570,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
