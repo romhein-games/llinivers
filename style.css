@@ -481,7 +481,7 @@ nav a:active {
 
 .content p {
     font-size: clamp(0.8rem, 2.1vw, 1.1rem);
-    margin-bottom: 0; /*clamp(10px, 1vw, 20px);*/
+    margin-bottom: clamp(20px, 2vw, 30px);
     white-space: normal;  /* permet le retour à la ligne automatique */
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
     overflow-wrap: break-word;
@@ -570,6 +570,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
