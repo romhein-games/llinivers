@@ -185,7 +185,6 @@ main {
     text-align: center;
     gap: clamp(17px, 2.5vw, 25px);
     margin-bottom: clamp(25px, 3vw, 35px);
-    background-color: rgba(255,0,0,0.8);
 }
 
 .games h2 {
@@ -457,6 +456,29 @@ nav a:active {
     margin-right: 8px;
   }
 
+/* ----------------- */
+/*  OWl runner page  */
+/* ----------------- */
+.owlGame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centre horizontalement */
+    align-items: center; 
+    position : relative;
+    text-align: left;
+    margin-bottom: clamp(10px, 1vw, 20px);
+    background-color: rgba(255,0,0,0.8);
+    white-space: normal;  /* permet le retour à la ligne automatique */
+    word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
+    overflow-wrap: break-word;
+}
+
+.owlGame h3 {
+    text-align: center;
+    margin-top: clamp(20px, 3vw, 30px);
+}
+
 /* ------------------------------------------------------- */
 /* Media querries => Responsive selon la taille de l'écran */
 /* ------------------------------------------------------- */
@@ -531,4 +553,5 @@ nav a:active {
         }
     }
 }
+
 
