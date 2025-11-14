@@ -468,7 +468,7 @@ nav a:active {
     position : relative;
     text-align: left;
     padding-top: clamp(20px, 2vw, 30px);
-    margin-bottom: clamp(10px, 1vw, 20px);
+    /*margin-bottom: clamp(10px, 1vw, 20px);*/
     background-color: rgba(255,0,0,0.8);
 }
 
@@ -477,6 +477,7 @@ nav a:active {
 }
 
 .content p {
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive */
     white-space: normal;  /* permet le retour à la ligne automatique */
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
     overflow-wrap: break-word;
@@ -556,6 +557,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
