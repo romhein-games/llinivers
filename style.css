@@ -467,16 +467,19 @@ nav a:active {
     align-items: center; 
     position : relative;
     text-align: left;
+    padding-top: clamp(20px, 2vw, 30px);
     margin-bottom: clamp(10px, 1vw, 20px);
     background-color: rgba(255,0,0,0.8);
-    white-space: normal;  /* permet le retour à la ligne automatique */
-    word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
-    overflow-wrap: break-word;
 }
 
 .content h3 {
     text-align: center;
-    margin-top: clamp(20px, 3vw, 30px);
+}
+
+.content p {
+    white-space: normal;  /* permet le retour à la ligne automatique */
+    word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
+    overflow-wrap: break-word;
 }
 
 /* ------------------------------------------------------- */
@@ -553,6 +556,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
