@@ -185,6 +185,7 @@ main {
     text-align: center;
     gap: clamp(17px, 2.5vw, 25px);
     margin-bottom: clamp(25px, 3vw, 35px);
+    background-color: rgba(255,0,0,0.8);
 }
 
 .games h2 {
@@ -530,3 +531,4 @@ nav a:active {
         }
     }
 }
+
