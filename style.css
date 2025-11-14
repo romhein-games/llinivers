@@ -480,7 +480,7 @@ nav a:active {
 }
 
 .content p {
-    font-size: clamp(0.6rem, 2.1vw, 1.1rem);
+    font-size: clamp(0.8rem, 2.1vw, 1.1rem);
     margin-bottom: 0; /*clamp(10px, 1vw, 20px);*/
     white-space: normal;  /* permet le retour à la ligne automatique */
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
@@ -488,12 +488,13 @@ nav a:active {
 }
 
 .content a {
-    font-size: clamp(0.6rem, 2.1vw, 1.1rem);
+    font-size: clamp(0.8rem, 2.1vw, 1.1rem);
     align-self: flex-start;
     text-align: left;
     white-space: normal;  /* permet le retour à la ligne automatique */
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
     overflow-wrap: break-word;
+    margin-bottom: clamp(10px, 2vw, 20px);
 }
 /* ------------------------------------------------------- */
 /* Media querries => Responsive selon la taille de l'écran */
@@ -569,6 +570,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
