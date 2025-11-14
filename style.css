@@ -471,7 +471,7 @@ nav a:active {
     /*margin-bottom: clamp(10px, 1vw, 20px);*/
     box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions de l'élément */
     overflow: hidden; /* Assure que rien ne dépasse du conteneur */
-    background-color: rgba(255,0,0,0.8);
+    /*background-color: rgba(255,0,0,0.8);*/
 }
 
 .content h3 {
@@ -570,6 +570,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
