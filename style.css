@@ -476,6 +476,7 @@ nav a:active {
 
 .content h3 {
     text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
     margin-bottom: 0; /*clamp(5px, 0.5vw, 10px);*/
 }
 
@@ -570,6 +571,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
