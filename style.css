@@ -506,7 +506,7 @@ nav a:active {
 .owlR-list {
     display: flex;
     justify-content: center;
-    gap: clamp(4px, 10vw, 100px);
+    gap: clamp(4px, 2vw, 200px);
     flex-wrap: nowrap;
     background-color: rgba(0,255,0,0.8);
 }
@@ -599,6 +599,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
