@@ -545,6 +545,9 @@ nav a:active {
 }
 
 /*  contact.html    */
+
+.contact a {
+}
 .contact a:hover {
     /*background: #0a74da;*/
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
@@ -634,6 +637,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
