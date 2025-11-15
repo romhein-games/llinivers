@@ -499,6 +499,28 @@ nav a:active {
     overflow-wrap: break-word;
     margin-top: clamp(5px, 1vw, 10px);
 }
+
+.owlR-list {
+    display: flex;
+    justify-content: center;
+    gap: clamp(4px, 1vw, 12px);
+    flex-wrap: wrap;
+    background-color: rgba(255,0,0,0.8);
+}
+
+.owlR-card {
+    position: relative; /* nécessaire pour positionner le texte à l’intérieur */
+    border-radius: clamp(10px, 1vw, 12px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: clamp(250px, 50vw, 500px);
+    overflow: hidden; /* empêche le texte de dépasser */
+    background-color: rgba(0,255,0,0.8);
+}
+
+.owlR-card img {
+    width: 100%;
+    border-radius: clamp(10px, 1vw, 12px)
+}
 /* ------------------------------------------------------- */
 /* Media querries => Responsive selon la taille de l'écran */
 /* ------------------------------------------------------- */
@@ -573,6 +595,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
