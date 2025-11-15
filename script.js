@@ -120,4 +120,32 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
+
+  // ---------------------------
+  // 4️⃣ SLIDER D'IMAGES POUR .owlR-card
+  // ---------------------------
+  document.querySelectorAll('.owlR-card').forEach(card => {
+    const images = card.querySelectorAll('.owlR-slider img');
+    const nextBtn = card.querySelector('.owlR-next');
+    const prevBtn = card.querySelector('.owlR-prev');
+    
+    if (!images.length || !nextBtn || !prevBtn) return; // sécurité
+
+    let index = 0;
+
+    const showImage = i => {
+      images.forEach(img => img.classList.remove('active'));
+      images[i].classList.add('active');
+    };
+
+    nextBtn.addEventListener('click', () => {
+      index = (index + 1) % images.length;
+      showImage(index);
+    });
+
+    prevBtn.addEventListener('click', () => {
+      index = (index - 1 + images.length) % images.length;
+      showImage(index);
+    });
+  });
 });
