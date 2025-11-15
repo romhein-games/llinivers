@@ -601,9 +601,11 @@ owlR-slider {
 /* Pour la vidéo dans la carte */
 .owlR-video {
   width: 100%;
+  top: 0;
+  left: 0;
   /*height: 100%;*/
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .owlR-video video {
@@ -705,6 +707,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
