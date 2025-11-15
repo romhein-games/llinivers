@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } 
   });
 
-// ---------------------------
+  // ---------------------------
   // 5️⃣ Gestion de l'overlay des CGU
   // ---------------------------
   const openCguButton = document.getElementById('openCguButton');
@@ -198,6 +198,35 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('click', (e) => {
       if (e.target === cguOverlay) {
         cguOverlay.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+  }
+
+   // ---------------------------
+  // 5️⃣bis Gestion de l'overlay des politiques
+  // ---------------------------
+  const openPolButton = document.getElementById('openPolButton');
+  const polOverlay = document.getElementById('polOverlay');
+  const closePolOverlay = document.getElementById('closePolOverlay');
+
+  // Afficher l'overlay quand l'utilisateur clique sur le bouton "Afficher CGU"
+  if (openPolButton && polOverlay && closePolOverlay) {
+    openPolButton.addEventListener('click', () => {
+      polOverlay.style.display = 'flex'; // Affiche l'overlay en mode flex (centré)
+      document.body.style.overflow = 'hidden'; // Empêche le défilement de la page principale
+    });
+
+    // Fermer l'overlay quand on clique sur le bouton "Fermer"
+    closePolOverlay.addEventListener('click', () => {
+      polOverlay.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Permet le défilement de la page principale
+    });
+
+    // Fermer l'overlay si on clique en dehors de la fenêtre de contenu
+    window.addEventListener('click', (e) => {
+      if (e.target === polOverlay) {
+        polOverlay.style.display = 'none';
         document.body.style.overflow = 'auto';
       }
     });
