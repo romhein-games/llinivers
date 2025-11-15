@@ -148,4 +148,45 @@ document.addEventListener('DOMContentLoaded', () => {
       showImage(index);
     });
   });
+
+  // ---------------------------
+// 5️⃣ ZOOM SUR LES owlR-card
+// ---------------------------
+const lightbox = document.createElement("div");
+lightbox.id = "owlR-lightbox";
+document.body.appendChild(lightbox);
+
+document.querySelectorAll('.owlR-card').forEach(card => {
+    const zoomBtn = card.querySelector('.owlR-zoom');
+    if (!zoomBtn) return;
+
+    zoomBtn.addEventListener('click', () => {
+        // Clone la carte pour l’afficher en grand
+        const clone = card.cloneNode(true);
+        clone.classList.add("zoomed-card");
+
+        // Ajoute bouton fermeture
+        const closeBtn = document.createElement("button");
+        closeBtn.className = "close-zoom";
+        closeBtn.textContent = "✖";
+        clone.appendChild(closeBtn);
+
+        lightbox.innerHTML = "";
+        lightbox.appendChild(clone);
+
+        lightbox.classList.add("show");
+
+        // Fermer en cliquant sur X
+        closeBtn.addEventListener('click', () => {
+            lightbox.classList.remove("show");
+        });
+
+        // Fermer en cliquant autour
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove("show");
+            }
+        });
+    });
+ });
 });
