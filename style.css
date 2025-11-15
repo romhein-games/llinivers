@@ -619,6 +619,8 @@ owlR-slider {
 /*  contact.html    */
 
 .contact a {
+    color: white; 
+    font-size: clamp(10px, 0.5vw, 25px)"
 }
 .contact a:hover {
     /*background: #0a74da;*/
@@ -709,6 +711,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
