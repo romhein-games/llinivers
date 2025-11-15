@@ -621,7 +621,7 @@ owlR-slider {
 
 
 /* Overlay complet (caché par défaut) */
-#Overlay {
+#cguOverlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -753,6 +753,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
