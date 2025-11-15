@@ -565,12 +565,13 @@ owlR-slider {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+    /*background: rgba(0, 0, 0, 0.5);*/
     border: none;
     color: white;
     font-size: 24px;
-    padding: 8px 12px;
+    padding: 6px 12px;
     cursor: pointer;
+    z-index: 10; /* toujours visible au-dessus des images */
 }
 
 .owlR-prev { left: 10px; }
@@ -673,6 +674,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
