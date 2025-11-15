@@ -568,14 +568,14 @@ owlR-slider {
     background: none;
     border: none;
     color: white;
-    font-size: clamp(10px, 3.5vw, 40px);
+    font-size: clamp(5px, 2vw, 40px);
     /*padding: 6px 12px;*/
     cursor: pointer;
     z-index: 10; /* toujours visible au-dessus des images */
 }
 
-.owlR-prev { left: clamp(5px, 1vw, 10px); }
-.owlR-next { right: clamp(5px, 1vw, 10px); }
+.owlR-prev { left: clamp(2px, 1vw, 5px); }
+.owlR-next { right: clamp(2px, 1vw, 5px); }
 
 /*.owlR-prev,
 .owlR-next:hover {
@@ -690,6 +690,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
