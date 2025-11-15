@@ -799,6 +799,23 @@ owlR-slider {
     object-fit: contain !important;
 }
 
+/* Ne montrer qu’une seule image dans le slider */
+.owlR-slider img {
+    display: none !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Image active du slider */
+.owlR-slider img.active {
+    display: block !important;
+    opacity: 1 !important;
+    position: relative !important;
+}
 
 
 
