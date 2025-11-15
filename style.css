@@ -565,18 +565,35 @@ owlR-slider {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /*background: rgba(0, 0, 0, 0.5);*/
+    background: none;
     border: none;
     color: white;
-    font-size: 24px;
+    font-size: clamp(18px, 4vw, 32px);
     padding: 6px 12px;
     cursor: pointer;
     z-index: 10; /* toujours visible au-dessus des images */
 }
 
-.owlR-prev { left: 10px; }
-.owlR-next { right: 10px; }
+.owlR-prev { left: clamp(5px, 2vw, 20px); }
+.owlR-next { right: clamp(5px, 2vw, 20px); }
 
+.owlR-prev,
+.owlR-next:hover {
+    /*background: #0a74da;*/
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(1.05);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
+
+.owlR-prev,
+.owlR-next:active {
+    /*background: #0a74da;*/
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(0.97);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
 .owlR-card img {
     width: 100%;
     border-radius: clamp(10px, 1vw, 12px)
@@ -675,6 +692,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
