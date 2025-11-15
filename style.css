@@ -541,7 +541,7 @@ nav a:active {
 owlR-slider {
     position: relative;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     background-color: rgba(0,0,255,0.8);
 }
 
@@ -552,6 +552,7 @@ owlR-slider {
     width: 100%;
     opacity: 0;
     transition: opacity 0.4s ease;
+    border-radius: clamp(10px, 1vw, 12px)
 }
 
 .owlR-slider img.active {
@@ -672,6 +673,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
