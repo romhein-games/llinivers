@@ -174,35 +174,23 @@ document.addEventListener('DOMContentLoaded', () => {
     } 
   });
 
-  // ---------------------------
+// ---------------------------
   // 5️⃣ Gestion de l'overlay des CGU
   // ---------------------------
   const openCguButton = document.getElementById('openCguButton');
   const cguOverlay = document.getElementById('cguOverlay');
-
-  const openPolButton = document.getElementById('openPolButton');
-  const polOverlay = document.getElementById('polOverlay');
-  
-  const closeOverlay = document.getElementById('closeOverlay');
+  const closeCguOverlay = document.getElementById('closeCguOverlay');
 
   // Afficher l'overlay quand l'utilisateur clique sur le bouton "Afficher CGU"
-  if (openCguButton && cguOverlay && closeOverlay) {
+  if (openCguButton && cguOverlay && closeCguOverlay) {
     openCguButton.addEventListener('click', () => {
       cguOverlay.style.display = 'flex'; // Affiche l'overlay en mode flex (centré)
       document.body.style.overflow = 'hidden'; // Empêche le défilement de la page principale
     });
 
-  // Afficher l'overlay quand l'utilisateur clique sur le bouton "Afficher CGU"
-  if (openPolButton && cguOverlay && closeOverlay) {
-    openPolButton.addEventListener('click', () => {
-      polOverlay.style.display = 'flex'; // Affiche l'overlay en mode flex (centré)
-      document.body.style.overflow = 'hidden'; // Empêche le défilement de la page principale
-    });
-
     // Fermer l'overlay quand on clique sur le bouton "Fermer"
-    closeOverlay.addEventListener('click', () => {
+    closeCguOverlay.addEventListener('click', () => {
       cguOverlay.style.display = 'none';
-      polOverlay.style.display = 'none';
       document.body.style.overflow = 'auto'; // Permet le défilement de la page principale
     });
 
@@ -210,10 +198,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('click', (e) => {
       if (e.target === cguOverlay) {
         cguOverlay.style.display = 'none';
-        document.body.style.overflow = 'auto';
-      }
-      if (e.target === polOverlay) {
-        polOverlay.style.display = 'none';
         document.body.style.overflow = 'auto';
       }
     });
