@@ -472,12 +472,14 @@ nav a:active {
     box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions de l'élément */
     overflow: hidden; /* Assure que rien ne dépasse du conteneur */
     border-radius: clamp(10px, 1vw, 12px);
+    background-color: rgba(255,0,0,0.8);
 }
 
 .content h3 {
-    text-align: center;
+    /*text-align: center;*/
     font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
     margin-bottom: 0; /*clamp(5px, 0.5vw, 10px);*/
+    background-color: rgba(0,0,255,0.8);
 }
 
 .content p {
@@ -486,17 +488,19 @@ nav a:active {
     white-space: normal;  /* permet le retour à la ligne automatique */
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
     overflow-wrap: break-word;
+    background-color: rgba(0,0,255,0.8);
 }
 
 .content a {
     font-size: clamp(0.8rem, 2.1vw, 1.1rem);
     color: white;
     align-self: flex-start;
-    text-align: left;
+    /*text-align: left;*/
     white-space: normal;  /* permet le retour à la ligne automatique */
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
     overflow-wrap: break-word;
     margin-top: clamp(5px, 1vw, 10px);
+    background-color: rgba(0,0,255,0.8);
 }
 
 .owlR-list {
@@ -504,7 +508,7 @@ nav a:active {
     justify-content: center;
     gap: clamp(4px, 10vw, 100px);
     flex-wrap: nowrap;
-    /*background-color: rgba(255,0,0,0.8);*/
+    background-color: rgba(0,255,0,0.8);
 }
 
 .owlR-card {
@@ -595,6 +599,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
