@@ -148,4 +148,50 @@ document.addEventListener('DOMContentLoaded', () => {
       showImage(index);
     });
   });
+
+  // ---------------------------
+  // 5️⃣ ZOOM SIMPLE SUR LES owlR-card
+  // ---------------------------
+
+  // Crée le lightbox une seule fois
+  let lightbox = document.createElement("div");
+  lightbox.id = "owlR-lightbox";
+  document.body.appendChild(lightbox);
+
+  document.querySelectorAll('.owlR-card').forEach(card => {
+    const zoomBtn = card.querySelector('.owlR-zoom');
+    if (!zoomBtn) return;
+
+    zoomBtn.addEventListener('click', () => {
+      // Clone la carte pour le zoom
+      const clone = card.cloneNode(true);
+      clone.classList.add("zoomed-card");
+
+      // Affiche uniquement l'image active
+      const imgs = clone.querySelectorAll('.owlR-slider img');
+      imgs.forEach(img => img.style.display = 'none');
+      const activeImg = clone.querySelector('.owlR-slider img.active') || imgs[0];
+      if (activeImg) activeImg.style.display = 'block';
+
+      // Supprime flèches et bouton zoom du clone
+      clone.querySelectorAll('.owlR-prev, .owlR-next, .owlR-zoom').forEach(el => el.remove());
+
+      // Bouton fermer
+      const closeBtn = document.createElement("button");
+      closeBtn.className = "close-zoom";
+      closeBtn.textContent = "✖";
+      clone.appendChild(closeBtn);
+
+      lightbox.innerHTML = "";
+      lightbox.appendChild(clone);
+      lightbox.classList.add("show");
+
+      // Fermer au clic sur bouton ou hors carte
+      closeBtn.addEventListener('click', () => lightbox.classList.remove("show"));
+      lightbox.addEventListener('click', e => {
+        if (e.target === lightbox) lightbox.classList.remove("show");
+      });
+    });
+  });
+
 });
