@@ -644,6 +644,7 @@ owlR-slider {
   max-width: 600px; /* Taille maximale pour ne pas prendre trop de place */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  color: black;
 }
 
 .overlay-content h2 {
@@ -759,6 +760,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
