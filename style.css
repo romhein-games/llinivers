@@ -598,6 +598,73 @@ owlR-slider {
     outline: none; /* supprime le contour natif */
 }
 
+
+/* Lightbox overlay */
+#owlR-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    z-index: 999;
+}
+
+/* Visible */
+#owlR-lightbox.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Zoomed card */
+#owlR-lightbox .zoomed-card {
+    max-width: 90vw;
+    max-height: 90vh;
+    transform: scale(0.8);
+    transition: transform 0.25s ease;
+}
+#owlR-lightbox.show .zoomed-card {
+    transform: scale(1);
+}
+
+/* Images visibles */
+#owlR-lightbox .zoomed-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Close button */
+#owlR-lightbox .close-zoom {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: clamp(24px, 3vw, 40px);
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Zoom button */
+.owlR-zoom {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: clamp(18px, 3vw, 28px);
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+
+
 /*  contact.html    */
 
 .contact a {
@@ -691,6 +758,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
