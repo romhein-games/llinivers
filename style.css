@@ -464,7 +464,7 @@ nav a:active {
     display: flex;
     flex-direction: column;
     justify-content: center; /* centre horizontalement */
-    align-items: center; 
+    align-items: left; 
     position : relative;
     text-align: left;
     padding-top: clamp(20px, 2vw, 30px);*/
@@ -599,6 +599,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
