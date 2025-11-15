@@ -181,14 +181,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const cguOverlay = document.getElementById('cguOverlay');
   const closeCguOverlay = document.getElementById('closeCguOverlay');
 
-  // Afficher l'overlay quand l'utilisateur clique sur le lien des CGU
+  // Afficher l'overlay quand l'utilisateur clique sur le bouton "Afficher CGU"
   if (openCguButton && cguOverlay && closeCguOverlay) {
     openCguButton.addEventListener('click', () => {
-      cguOverlay.style.display = 'block';
+      cguOverlay.style.display = 'flex'; // Affiche l'overlay en mode flex (centré)
       document.body.style.overflow = 'hidden'; // Empêche le défilement de la page principale
     });
 
-    // Fermer l'overlay quand on clique sur le bouton de fermeture
+    // Fermer l'overlay quand on clique sur le bouton "Fermer"
     closeCguOverlay.addEventListener('click', () => {
       cguOverlay.style.display = 'none';
       document.body.style.overflow = 'auto'; // Permet le défilement de la page principale
