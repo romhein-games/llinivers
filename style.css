@@ -606,14 +606,14 @@ owlR-slider {
   /*height: 100%;*/
   position: relative;
   /*overflow: hidden;*/
-  background-color: rgba(255,0,0,0.8);
 }
 
 .owlR-video video {
   width: 100%;
   border-radius: clamp(10px, 1vw, 12px); /* Optionnel : pour arrondir les bords de la vidéo */
-  /*background-color: #000; /* Fond noir derrière la vidéo si elle n'est pas en plein écran */
-  background-color: rgba(0,255,0,0.8);
+  background-color: #000; /* Fond noir derrière la vidéo si elle n'est pas en plein écran */
+  height: 100%;
+  object-fit: cover;
 }
 
 /*  contact.html    */
@@ -709,6 +709,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
