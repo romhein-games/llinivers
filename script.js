@@ -179,6 +179,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---------------------------
   const openCguButton = document.getElementById('openCguButton');
   const cguOverlay = document.getElementById('cguOverlay');
+
+  const openPolButton = document.getElementById('openPolButton');
+  const polOverlay = document.getElementById('polOverlay');
+  
   const closeCguOverlay = document.getElementById('closeCguOverlay');
 
   // Afficher l'overlay quand l'utilisateur clique sur le bouton "Afficher CGU"
