@@ -173,4 +173,33 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     } 
   });
+
+  // ---------------------------
+  // 5️⃣ Gestion de l'overlay des CGU
+  // ---------------------------
+  const openCguButton = document.getElementById('openCguButton');
+  const cguOverlay = document.getElementById('cguOverlay');
+  const closeCguOverlay = document.getElementById('closeCguOverlay');
+
+  // Afficher l'overlay quand l'utilisateur clique sur le lien des CGU
+  if (openCguButton && cguOverlay && closeCguOverlay) {
+    openCguButton.addEventListener('click', () => {
+      cguOverlay.style.display = 'block';
+      document.body.style.overflow = 'hidden'; // Empêche le défilement de la page principale
+    });
+
+    // Fermer l'overlay quand on clique sur le bouton de fermeture
+    closeCguOverlay.addEventListener('click', () => {
+      cguOverlay.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Permet le défilement de la page principale
+    });
+
+    // Fermer l'overlay si on clique en dehors de la fenêtre de contenu
+    window.addEventListener('click', (e) => {
+      if (e.target === cguOverlay) {
+        cguOverlay.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+  }
 });
