@@ -128,9 +128,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const images = card.querySelectorAll('.owlR-slider img');
     const nextBtn = card.querySelector('.owlR-next');
     const prevBtn = card.querySelector('.owlR-prev');
+    const video = card.querySelector('.owlR-video video'); // Vidéo dans la carte
     
-    if (!images.length || !nextBtn || !prevBtn) return; // sécurité
-
+    //if (!images.length || !nextBtn || !prevBtn) return; // sécurité
+    if (images.length) {
     let index = 0;
 
     const showImage = i => {
@@ -147,5 +148,17 @@ document.addEventListener('DOMContentLoaded', () => {
       index = (index - 1 + images.length) % images.length;
       showImage(index);
     });
+    }
+    if (video) { // Si c'est une carte avec une vidéo
+      nextBtn.addEventListener('click', () => {
+        // Optionnel : passer à la carte suivante
+        console.log("Passer à la prochaine carte...");
+      });
+
+      prevBtn.addEventListener('click', () => {
+        // Optionnel : passer à la carte précédente
+        console.log("Passer à la carte précédente...");
+      });
+    } 
   });
 });
