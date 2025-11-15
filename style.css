@@ -577,7 +577,6 @@ owlR-slider {
 .owlR-prev { left: clamp(2px, 1vw, 5px); }
 .owlR-next { right: clamp(2px, 1vw, 5px); }
 
-.owlR-prev:hover,
 .owlR-next:hover {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(1.05);
@@ -690,6 +689,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
