@@ -60,6 +60,18 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation(); // empêche la fermeture immédiate par le listener global
       btn.classList.toggle('open');
       menu.classList.toggle('show');
+
+      // Si le menu est ouvert, défile jusqu'en bas
+      if (menu.classList.contains('show')) {
+        // Attends un petit délai pour être sûr que le menu est visible avant de défiler
+        setTimeout(() => {
+          window.scrollTo({
+            top: document.body.scrollHeight, // Défilement jusqu'en bas de la page
+            behavior: 'smooth' // Ajoute une animation fluide pour le défilement
+          });
+        }, 200); // Délai de 200ms pour garantir que le menu a le temps de s'afficher
+      }
+      
     });
 
     // Quand on choisit une langue
