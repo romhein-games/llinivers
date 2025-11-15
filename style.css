@@ -618,6 +618,46 @@ owlR-slider {
   background-color: #000; /* Fond noir derrière la vidéo si elle n'est pas en plein écran */
 }
 
+
+
+/* Overlay complet (caché par défaut) */
+#Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1); /* Opaque, fond blanc */
+  z-index: 9999;
+  display: none; /* Initialement caché */
+  overflow-y: auto; /* Permet de faire défiler le contenu */
+}
+
+.overlay-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
 /*  contact.html    */
 
 .mail a {
@@ -713,6 +753,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
