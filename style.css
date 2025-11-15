@@ -641,7 +641,7 @@ owlR-slider {
   padding: 20px;
   border-radius: clamp(10px, 1vw, 12px);
   width: 80%; /* Taille modale (peut être ajustée selon tes préférences) */
-  max-width: 1000px; /* Taille maximale pour ne pas prendre trop de place */
+  /*max-width: 1000px; /* Taille maximale pour ne pas prendre trop de place */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: black;
@@ -774,6 +774,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
