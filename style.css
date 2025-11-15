@@ -774,10 +774,10 @@ owlR-slider {
 }
 
 #owlR-lightbox .zoomed-card {
-    width: 90vw !important;
-    max-width: 90vw !important;
+    width: 60vw !important;
+    max-width: 60vw !important;
     height: auto !important;
-    max-height: 90vh !important;
+    max-height: 60vh !important;
     overflow: hidden !important;
     background: none !important;
     border-radius: 0 !important;
@@ -793,6 +793,11 @@ owlR-slider {
     overflow: visible !important;
 }
 
+#owlR-lightbox .zoomed-card img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+}
 
 
 
