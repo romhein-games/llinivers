@@ -764,6 +764,33 @@ owlR-slider {
 
 
 
+/* Force les images à être visibles dans le zoom */
+#owlR-lightbox .zoomed-card .owlR-slider img {
+    display: block !important;
+    opacity: 1 !important;
+    position: relative !important;
+    height: auto !important;
+    width: 100% !important;
+}
+
+/* Réinitialise complètement la carte zoomée */
+#owlR-lightbox .zoomed-card {
+    width: auto !important;
+    height: auto !important;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: visible !important;
+    background: none !important;
+    border-radius: 0 !important;
+    position: relative !important;
+    transform: scale(1) !important;
+}
+
+/* Le slider ne doit PAS être caché dans le zoom */
+#owlR-lightbox .zoomed-card .owlR-slider {
+    position: relative !important;
+    overflow: visible !important;
+}
 
 
 
