@@ -545,7 +545,7 @@ nav a:active {
 }
 
 /*  contact.html    */
-.content a:hover {
+.contact a:hover {
     /*background: #0a74da;*/
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(1.05);
@@ -553,7 +553,7 @@ nav a:active {
     outline: none; /* supprime le contour natif */
 }
 
-.content a:active {
+.contact a:active {
     /*background: #0a74da;*/
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(0.97);
@@ -634,6 +634,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
