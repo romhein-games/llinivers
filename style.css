@@ -773,17 +773,18 @@ owlR-slider {
     width: 100% !important;
 }
 
-/* Réinitialise complètement la carte zoomée */
 #owlR-lightbox .zoomed-card {
-    width: auto !important;
+    width: 90vw !important;
+    max-width: 90vw !important;
     height: auto !important;
-    max-width: 90vw;
-    max-height: 90vh;
-    overflow: visible !important;
+    max-height: 90vh !important;
+    overflow: hidden !important;
     background: none !important;
     border-radius: 0 !important;
     position: relative !important;
-    transform: scale(1) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 /* Le slider ne doit PAS être caché dans le zoom */
@@ -791,6 +792,7 @@ owlR-slider {
     position: relative !important;
     overflow: visible !important;
 }
+
 
 
 
