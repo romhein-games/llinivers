@@ -577,20 +577,22 @@ owlR-slider {
 .owlR-prev { left: clamp(2px, 1vw, 5px); }
 .owlR-next { right: clamp(2px, 1vw, 5px); }
 
+.owlR-prev:hover,
 .owlR-next:hover {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
-    transform: scale(1.05);
-    color: #fff; /* pour s’assurer que le texte reste visible 
-    outline: none; /* supprime le contour natif 
+    transform: translateY(-50%) scale(1.05);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
 }
 
-.owlR-prev,
+.owlR-prev:active,
 .owlR-next:active {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
-    transform: scale(0.97);
-    color: #fff; /* pour s’assurer que le texte reste visible 
-    outline: none; /* supprime le contour natif 
-}*/
+    transform: translateY(-50%) scale(0.97);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
+
 .owlR-card img {
     width: 100%;
     border-radius: clamp(10px, 1vw, 12px)
@@ -689,6 +691,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
