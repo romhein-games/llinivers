@@ -628,7 +628,7 @@ owlR-slider {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 1); /* Fond semi-transparent */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
   z-index: 1000; /* Assure que l'overlay soit au-dessus de tout le reste */
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
@@ -639,8 +639,8 @@ owlR-slider {
 .overlay-content {
   background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
-  width: 60%; /* Taille modale (peut être ajustée selon tes préférences) */
+  border-radius: clamp(10px, 1vw, 12px);
+  width: 80%; /* Taille modale (peut être ajustée selon tes préférences) */
   max-width: 600px; /* Taille maximale pour ne pas prendre trop de place */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -759,6 +759,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
