@@ -610,7 +610,7 @@ owlR-slider {
 
 .owlR-video video {
   width: 100%;
-  border-radius: clamp(10px, 1vw, 12px) /* Optionnel : pour arrondir les bords de la vidéo */
+  border-radius: clamp(10px, 1vw, 12px); /* Optionnel : pour arrondir les bords de la vidéo */
   background-color: #000; /* Fond noir derrière la vidéo si elle n'est pas en plein écran */
 }
 
@@ -707,6 +707,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
