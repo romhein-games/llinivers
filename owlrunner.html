@@ -22,6 +22,7 @@
 
     <section id="content" class="content">
       <div class="owlR-list">
+        <!-- Carte avec Images -->
         <div class="owlR-card">
           <div class="owlR-slider">
             <img src="images/image1.png" class="active">
@@ -33,8 +34,16 @@
           <button class="owlR-next">❯</button>
         </div>
 
+        <!-- Carte avec Vidéo -->
         <div class="owlR-card">
-          <img src="images/image3.png" alt="Owl Runner">
+         <div class="owlR-video">
+           <video controls>
+             <source src="videos/video.mp4" type="video/mp4">
+             Votre navigateur ne supporte pas la vidéo.
+           </video>
+         </div>
+         <div class="owlR-prev">←</div>
+         <div class="owlR-next">→</div>
         </div>
       </div>
       
@@ -87,6 +96,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
