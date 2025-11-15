@@ -459,6 +459,8 @@ nav a:active {
 /* ----------------- */
 /*  Others pages     */
 /* ----------------- */
+
+/*  Owlrunner.html    */
 .content {
     width: 100%;
     display: flex;
@@ -472,14 +474,14 @@ nav a:active {
     box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions de l'élément */
     overflow: hidden; /* Assure que rien ne dépasse du conteneur */
     border-radius: clamp(10px, 1vw, 12px);
-    background-color: rgba(255,0,0,0.8);
+    /*background-color: rgba(255,0,0,0.8);*/
 }
 
 .content h3 {
     text-align: left;
     font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
     margin-bottom: 0; /*clamp(5px, 0.5vw, 10px);*/
-    background-color: rgba(0,0,255,0.8);
+    /*background-color: rgba(0,0,255,0.8);*/
 }
 
 .content p {
@@ -488,7 +490,7 @@ nav a:active {
     white-space: normal;  /* permet le retour à la ligne automatique */
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
     overflow-wrap: break-word;
-    background-color: rgba(0,0,255,0.8);
+    /*background-color: rgba(0,0,255,0.8);*/
 }
 
 .content a {
@@ -500,7 +502,23 @@ nav a:active {
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
     overflow-wrap: break-word;
     margin-top: clamp(5px, 1vw, 10px);
-    background-color: rgba(0,0,255,0.8);
+    /*background-color: rgba(0,0,255,0.8);*/
+}
+
+.content a:hover {
+    /*background: #0a74da;*/
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(1.05);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
+
+.content a:active {
+    /*background: #0a74da;*/
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(0.97);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
 }
 
 .owlR-list {
@@ -508,7 +526,7 @@ nav a:active {
     justify-content: center;
     gap: clamp(4px, 2vw, 200px);
     flex-wrap: nowrap;
-    background-color: rgba(0,255,0,0.8);
+    /*background-color: rgba(0,255,0,0.8);*/
 }
 
 .owlR-card {
@@ -524,6 +542,23 @@ nav a:active {
 .owlR-card img {
     width: 100%;
     border-radius: clamp(10px, 1vw, 12px)
+}
+
+/*  contact.html    */
+.content a:hover {
+    /*background: #0a74da;*/
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(1.05);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
+
+.content a:active {
+    /*background: #0a74da;*/
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(0.97);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
 }
 /* ------------------------------------------------------- */
 /* Media querries => Responsive selon la taille de l'écran */
@@ -599,6 +634,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
