@@ -504,7 +504,7 @@ nav a:active {
     justify-content: center;
     gap: clamp(4px, 2vw, 50px);
     flex-wrap: nowrap;
-    background-color: rgba(255,0,0,0.8);
+    /*background-color: rgba(255,0,0,0.8);*/
 }
 
 .owlR-card {
@@ -512,9 +512,9 @@ nav a:active {
     border-radius: clamp(10px, 1vw, 12px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     flex: 1 1 0; /* permet de réduire la taille mais reste sur une ligne */
-    width: clamp(150px, 50vw, 500px);
+    width: clamp(100px, 50vw, 500px);
     overflow: hidden; /* empêche le texte de dépasser */
-    background-color: rgba(0,255,0,0.8);
+    /*background-color: rgba(0,255,0,0.8);*/
 }
 
 .owlR-card img {
@@ -595,6 +595,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
