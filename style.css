@@ -651,7 +651,7 @@ owlR-slider {
   margin-bottom: 20px;
 }
 
-#closeOverlay {
+#closeCguOverlay {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #007BFF;
@@ -661,7 +661,7 @@ owlR-slider {
   cursor: pointer;
 }
 
-#closeOverlay:hover {
+#closeCguOverlay:hover {
   background-color: #0056b3;
 }
 
@@ -760,6 +760,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
