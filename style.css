@@ -503,12 +503,13 @@ nav a:active {
     justify-content: center;
     margin-top: clamp(-7px, -0.9vw, -12px);
     margin-bottom: clamp(15px, 1.8vw, 25px);
-    gap: 20px;
+    gap: clamp(5px, 1vw, 20px);
     flex-wrap: nowrap;
 }
 
 .gif img {
-    width: 5%;
+    width: clamp(81px, 5vw, 150px);
+    height: auto;
 }
 
 .content a {
@@ -789,6 +790,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
