@@ -508,7 +508,7 @@ nav a:active {
 }
 
 .gif img {
-    width: clamp(61px, 5vw, 150px);
+    width: clamp(40px, 5vw, 150px);
     height: auto;
 }
 
@@ -790,6 +790,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
