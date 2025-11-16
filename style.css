@@ -498,11 +498,16 @@ nav a:active {
 }
 
 .gif {
-    width: 5%;
     /*padding-left: 10px;*/
-    align-items: center; 
+    display: flex;
+    justify-content: center;
     margin-top: clamp(7px, 0.9vw, 12px);
     margin-bottom: clamp(15px, 1.8vw, 25px);
+    flex-wrap: nowrap;
+}
+
+.gif img {
+    width: 5%;
 }
 
 .content a {
@@ -783,6 +788,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
