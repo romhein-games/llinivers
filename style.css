@@ -497,6 +497,10 @@ nav a:active {
     /*background-color: rgba(0,0,255,0.8);*/
 }
 
+.gif {
+    width: 100%;
+}
+
 .content a {
     font-size: clamp(0.8rem, 2.1vw, 1.1rem);
     color: white;
@@ -775,6 +779,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
