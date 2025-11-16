@@ -683,7 +683,7 @@ owlR-slider {
 
 .mail a {
     color: white; 
-    font-size: clamp(10px, 0.5vw, 25px)"
+    font-size: clamp(10px, 0.5vw, 25px);
 }
 .mail a:hover {
     /*background: #0a74da;*/
@@ -774,6 +774,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
