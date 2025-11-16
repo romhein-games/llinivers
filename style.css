@@ -493,6 +493,7 @@ nav a:active {
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
     overflow-wrap: break-word;
     padding-left: 10px;
+    text-align: justify;
     /*background-color: rgba(0,0,255,0.8);*/
 }
 
@@ -774,6 +775,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
