@@ -74,9 +74,55 @@
       </div>
 
       <h3>Comment jouer</h3>
-      <p>Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte
-         Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte
-         Texte Texte Texte Texte Texte Texte</p>
+      <p>Lancer une partie, le déplacement est unidirectionnel et le personnage se déplace automatiquement vers la droite (sans aucune action de la part du joueur). La vitesse de déplacement est également automatique 
+      et s’accroit au fur et à mesure que les niveaux augmentent. ce personnage est également contrôlé par le joueur. Ses actions possibles sont les sauts, les tirs et la prise d'objets.<br><br>
+      <u>Les actions possibles</u> <br>
+      Les sauts: Pour sauter le joueur devra toucher la zone gauche de l’écran.<br>
+      Les tirs:  Pour tirer le joueur devra toucher la zone droite de l’écran dans la direction du MOB qu’il souhaite tuer.<br>
+      La prise d'objets: Pour récupérer un objet le personnage doit rentrer en contact avec l’objet. <br><br>
+        
+      <u>Les ressources</u> <br>
+      L'or: Bien que l’objectif principal soit d’aller le plus loin possible, le deuxième objectif important est de ramasser durant la phase de jeu le maximum d’or.               
+      Chaque pièce d’or récoltée incrémente le niveau d’or de 1. Mais également, tuer un MOB rapporte 5 pièces d’or.<br>
+      Les vies: Les vies permettent au joueur de reprendre la partie où il s’est arrêté tout en préservant son score en cours. Ainsi, lorsqu’il perd le joueur peut reprendre contre une vie à l’endroit où il a perdu. 
+      Lorsque le joueur perd et qu’il n’a plus de vies, il y a Game Over et le joueur devra recommencer au début du dernier niveau.<br>
+      Les fioles d'air: La capacité d’air du personnage décroit en fonction du temps. Lorsque la capacité d’air est nulle, le personnage meurt. Pour rester en vie afin d’aller le plus loin possible le joueur devra récupérer 
+      les air boost (potion d’air) pour ainsi remplir sa jauge d’air.<br>
+      Les powers-up: Pour l’aider dans son avancement le personnage verra apparaitre tout le long du parcours des objets power-up qu’il pourra pickup. Ces objets lui permettront d’accroitre de manière temporaire ses performances. 
+      Il aura ainsi de manière totalement aléatoire le choix entre: <br>
+      ➢ Une potion d’invincibilité qui lui confèrera pendant 30 secondes une invincibilité totale et une vitesse de déplacement super sonique. <br>
+      ➢ Une potion laser boost qui lui confèrera pendant 30 secondes une puissance de feu surpuissante (1 tir détruit tout). <br><br>
+
+      <u>Head up display</u> <br>
+      Le bandeau de jeu présentera toutes les informations nécessaires au déroulement du jeu mais aussi les boutons d’accès au menu pause et aux commandes<br>
+      1 – Jauge de vie du personnage principal<br>
+      2 – Nombre de vie disponible <br>
+      3 – Nombre de pièces récoltées <br>
+      4 – Buton du menu des commandes <br>
+      5 – Bouton du menu pause<br><br>
+        
+      Le personnage meurt dans les cas suivants: <br>
+      1. Collision avec un MOB : Le personnage meurt dès rentre en contact avec un MOB.<br>
+      2. Chute dans un trou : Le personnage meurt dès qu’il tombe dans un trou.<br>
+      3. Manque d’air : Le personnage meurt lorsqu’il n’a plus d’air (jauge d’air vide)<br><br>
+
+      Le joueur gagne Lorsqu'il arrive à la fin du niveau et passe au niveau suivant. le joueur se verra attribuer de 1 à 3 étoiles en fonction du nombre de ressources d’or récoltées. Chaque étoile donne 50 ressources 
+      d’or complémentaires. Ainsi, le joueur pourra avoir un complément allant jusqu’à 150 ressources d’or.
+      </p>
+
+      <h3>Mode de jeu</h3>
+      <p>Le joueur pourra ainsi choisir entre 3 mode de jeu:<br> 
+      Facile, <br>
+      Normal, <br>
+      Difficile. <br><br>
+      Le choix du mode influera sur l’activation ou non de l’intelligence artificielle (IA) des MOB mais aussi de la vitesse de diminution de la capacité d’air du personnage.
+      </p>
+
+      <h3>Crédits</h3>
+      <p>Game producer/Game designer/game developer/Level designer: Llinivers<Br>
+      Graphismes/Police: www.craftpix.net<br>
+      Audio: Prod. Bifrost
+      </p>
       
       <a id="openPolButton">Politique de confidentialité de Owl Runner</a>
       <a id="openCguButton">Conditions générales d'utilisation (CGU) de Owl Runner</a>
@@ -131,6 +177,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
