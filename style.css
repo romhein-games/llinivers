@@ -482,7 +482,7 @@ nav a:active {
     text-align: left;
     font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
     margin-bottom: 0; /*clamp(5px, 0.5vw, 10px);*/
-    padding-left: 10px;
+    /*padding-left: 10px;*/
     /*background-color: rgba(0,0,255,0.8);*/
 }
 
@@ -492,7 +492,7 @@ nav a:active {
     white-space: normal;  /* permet le retour à la ligne automatique */
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
     overflow-wrap: break-word;
-    padding-left: 10px;
+    /*padding-left: 10px;*/
     text-align: justify;
     /*background-color: rgba(0,0,255,0.8);*/
 }
@@ -790,6 +790,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
