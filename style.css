@@ -742,7 +742,7 @@ owlR-slider {
   background: white;
   color: black;
   padding: 25px;
-  border-radius: 12px;
+  border-radius: clamp(10px, 1vw, 12px);
   text-align: center;
   max-width: 400px;
   width: 80%;
@@ -876,6 +876,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
