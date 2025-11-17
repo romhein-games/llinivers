@@ -514,6 +514,21 @@ nav a:active {
     height: auto;
 }
 
+.png {
+    /*padding-left: 10px;*/
+    display: flex;
+    justify-content: center;
+    margin-top: clamp(-7px, -0.9vw, -12px);
+    margin-bottom: clamp(15px, 1.8vw, 25px);
+    border-radius: clamp(10px, 1vw, 12px);
+}
+
+.png img {
+    width: 100%;
+    height: auto;
+    border-radius: clamp(10px, 1vw, 12px);
+}
+
 .content a {
     font-size: clamp(0.8rem, 2.1vw, 1.1rem);
     color: white;
@@ -792,6 +807,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
