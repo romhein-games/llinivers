@@ -695,6 +695,12 @@ owlR-slider {
 
 #closeCguOverlay:hover {
   background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+#closeCguOverlay:active {
+  background-color: #0056b3;
+  transform: scale(0.97);
 }
 
 #closePolOverlay {
@@ -709,8 +715,13 @@ owlR-slider {
 
 #closePolOverlay:hover {
   background-color: #0056b3;
+  transform: scale(1.05);
 }
 
+#closePolOverlay:active {
+  background-color: #0056b3;
+  transform: scale(0.97);
+}
 
 /* Overlay plein écran */
 #qrOverlay {
@@ -751,6 +762,16 @@ owlR-slider {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+#closeQrOverlay:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+#closeQrOverlay:active {
+  background-color: #0056b3;
+  transform: scale(0.97);
 }
 
 /* Animation d’apparition */
@@ -854,6 +875,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
