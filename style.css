@@ -740,10 +740,11 @@ owlR-slider {
 /* Box du QR */
 .qr-box {
   background: white;
+  color: black;
   padding: 25px;
   border-radius: 12px;
   text-align: center;
-  max-width: 300px;
+  max-width: 400px;
   width: 80%;
   animation: pop 0.25s ease-out;
 }
@@ -875,6 +876,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
