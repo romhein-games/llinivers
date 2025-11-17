@@ -518,8 +518,8 @@ nav a:active {
     /*padding-left: 10px;*/
     display: flex;
     justify-content: center;
-    margin-top: clamp(-7px, -0.9vw, -12px);
-    margin-bottom: clamp(15px, 1.8vw, 25px);
+    /*margin-top: clamp(-7px, -0.9vw, -12px);
+    margin-bottom: clamp(15px, 1.8vw, 25px);*/
     border-radius: clamp(10px, 2vw, 40px);
 }
 
@@ -807,6 +807,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
