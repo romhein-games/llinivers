@@ -236,8 +236,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // 7️⃣ Bouton téléchargement : Mobile → Play Store / PC → QR Code
   // ---------------------------
   const downloadBtn = document.getElementById('download-btn');
-  const qrCodeContainer = document.getElementById('qr-code-container');
+  const qrOverlay = document.getElementById('qrOverlay');
   const qrCodeImg = document.getElementById('qr-code');
+  const closeQrOverlay = document.getElementById('closeQrOverlay');
 
   const playStoreUrl = "https://play.google.com/store/apps/details?id=com.test.jeu";
 
@@ -252,8 +253,25 @@ document.addEventListener('DOMContentLoaded', () => {
       if (isMobileOrTablet()) {
         window.location.href = playStoreUrl;
       } else {
-        qrCodeContainer.style.display = "block";
+        // Affiche l'overlay
+        qrOverlay.style.display = "flex";
+
+        // Charge le QR Code
         qrCodeImg.src = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(playStoreUrl)}&size=200x200`;
+      }
+    });
+  }
+
+  // Fermeture du QR Code
+  if (closeQrOverlay && qrOverlay) {
+    closeQrOverlay.addEventListener('click', () => {
+      qrOverlay.style.display = "none";
+    });
+
+    // Fermer en cliquant autour
+    qrOverlay.addEventListener('click', (e) => {
+      if (e.target === qrOverlay) {
+        qrOverlay.style.display = "none";
       }
     });
   }
