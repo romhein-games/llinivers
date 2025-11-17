@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
    // ---------------------------
-  // 5️⃣bis Gestion de l'overlay des politiques
+  // 6️⃣ Gestion de l'overlay des politiques
   // ---------------------------
   const openPolButton = document.getElementById('openPolButton');
   const polOverlay = document.getElementById('polOverlay');
@@ -228,6 +228,32 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target === polOverlay) {
         polOverlay.style.display = 'none';
         document.body.style.overflow = 'auto';
+      }
+    });
+  }
+
+  // ---------------------------
+  // 7️⃣ Bouton téléchargement : Mobile → Play Store / PC → QR Code
+  // ---------------------------
+  const downloadBtn = document.getElementById('download-btn');
+  const qrCodeContainer = document.getElementById('qr-code-container');
+  const qrCodeImg = document.getElementById('qr-code');
+
+  const playStoreUrl = "https://play.google.com/store/apps/details?id=com.test.jeu";
+
+  function isMobileOrTablet() {
+    return /Mobi|Android|iPhone|iPad|Tablet/i.test(navigator.userAgent);
+  }
+
+  if (downloadBtn) {
+    downloadBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      if (isMobileOrTablet()) {
+        window.location.href = playStoreUrl;
+      } else {
+        qrCodeContainer.style.display = "block";
+        qrCodeImg.src = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(playStoreUrl)}&size=200x200`;
       }
     });
   }
