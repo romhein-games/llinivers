@@ -739,13 +739,15 @@ owlR-slider {
 
 /* Box du QR */
 .qr-box {
+display: flex;
+  flex-direction: column; /* les éléments s'empilent verticalement */
   background: white;
   color: black;
   padding: 25px;
   border-radius: clamp(10px, 1vw, 12px);
   text-align: center;
-  max-width: 400px;
-  width: 80%;
+  max-width: 500px;
+  width: 85%;
   animation: pop 0.25s ease-out;
 }
 
@@ -876,6 +878,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
