@@ -122,7 +122,6 @@ main {
     font-weight: bold;
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
     transition: all 0.3s ease;
-    z-index: 10; /* toujours visible au-dessus des images */
     cursor: pointer;
 
     -webkit-tap-highlight-color: transparent; /* supprime le carré bleu sur mobile */
@@ -807,6 +806,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
