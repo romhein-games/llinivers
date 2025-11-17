@@ -514,7 +514,7 @@ nav a:active {
     height: auto;
 }
 
-.png {
+.pic {
     /*padding-left: 10px;*/
     display: flex;
     justify-content: center;
@@ -523,8 +523,8 @@ nav a:active {
     border-radius: clamp(10px, 1vw, 12px);
 }
 
-.png img {
-    width: 100%;
+.pic img {
+    width: 50%;
     height: auto;
     border-radius: clamp(10px, 1vw, 12px);
 }
@@ -807,6 +807,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
