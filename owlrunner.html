@@ -236,12 +236,16 @@
    </div>
   </div>
 
-  <!-- Conteneur pour le QR Code (affiché seulement sur Desktop) -->
-  <div id="qr-code-container" style="display:none;">
-    <h3>Scannez ce QR Code pour télécharger l'application</h3>
-    <img id="qr-code" src="" alt="QR Code">
+  <!-- OVERLAY QR CODE -->
+  <div id="qrOverlay">
+    <div class="qr-box">
+      <h3>Scannez pour télécharger l'application</h3>
+      <img id="qr-code" src="" alt="QR Code">
+      <button id="closeQrOverlay">Fermer</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
