@@ -520,13 +520,13 @@ nav a:active {
     justify-content: center;
     margin-top: clamp(-7px, -0.9vw, -12px);
     margin-bottom: clamp(15px, 1.8vw, 25px);
-    border-radius: clamp(10px, 1vw, 12px);
+    border-radius: clamp(20px, 2vw, 40px);
 }
 
 .pic img {
     width: 50%;
     height: auto;
-    border-radius: clamp(10px, 1vw, 12px);
+    border-radius: clamp(20px, 2vw, 40px);
 }
 
 .content a {
@@ -807,6 +807,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
