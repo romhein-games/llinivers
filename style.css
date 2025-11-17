@@ -122,7 +122,7 @@ main {
     font-weight: bold;
     box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
     transition: all 0.3s ease;
-
+    z-index: 10; /* toujours visible au-dessus des images */
     cursor: pointer;
 
     -webkit-tap-highlight-color: transparent; /* supprime le carré bleu sur mobile */
@@ -569,7 +569,7 @@ nav a:active {
 .owlR-card {
     position: relative; /* nécessaire pour positionner le texte à l’intérieur */
     border-radius: clamp(10px, 1vw, 12px);
-    /*flex: 1 1 0; /* permet de réduire la taille mais reste sur une ligne */
+    flex: 1 1 0; /* permet de réduire la taille mais reste sur une ligne */
     width: clamp(150px, 40vw, 500px);
     overflow: hidden; /* empêche le texte de dépasser */
     /*background-color: rgba(0,0,255,0.8);*/
@@ -807,6 +807,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
