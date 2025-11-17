@@ -740,15 +740,16 @@ owlR-slider {
 .qr-box img {
   width: 200px;
   height: 200px;
+  margin-bottom: 15px; /* Espacement entre le QR code et le bouton */
 }
 
 #closeQrOverlay {
-  margin-top: 15px;
-  padding: 8px 20px;
-  border: none;
-  background: #333;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
   color: white;
-  border-radius: 6px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -853,6 +854,7 @@ owlR-slider {
         }
     }
 }
+
 
 
 
