@@ -219,36 +219,32 @@
   </footer>
 
   <!-- Overlay CGU -->
-  <div id="cguOverlay" class="overlay">
-   <div class="overlay-content">
-    <h2>Conditions Générales d'Utilisation</h2>
-    <p>Voici les conditions...</p>
-    <button id="closeCguOverlay">Fermer</button>
-   </div>
+  <div id="cguOverlay" class="overlay" data-overlay>
+    <div class="overlay-content">
+      <h2>Conditions Générales d'Utilisation</h2>
+      <p>Voici les conditions...</p>
+      <button data-close>Fermer</button>
+    </div>
   </div>
 
-  <!-- Overlay politiques -->
-  <div id="polOverlay" class="overlay">
-   <div class="overlay-content">
-    <h2>Politique de confidentialité</h2>
-    <p>Voici les conditions...</p>
-    <button id="closePolOverlay">Fermer</button>
-   </div>
+  <!-- Overlay Politique -->
+  <div id="polOverlay" class="overlay" data-overlay>
+    <div class="overlay-content">
+      <h2>Politique de confidentialité</h2>
+      <p>Voici les conditions...</p>
+      <button data-close>Fermer</button>
+    </div>
   </div>
 
-  <!-- OVERLAY QR CODE -->
-  <div id="qrOverlay">
+  <!-- Overlay QR -->
+  <div id="qrOverlay" class="overlay" data-overlay>
     <div class="qr-box">
       <h3>Scannez pour télécharger l'application</h3>
       <img id="qr-code" src="" alt="QR Code">
-      <button id="closeQrOverlay">Fermer</button>
+      <button data-close>Fermer</button>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
