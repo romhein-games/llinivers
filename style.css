@@ -228,14 +228,14 @@ main {
 }
 
 .game-card h3 {
-  position: relative;
-  bottom: 15px; /* position sur la base de l’image */
-  left: 0;
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
-  margin: 0;
+    position: relative;
+    bottom: 15px; /* position sur la base de l’image */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
+    margin: 0;
 }
 
 .platforms {
@@ -864,5 +864,6 @@ nav a:active {
         }
     }
 }
+
 
 
