@@ -472,16 +472,16 @@ owlR-slider {
 
 /* --- Paramètre de la vidéo dans la carte --- */
 .owlR-video {
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
 }
 
 .owlR-video video {
-  width: 100%;
-  border-radius: clamp(10px, 1vw, 12px); /* Optionnel : pour arrondir les bords de la vidéo */
-  background-color: #000; /* Fond noir derrière la vidéo si elle n'est pas en plein écran */
+    width: 100%;
+    border-radius: clamp(10px, 1vw, 12px); /* Optionnel : pour arrondir les bords de la vidéo */
+    background-color: #000; /* Fond noir derrière la vidéo si elle n'est pas en plein écran */
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -666,8 +666,8 @@ footer:hover {
 }
 
 footer p {
-  white-space: nowrap; /* empêche le texte de se couper */
-  margin: 0;
+    white-space: nowrap; /* empêche le texte de se couper */
+    margin: 0;
 }
 
 nav ul {
@@ -738,8 +738,8 @@ nav a:active {
 
 /* Style de base de la flèche */
 .btn-lang .arrow {
-  transform: rotate(90deg);
-  transition: transform 0.3s ease; /* transition fluide */
+    transform: rotate(90deg);
+    transition: transform 0.3s ease; /* transition fluide */
 }
 
 .btn-lang.open .arrow {
@@ -864,6 +864,3 @@ nav a:active {
         }
     }
 }
-
-
-
