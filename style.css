@@ -364,7 +364,7 @@ main {
 }
 
 .pic img {
-    width: clamp(100px, 50vw, 700px);/*50%;*/
+    width: clamp(150px, 50vw, 700px);/*50%;*/
     height: auto;
     border-radius: clamp(10px, 2vw, 40px);
 }
@@ -820,5 +820,6 @@ nav a:active {
         }
     }
 }
+
 
 
