@@ -174,72 +174,53 @@ document.addEventListener('DOMContentLoaded', () => {
     } 
   });
 
-  // ---------------------------
-  // 5️⃣ Gestion de l'overlay des CGU
-  // ---------------------------
-  const openCguButton = document.getElementById('openCguButton');
-  const cguOverlay = document.getElementById('cguOverlay');
-  const closeCguOverlay = document.getElementById('closeCguOverlay');
+  // ============================================================
+  // 5️⃣ 6️⃣ 7️⃣ — SYSTÈME D’OVERLAY FACTORISÉ (CGU / POL / QR)
+  // ============================================================
 
-  // Afficher l'overlay quand l'utilisateur clique sur le bouton "Afficher CGU"
-  if (openCguButton && cguOverlay && closeCguOverlay) {
-    openCguButton.addEventListener('click', () => {
-      cguOverlay.style.display = 'flex'; // Affiche l'overlay en mode flex (centré)
-      document.body.style.overflow = 'hidden'; // Empêche le défilement de la page principale
+  // Fonction générique pour ouvrir un overlay
+  function openOverlay(overlay) {
+    overlay.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+
+  // Fonction générique pour fermer un overlay
+  function closeOverlay(overlay) {
+    overlay.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+
+  // Gestion automatique pour TOUS les overlays
+  document.querySelectorAll("[data-overlay]").forEach(overlay => {
+    overlay.querySelectorAll("[data-close]").forEach(btn => {
+      btn.addEventListener("click", () => closeOverlay(overlay));
     });
 
-    // Fermer l'overlay quand on clique sur le bouton "Fermer"
-    closeCguOverlay.addEventListener('click', () => {
-      cguOverlay.style.display = 'none';
-      document.body.style.overflow = 'auto'; // Permet le défilement de la page principale
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) closeOverlay(overlay);
     });
+  });
 
-    // Fermer l'overlay si on clique en dehors de la fenêtre de contenu
-    window.addEventListener('click', (e) => {
-      if (e.target === cguOverlay) {
-        cguOverlay.style.display = 'none';
-        document.body.style.overflow = 'auto';
-      }
+  // -------- CGU
+  const openCguButton = document.getElementById("openCguButton");
+  if (openCguButton) {
+    openCguButton.addEventListener("click", () => {
+      openOverlay(document.getElementById("cguOverlay"));
     });
   }
 
-   // ---------------------------
-  // 6️⃣ Gestion de l'overlay des politiques
-  // ---------------------------
-  const openPolButton = document.getElementById('openPolButton');
-  const polOverlay = document.getElementById('polOverlay');
-  const closePolOverlay = document.getElementById('closePolOverlay');
-
-  // Afficher l'overlay quand l'utilisateur clique sur le bouton "Afficher CGU"
-  if (openPolButton && polOverlay && closePolOverlay) {
-    openPolButton.addEventListener('click', () => {
-      polOverlay.style.display = 'flex'; // Affiche l'overlay en mode flex (centré)
-      document.body.style.overflow = 'hidden'; // Empêche le défilement de la page principale
-    });
-
-    // Fermer l'overlay quand on clique sur le bouton "Fermer"
-    closePolOverlay.addEventListener('click', () => {
-      polOverlay.style.display = 'none';
-      document.body.style.overflow = 'auto'; // Permet le défilement de la page principale
-    });
-
-    // Fermer l'overlay si on clique en dehors de la fenêtre de contenu
-    window.addEventListener('click', (e) => {
-      if (e.target === polOverlay) {
-        polOverlay.style.display = 'none';
-        document.body.style.overflow = 'auto';
-      }
+  // -------- POLITIQUE
+  const openPolButton = document.getElementById("openPolButton");
+  if (openPolButton) {
+    openPolButton.addEventListener("click", () => {
+      openOverlay(document.getElementById("polOverlay"));
     });
   }
 
-  // ---------------------------
-  // 7️⃣ Bouton téléchargement : Mobile → Play Store / PC → QR Code
-  // ---------------------------
+  // -------- QR CODE DOWNLOAD
   const downloadBtn = document.getElementById('download-btn');
   const qrOverlay = document.getElementById('qrOverlay');
   const qrCodeImg = document.getElementById('qr-code');
-  const closeQrOverlay = document.getElementById('closeQrOverlay');
-
   const playStoreUrl = "https://play.google.com/store/apps/details?id=com.test.jeu";
 
   function isMobileOrTablet() {
@@ -253,26 +234,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (isMobileOrTablet()) {
         window.location.href = playStoreUrl;
       } else {
-        // Affiche l'overlay
-        qrOverlay.style.display = "flex";
-
-        // Charge le QR Code
-        qrCodeImg.src = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(playStoreUrl)}&size=200x200`;
+        openOverlay(qrOverlay);
+        qrCodeImg.src =
+          `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(playStoreUrl)}&size=200x200`;
       }
     });
-  }
-
-  // Fermeture du QR Code
-  if (closeQrOverlay && qrOverlay) {
-    closeQrOverlay.addEventListener('click', () => {
-      qrOverlay.style.display = "none";
-    });
-
-    // Fermer en cliquant autour
-    qrOverlay.addEventListener('click', (e) => {
-      if (e.target === qrOverlay) {
-        qrOverlay.style.display = "none";
-      }
-    });
-  }
+  }  
 });
