@@ -316,7 +316,7 @@ main {
     align-items: left; 
     position : relative;
     text-align: left;
-    padding-top: clamp(20px, 2vw, 30px);*/
+    padding-top: clamp(20px, 2vw, 30px);
     box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions de l'élément */
     overflow: hidden; /* Assure que rien ne dépasse du conteneur */
     border-radius: clamp(10px, 1vw, 12px);
@@ -864,4 +864,5 @@ nav a:active {
         }
     }
 }
+
 
