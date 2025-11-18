@@ -754,20 +754,40 @@ nav a:active {
     body {
         background-image: url('images/portrait-480.webp'), url('images/portrait-480.jpg');
     }
+    .pic img {
+    width: clamp(300px, 60vw, 700px);/*50%;*/
+    height: auto;
+    border-radius: clamp(10px, 2vw, 40px);
+    }
 }
 @media (min-width: 481px) and (max-width: 720px) {
     body {
         background-image: url('images/portrait-720.webp'), url('images/portrait-720.jpg');
+    }
+    .pic img {
+    width: clamp(300px, 60vw, 700px);/*50%;*/
+    height: auto;
+    border-radius: clamp(10px, 2vw, 40px);
     }
 }
 @media (min-width: 721px) and (max-width: 1080px) {
     body {
         background-image: url('images/portrait-1080.webp'), url('images/portrait-1080.jpg');
     }
+    .pic img {
+    width: clamp(300px, 60vw, 700px);/*50%;*/
+    height: auto;
+    border-radius: clamp(10px, 2vw, 40px);
+    }
 }
 @media (min-width: 1081px) {
     body {
         background-image: url('images/portrait-1536.webp'), url('images/portrait-1536.jpg');
+    }
+    .pic img {
+    width: clamp(300px, 60vw, 700px);/*50%;*/
+    height: auto;
+    border-radius: clamp(10px, 2vw, 40px);
     }
 }
 
@@ -820,6 +840,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
