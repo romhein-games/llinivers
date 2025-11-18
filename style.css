@@ -490,112 +490,39 @@ owlR-slider {
 /* ------------------------------------------------ */
 /* Style pour les Overlay de owlrunner.html         */
 /* ------------------------------------------------ */
+/* BASE OVERLAY (tous les overlays partagent ce style) */
 .overlay {
-  display: none; /* Cache l'overlay par défaut */
-  position: fixed; /* Positionnement fixe par rapport à la fenêtre */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
-  z-index: 1000; /* Assure que l'overlay soit au-dessus de tout le reste */
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  overflow: auto; /* Pour éviter les barres de défilement */
-}
-
-/* Contenu de l'overlay centré */
-.overlay-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: clamp(10px, 1vw, 12px);
-  width: 80%; /* Taille modale (peut être ajustée selon tes préférences) */
-  /*max-width: 1000px; /* Taille maximale pour ne pas prendre trop de place */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  color: black;
-}
-
-.overlay-content h2 {
-  margin-bottom: 20px;
-}
-
-#closeCguOverlay {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#closeCguOverlay:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-}
-
-#closeCguOverlay:active {
-  background-color: #0056b3;
-  transform: scale(0.97);
-}
-
-#closePolOverlay {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#closePolOverlay:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-}
-
-#closePolOverlay:active {
-  background-color: #0056b3;
-  transform: scale(0.97);
-}
-
-/* Overlay plein écran */
-#qrOverlay {
+  display: none;               /* caché par défaut */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.75);
-  display: none; /* caché par défaut */
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  overflow: auto;
+  z-index: 1000;
 }
 
-/* Box du QR */
-.qr-box {
-  display: flex;
-  flex-direction: column; /* les éléments s'empilent verticalement */
-  background: white;
-  color: black;
-  padding: 25px;
-  border-radius: clamp(10px, 1vw, 12px);
-  text-align: center;
-  align-items: center;
-  max-width: 500px;
+/* CONTENU DES OVERLAYS (CGU / POL) */
+.overlay-content {
+  background: #fff;
+  color: #000;
+  padding: 20px;
   width: 80%;
-  animation: pop 0.25s ease-out;
+  border-radius: clamp(10px, 1vw, 12px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.qr-box img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 15px; /* Espacement entre le QR code et le bouton */
+/* Titres */
+.overlay-content h2 {
+  margin-bottom: 20px;
 }
 
-#closeQrOverlay {
+/* BOUTONS FERMER (UNIFY) */
+[data-close] {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #007BFF;
@@ -603,19 +530,48 @@ owlR-slider {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease;
 }
 
-#closeQrOverlay:hover {
+[data-close]:hover {
   background-color: #0056b3;
   transform: scale(1.05);
 }
 
-#closeQrOverlay:active {
+[data-close]:active {
   background-color: #0056b3;
   transform: scale(0.97);
 }
 
-/* Animation d’apparition */
+/* OVERLAY DU QR CODE (spécifique) */
+#qrOverlay {
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+}
+
+/* Box QR */
+.qr-box {
+  background: white;
+  color: black;
+  padding: 25px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: clamp(10px, 1vw, 12px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: pop 0.25s ease-out;
+}
+
+/* QR image */
+.qr-box img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+/* ANIMATION */
 @keyframes pop {
   from { transform: scale(0.8); opacity: 0; }
   to   { transform: scale(1); opacity: 1; }
