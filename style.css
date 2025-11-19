@@ -521,6 +521,24 @@ owlR-slider {
   margin-bottom: 20px;
 }
 
+.overlay-content h3 {
+  text-align: left;
+  font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
+  margin-bottom: 10px;
+}
+
+.overlay-content p {
+  font-size: clamp(0.8rem, 2.1vw, 1.1rem);
+  margin-bottom: clamp(15px, 1.8vw, 25px);
+  white-space: normal;  /* permet le retour à la ligne automatique */
+  word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
+  overflow-wrap: break-word;
+  /*padding-left: 10px;
+  padding-right: 10px;*/
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
 /* BOUTONS FERMER (UNIFY) */
 [data-close] {
   margin-top: 20px;
@@ -863,4 +881,3 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
-
