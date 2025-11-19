@@ -510,7 +510,7 @@ owlR-slider {
   background: #fff;
   color: #000;
   padding: 20px;
-  width: 80%;
+  width: clamp(100px, 80vw, 700px);
   border-radius: clamp(10px, 1vw, 12px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -518,13 +518,14 @@ owlR-slider {
 
 /* Titres */
 .overlay-content h2 {
-  margin-bottom: 20px;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin-bottom: clamp(15px, 1.8vw, 25px);
 }
 
 .overlay-content h3 {
   text-align: left;
   font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
-  margin-bottom: 10px;
+  margin-bottom: clamp(7px, 0.9vw, 12px);;
 }
 
 .overlay-content p {
@@ -536,7 +537,6 @@ owlR-slider {
   /*padding-left: 10px;
   padding-right: 10px;*/
   text-align: justify;
-  margin-bottom: 20px;
 }
 
 /* BOUTONS FERMER (UNIFY) */
@@ -881,3 +881,4 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
