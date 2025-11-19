@@ -842,5 +842,25 @@ nav a:active {
 }
 
 
+/* ------ PROVISOIRE ------ */
+/* Style pour l'encart en construction */
+.construction-banner {
+    position: fixed; /* Position fixe pour être en haut de la page */
+    top: 0; /* Le placer tout en haut de la page */
+    left: 0; /* Aligner à gauche */
+    width: 100%; /* Largeur à 100% pour couvrir toute la largeur de l'écran */
+    background-color: white; /* Couleur de fond orange */
+    color: black; /* Texte blanc */
+    text-align: center; /* Centrer le texte */
+    padding: 10px 0; /* Espacement vertical */
+    font-size: 16px; /* Taille de police */
+    font-weight: bold; /* Texte en gras */
+    z-index: 1000; /* S'assurer que l'encart soit au-dessus de tout le contenu */
+}
 
+/* Pour rendre le texte plus lisible */
+.construction-banner p {
+    margin: 0;
+    padding: 0;
+}
 
