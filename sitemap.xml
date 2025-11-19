@@ -12,7 +12,8 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
+  
+  <!--
   <!-- Actualités -->
   <url>
     <loc>https://www.llinivers.com/actualites.html</loc>
@@ -71,6 +72,6 @@
     <loc>https://www.llinivers.com/en/owlrunner.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
+  </url>-->
 
 </urlset>
