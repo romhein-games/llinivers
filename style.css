@@ -515,6 +515,12 @@ owlR-slider {
   text-align: center;
   max-height: 80vh;
   overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Chrome / Edge / Safari */
+.overlay-content::-webkit-scrollbar {
+  display: none;
 }
 
 /* Titres */
@@ -538,16 +544,6 @@ owlR-slider {
   /*padding-left: 10px;
   padding-right: 10px;*/
   text-align: justify;
-}
-
-/* Chrome / Edge / Safari */
-.box::-webkit-scrollbar {
-  display: none;
-}
-
-/* Firefox */
-.box {
-  scrollbar-width: none;
 }
 
 /* BOUTONS FERMER (UNIFY) */
@@ -892,6 +888,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
