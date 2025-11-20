@@ -369,7 +369,7 @@ main {
     border-radius: clamp(10px, 2vw, 40px);
 }
 
-/* --- Paramètre des textes --- */
+/* --- Paramètre des boutons a --- */
 .content a {
     font-size: clamp(0.8rem, 2.1vw, 1.1rem);
     color: white;
@@ -389,6 +389,23 @@ main {
 }
 
 .content a:active {
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(0.97);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
+
+.content p a {
+}
+
+.content p a:hover {
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(1.05);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
+
+.content p a:active {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(0.97);
     color: #fff; /* pour s’assurer que le texte reste visible */
@@ -906,6 +923,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
