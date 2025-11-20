@@ -396,6 +396,7 @@ main {
 }
 
 .content p a {
+    margin: 0;
 }
 
 .content p a:hover {
@@ -570,14 +571,14 @@ owlR-slider {
 .overlay-content p a:hover {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(1.05);
-    color: #fff; /* pour s’assurer que le texte reste visible */
+    color: black; /* #fff pour s’assurer que le texte reste visible */
     outline: none; /* supprime le contour natif */
 }
 
 .overlay-content p a:active {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(0.97);
-    color: #fff; /* pour s’assurer que le texte reste visible */
+    color: black; /* pour s’assurer que le texte reste visible */
     outline: none; /* supprime le contour natif */
 }
 
@@ -923,5 +924,6 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
