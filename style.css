@@ -498,7 +498,7 @@ owlR-slider {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -538,6 +538,16 @@ owlR-slider {
   /*padding-left: 10px;
   padding-right: 10px;*/
   text-align: justify;
+}
+
+/* Chrome / Edge / Safari */
+.box::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+.box {
+  scrollbar-width: none;
 }
 
 /* BOUTONS FERMER (UNIFY) */
@@ -882,6 +892,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
