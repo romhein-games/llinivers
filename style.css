@@ -395,6 +395,23 @@ main {
     outline: none; /* supprime le contour natif */
 }
 
+.content p a {
+}
+
+.content p a:hover {
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(1.05);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
+
+.content p a:active {
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(0.97);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
+
 /* ----------------------------------- */
 /* Liste et carte des images et vidéos */
 /* ----------------------------------- */
@@ -547,25 +564,17 @@ owlR-slider {
 }
 
 /* --- Paramètre des textes --- */
-.overlay-content a {
-    font-size: clamp(0.8rem, 2.1vw, 1.1rem);
-    color: white;
-    align-self: flex-start;
-    white-space: normal;  /* permet le retour à la ligne automatique */
-    word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
-    overflow-wrap: break-word;
-    margin-top: clamp(5px, 1vw, 10px);
-    padding-left: 10px;
+.overlay-content p a {
 }
 
-.overlay-content a:hover {
+.overlay-content p a:hover {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(1.05);
     color: #fff; /* pour s’assurer que le texte reste visible */
     outline: none; /* supprime le contour natif */
 }
 
-.overlay-content a:active {
+.overlay-content p a:active {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(0.97);
     color: #fff; /* pour s’assurer que le texte reste visible */
@@ -914,4 +923,5 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
