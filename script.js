@@ -205,7 +205,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const openCguButton = document.getElementById("openCguButton");
   if (openCguButton) {
     openCguButton.addEventListener("click", () => {
-      console.log("Clic sur le bouton CGU");
       openOverlay(document.getElementById("cguOverlay"));
     });
   }
@@ -214,10 +213,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const openPolButton = document.getElementById("openPolButton");
   if (openPolButton) {
     openPolButton.addEventListener("click", () => {
-      console.log("Clic sur le bouton POL");
       openOverlay(document.getElementById("polOverlay"));
     });
   }
+
+  // -------- POLITIQUE DEPUIS CGU
+  document.getElementById("cguOverlay").addEventListener("click", (e) => {
+    if (e.target && e.target.id === 'openPolButton') {
+      closeOverlay(document.getElementById("cguOverlay"))
+      openOverlay(document.getElementById("polOverlay"));
+    }
+  });
 
   // -------- QR CODE DOWNLOAD
   const downloadBtn = document.getElementById('download-btn');
