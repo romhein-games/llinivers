@@ -205,6 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const openCguButton = document.getElementById("openCguButton");
   if (openCguButton) {
     openCguButton.addEventListener("click", () => {
+      console.log("Clic sur le bouton CGU");
       openOverlay(document.getElementById("cguOverlay"));
     });
   }
@@ -213,6 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const openPolButton = document.getElementById("openPolButton");
   if (openPolButton) {
     openPolButton.addEventListener("click", () => {
+      console.log("Clic sur le bouton POL");
       openOverlay(document.getElementById("polOverlay"));
     });
   }
