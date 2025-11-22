@@ -182,6 +182,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function openOverlay(overlay) {
     overlay.style.display = "flex";
     document.body.style.overflow = "hidden";
+
+    setTieout(() => {
+      overlay.scrollTop = 0;
+    }, 10); // Petit délai
   }
 
   // Fonction générique pour fermer un overlay
