@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.style.display = "flex";
     document.body.style.overflow = "hidden";
 
-    setTieout(() => {
+    setTimeout(() => {
       overlay.scrollTop = 0;
     }, 10); // Petit délai
   }
