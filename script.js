@@ -1,8 +1,18 @@
 // 🔄 Au retour sur la page (pageshow), on recharge la langue stockée
 window.addEventListener("pageshow", function () {
   const lang = localStorage.getItem("preferredLanguage");
-  if (lang) {
-    applyLanguage(lang); // ⚠️ Fonction définie plus bas
+  if (!lang) return;
+
+  const isEnglishPage = window.location.pathname.startsWith("/en");
+
+  // Si l'utilisateur veut EN mais se retrouve sur FR
+  if (lang === "en" && !isEnglishPage) {
+    window.location.href = "/en" + window.location.pathname;
+  }
+
+  // Si l'utilisateur veut FR mais se retrouve sur EN
+  if (lang === "fr" && isEnglishPage) {
+    window.location.href = window.location.pathname.replace("/en", "");
   }
 });
 
