@@ -197,8 +197,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function openOverlay(overlay) {
     overlay.style.display = "flex";
     document.body.style.overflow = "hidden";
-    overlay.scrollTop = 0;
 
+    // Trouve le bloc qui scroll réellement
+    const scrollable = overlay.querySelector('.overlay-content');
+    if (scrollable) scrollable.scrollTop = 0;
   }
 
   // Fonction générique pour fermer un overlay
