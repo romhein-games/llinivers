@@ -1,3 +1,12 @@
+// 🔄 Au retour sur la page (pageshow), on recharge la langue stockée
+window.addEventListener("pageshow", function () {
+  const lang = localStorage.getItem("preferredLanguage");
+  if (lang) {
+    applyLanguage(lang); // ⚠️ Fonction définie plus bas
+  }
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
   // ---------------------------
   // 1️⃣ Gestion des éléments cliquables
@@ -131,6 +140,12 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = currentPath;
       }
     }
+  }
+
+  // 👉 Fonction appliquant visuellement la langue (si tu veux changer du contenu)
+  function applyLanguage(lang) {
+    // Exemple minimal — à adapter
+    document.documentElement.setAttribute("lang", lang);
   }
 
   // ---------------------------
