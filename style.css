@@ -360,7 +360,7 @@ main {
 .pic {
     display: flex;
     justify-content: center;
-    border-radius: clamp(15px, 2.5vw, 50px);
+    /*border-radius: clamp(15px, 2.5vw, 50px);*/
 }
 
 .pic img {
@@ -923,6 +923,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
