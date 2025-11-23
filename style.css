@@ -360,13 +360,13 @@ main {
 .pic {
     display: flex;
     justify-content: center;
-    /*border-radius: clamp(15px, 2.5vw, 50px);*/
+    border-radius: clamp(10px, 2vw, 40px);
 }
 
 .pic img {
     width: clamp(150px, 50vw, 700px);/*50%;*/
     height: auto;
-    border-radius: clamp(15px, 2.5vw, 50px);
+    border-radius: clamp(10px, 2vw, 40px);
 }
 
 /* --- Paramètre des boutons a --- */
@@ -923,6 +923,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
