@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ============================================================
-  // 5️⃣ 6️⃣ 7️⃣ — SYSTÈME D’OVERLAY FACTORISÉ (CGU / POL / QR)
+  // 5️⃣ 6️⃣ 7️⃣ — SYSTÈME D’OVERLAY FACTORISÉ (MEN / CGU / POL / QR)
   // ============================================================
 
   // Fonction générique pour ouvrir un overlay
@@ -230,6 +230,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+   // -------- MENTIONS
+  const openMenButton = document.getElementById("openMenButton");
+  if (openMenButton) {
+    openMenButton.addEventListener("click", () => {
+      openOverlay(document.getElementById("menOverlay"));
+    });
+  }
+  
   // -------- CGU
   const openCguButton = document.getElementById("openCguButton");
   if (openCguButton) {
