@@ -285,4 +285,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }  
+  
+  // ============================================================
+  // 8️⃣ SYSTÈME "LIRE LA SUITE" POUR LES NEWS
+  // ============================================================
+  document.querySelectorAll(".news").forEach(news => {
+    const fullText = news.querySelector(".full-text");
+    const excerpt = news.querySelector(".excerpt");
+    const btn = news.querySelector(".read-more");
+
+    if (!fullText || !excerpt || !btn) return;
+
+    btn.addEventListener("click", () => {
+      const expanded = news.classList.toggle("expanded");
+
+      if (expanded) {
+        fullText.style.display = "block";
+        btn.textContent = btn.dataset.less ?? "Lire moins";
+      } else {
+        fullText.style.display = "none";
+        btn.textContent = btn.dataset.more ?? "Lire la suite";
+      }
+    });
+  });
 });
