@@ -309,6 +309,11 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         fullText.style.display = "none";
         link.textContent = link.dataset.more ?? "Lire la suite";
+
+        // Vérifie si aucune autre news n’est ouverte
+       if (!container.querySelector(".news-grid.expanded")) {
+        container.classList.remove("has-expanded");
+       }
       }
     });
   });
