@@ -299,6 +299,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!fullText || !excerpt || !link) return;
 
+    // Effet de clic sur le bouton → applique un effet sur le GRID
+    link.addEventListener("mousedown", () => {
+        news.classList.add("grid-click");
+    });
+
+    link.addEventListener("mouseup", () => {
+        news.classList.remove("grid-click");
+    });
+
+    link.addEventListener("mouseleave", () => {
+        news.classList.remove("grid-click");
+    });
+    
     link.addEventListener("click", (e) => {
       e.preventDefault(); // évite de remonter en haut de la page
       const expanded = news.classList.toggle("expanded");
