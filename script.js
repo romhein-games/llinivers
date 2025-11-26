@@ -289,6 +289,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================================
   // 8️⃣ SYSTÈME "LIRE LA SUITE" POUR LES NEWS
   // ============================================================
+  console.log("Articles trouvés :", document.querySelectorAll(".news-grid").length);
+  
   document.querySelectorAll(".news-grid").forEach(news => {
     const fullText = news.querySelector(".full-text");
     const excerpt = news.querySelector(".excerpt");
