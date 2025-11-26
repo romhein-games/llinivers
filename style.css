@@ -219,7 +219,6 @@ main {
 .game-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    border: 1px solid #eee;
 }
 
 .game-card:active {
@@ -295,7 +294,6 @@ main {
 .community:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    border: 1px solid #eee;
 }
 
 .community:active {
@@ -677,11 +675,11 @@ owlR-slider {
   border: none;
   border-radius: clamp(10px, 1vw, 12px);
   margin: clamp(10px, 1vw, 20px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);*/
 }
 
 .news-grid:hover {
-    border: 1px solid #eee;
+    /*border: 1px solid #eee;*/
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
@@ -700,7 +698,7 @@ owlR-slider {
 
 /* ❌ Désactiver hover sur les éléments non-expanded quand un expanded existe */
 .has-expanded .news-grid:not(.expanded):hover {
-  border-color: #ccc; /* couleur par défaut */
+  border: none; /* couleur par défaut */
 }
 
 .news-grid.expanded {
@@ -732,7 +730,7 @@ owlR-slider {
 
 /* Effet appliqué au GRID lors du clic sur le bouton */
 .news-grid.grid-click {
-  border: none !important;
+  /*border: none !important;*/
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
   transform: scale(0.97);
@@ -1013,3 +1011,4 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
