@@ -678,10 +678,6 @@ owlR-slider {
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
 }
 
-.news-grid .content {
-  /*overflow: visible !important;*/
-}
-
 .news-grid:hover {
     border: 1px solid #eee;
     transform: translateY(-3px);
@@ -701,8 +697,9 @@ owlR-slider {
   display: none;
 }
 
-.news-grid.expanded .excerpt {
-  /*display: none;*/
+/* ❌ Désactiver hover sur les éléments non-expanded quand un expanded existe */
+.has-expanded .news-grid:not(.expanded):hover {
+  border-color: #ccc; /* couleur par défaut */
 }
 
 .news-grid.expanded {
@@ -1008,6 +1005,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
