@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     link.addEventListener("click", (e) => {
       e.preventDefault(); // évite de remonter en haut de la page
-      
+      console.log("clic");
       const expanded = news.classList.toggle("expanded");
 
       if (expanded) {
