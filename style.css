@@ -698,6 +698,8 @@ owlR-slider {
   border-radius: clamp(10px, 1vw, 12px);
 }
 
+.hidden { display: none; }
+
 /* responsive : image au-dessus sur mobile */
 @media (max-width: 640px) {
   .news-grid {
@@ -973,6 +975,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
