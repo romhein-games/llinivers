@@ -699,11 +699,11 @@ owlR-slider {
   border-radius: clamp(10px, 1vw, 12px);
 }
 
-.news .full-text {
+.news-grid .full-text {
   display: none;
 }
 
-.news.expanded .excerpt {
+.news-grid .excerpt {
   display: none;
 }
 
@@ -982,6 +982,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
