@@ -291,7 +291,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================================
   // 8️⃣ SYSTÈME "LIRE LA SUITE" POUR LES NEWS
   // ============================================================
-  console.log("Articles trouvés :", document.querySelectorAll(".news-grid").length);
   
   document.querySelectorAll(".news-grid").forEach(news => {
     const fullText = news.querySelector(".full-text");
@@ -302,7 +301,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     link.addEventListener("click", (e) => {
       e.preventDefault(); // évite de remonter en haut de la page
-      console.log("clic");
       const expanded = news.classList.toggle("expanded");
 
       if (expanded) {
