@@ -699,15 +699,15 @@ owlR-slider {
   border-radius: clamp(10px, 1vw, 12px);
 }
 
-.news .full-text {
+.news-grid .full-text {
   display: none;
 }
 
-.news.expanded .excerpt {
+.news-grid.expanded .excerpt {
   display: none;
 }
 
-.news .read-more {
+.news-grid .read-more {
   display: inline-block;
   margin-top: 10px;
   cursor: pointer;
@@ -989,6 +989,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
