@@ -684,7 +684,6 @@ owlR-slider {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-
 /* image */
 .news-grid .thumb {
   width: 100%;
@@ -730,13 +729,21 @@ owlR-slider {
     outline: none; /* supprime le contour natif */
 }
 
+/* Effet appliqué au GRID lors du clic sur le bouton */
+.news-grid.grid-click {
+  border: none !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  transform: scale(0.97);
+}
+
 /* responsive : image au-dessus sur mobile */
 @media (max-width: 640px) {
   .news-grid {
-    grid-template-columns: 1fr;
+    /*grid-template-columns: 1fr;*/
   }
   .news-grid .thumb {
-    height: auto;
+    /*height: auto;*/
   }
 }
 
@@ -1005,6 +1012,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
