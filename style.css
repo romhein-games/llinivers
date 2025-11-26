@@ -219,6 +219,7 @@ main {
 .game-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #eee;
 }
 
 .game-card:active {
@@ -294,6 +295,7 @@ main {
 .community:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #eee;
 }
 
 .community:active {
@@ -1011,39 +1013,3 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
