@@ -292,19 +292,21 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll(".news").forEach(news => {
     const fullText = news.querySelector(".full-text");
     const excerpt = news.querySelector(".excerpt");
-    const btn = news.querySelector(".read-more");
+    const link = news.querySelector(".read-more");
 
-    if (!fullText || !excerpt || !btn) return;
+    if (!fullText || !excerpt || !link) return;
 
-    btn.addEventListener("click", () => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault(); // évite de remonter en haut de la page
+      
       const expanded = news.classList.toggle("expanded");
 
       if (expanded) {
         fullText.style.display = "block";
-        btn.textContent = btn.dataset.less ?? "Lire moins";
+        link.textContent = link.dataset.less ?? "Lire moins";
       } else {
         fullText.style.display = "none";
-        btn.textContent = btn.dataset.more ?? "Lire la suite";
+        link.textContent = link.dataset.more ?? "Lire la suite";
       }
     });
   });
