@@ -675,13 +675,13 @@ owlR-slider {
   border: none;
   border-radius: clamp(10px, 1vw, 12px);
   margin: clamp(10px, 1vw, 20px);
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 .news-grid:hover {
     border: 1px solid #eee;
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* image */
@@ -704,8 +704,7 @@ owlR-slider {
 .news-grid.expanded {
     border: 1px solid #eee;
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    /*transform: scale(0.97); /* léger effet “pressé” */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 .news-grid .read-more {
@@ -733,7 +732,7 @@ owlR-slider {
 .news-grid.grid-click {
   border: none !important;
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 20px rgba(0,0,0,0.5);
   transform: scale(0.97);
 }
 
@@ -1012,6 +1011,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
