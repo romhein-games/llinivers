@@ -674,7 +674,7 @@ owlR-slider {
   padding: clamp(10px, 1vw, 20px);
   border: none;
   border-radius: clamp(10px, 1vw, 12px);
-  /*margin: 18px 0;*/
+  margin: clamp(10px, 1vw, 20px)
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -689,7 +689,7 @@ owlR-slider {
 }
 
 .news-grid:active {
-    border: none;
+    /*border: none;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     transform: scale(0.97); /* léger effet “pressé” */
@@ -716,6 +716,20 @@ owlR-slider {
   margin-top: 10px;
   cursor: pointer;
   text-decoration: underline;
+}
+
+.news-grid a:hover {
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(1.05);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
+
+.news-grid a:active {
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(0.97);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
 }
 
 /* responsive : image au-dessus sur mobile */
@@ -993,6 +1007,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
