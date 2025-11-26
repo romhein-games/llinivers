@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================================
   // 8️⃣ SYSTÈME "LIRE LA SUITE" POUR LES NEWS
   // ============================================================
-  document.querySelectorAll(".news").forEach(news => {
+  document.querySelectorAll(".news-grid").forEach(news => {
     const fullText = news.querySelector(".full-text");
     const excerpt = news.querySelector(".excerpt");
     const link = news.querySelector(".read-more");
