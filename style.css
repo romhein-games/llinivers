@@ -678,6 +678,10 @@ owlR-slider {
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
 }
 
+.news-grid .content {
+  overflow: visible !important;
+}
+
 .news-grid:hover {
     border: 1px solid #eee;
     transform: translateY(-3px);
@@ -989,6 +993,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
