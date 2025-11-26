@@ -255,12 +255,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // -------- POLITIQUE DEPUIS CGU
-  document.getElementById("cguOverlay").addEventListener("click", (e) => {
-    if (e.target && e.target.id === 'openPolButton') {
-      closeOverlay(document.getElementById("cguOverlay"))
-      openOverlay(document.getElementById("polOverlay"));
-    }
-  });
+  if (openPolButton) {
+    document.getElementById("cguOverlay").addEventListener("click", (e) => {
+      if (e.target && e.target.id === 'openPolButton') {
+        closeOverlay(document.getElementById("cguOverlay"))
+        openOverlay(document.getElementById("polOverlay"));
+      }
+    });
+  }
 
   // -------- QR CODE DOWNLOAD
   const downloadBtn = document.getElementById('download-btn');
