@@ -697,7 +697,7 @@ owlR-slider {
 .news-grid .cont h3 {
     text-align: left;
     font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
-    margin: 0;
+    margin-top: clamp(10px, 1vw, 20px);;
 }
 
 .news-grid .cont p {
@@ -707,6 +707,31 @@ owlR-slider {
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
     overflow-wrap: break-word;
     text-align: justify;
+}
+
+.cont a {
+    font-size: clamp(0.8rem, 2.1vw, 1.1rem);
+    color: white;
+    align-self: flex-start;
+    white-space: normal;  /* permet le retour à la ligne automatique */
+    word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
+    overflow-wrap: break-word;
+    margin-top: clamp(5px, 1vw, 10px);
+    padding-left: 10px;
+}
+
+.cont a:hover {
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(1.05);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
+}
+
+.cont a:active {
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+    transform: scale(0.97);
+    color: #fff; /* pour s’assurer que le texte reste visible */
+    outline: none; /* supprime le contour natif */
 }
 
 .news-grid .full-text {
@@ -1017,6 +1042,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
