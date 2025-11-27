@@ -675,6 +675,7 @@ owlR-slider {
 
 .news-grid {
   display: flex;
+  flex-direction: column;
   align-items: start;
   padding: clamp(10px, 1vw, 20px);
   border: none;
@@ -695,7 +696,7 @@ owlR-slider {
   border-radius: clamp(10px, 1vw, 12px);
 }
 
-.news-grid  h3 {
+.news-grid .content h3 {
     text-align: left;
     font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
     margin-bottom: 0;
@@ -703,7 +704,7 @@ owlR-slider {
     padding-right: 10px;
 }
 
-.news-grid p {
+.news-grid .content p {
     font-size: clamp(0.8rem, 2.1vw, 1.1rem);
     margin-bottom: clamp(15px, 1.8vw, 25px);
     white-space: normal;  /* permet le retour à la ligne automatique */
@@ -1022,6 +1023,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
