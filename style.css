@@ -678,7 +678,7 @@ owlR-slider {
   padding: clamp(10px, 1vw, 20px);
   border: none;
   border-radius: clamp(10px, 1vw, 12px);
-  margin: clamp(10px, 1vw, 20px);
+  margin-bottom: clamp(10px, 1vw, 20px);
 }
 
 .news-grid:hover {
@@ -694,13 +694,13 @@ owlR-slider {
   border-radius: clamp(10px, 1vw, 12px);
 }
 
-.news-grid .content h3 {
+.news-grid .cont h3 {
     text-align: left;
     font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
     margin: 0;
 }
 
-.news-grid .content p {
+.news-grid .cont p {
     font-size: clamp(0.8rem, 2.1vw, 1.1rem);
     margin-bottom: clamp(5px, 0.7vw, 13px);
     white-space: normal;  /* permet le retour à la ligne automatique */
@@ -1017,6 +1017,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
