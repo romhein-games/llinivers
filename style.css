@@ -895,12 +895,6 @@ nav a:active {
     transform: rotate(270deg); /* flèche tourne vers la gauche */
 }
 
-
-/* Le li qui contient le bouton et le menu */
-nav ul li {
-    position: relative; /* permet au menu absolu de se positionner par rapport au parent */
-}
-
 /* --- Menu déroulant --- */
 .lang-menu {
     border-radius: 6px;
@@ -910,12 +904,6 @@ nav ul li {
     margin-left: -10px;
     display: none;
     z-index: 10;
-    position: absolute; /* se positionne par rapport au li parent */
-    min-width: 120px;   /* largeur minimum pour que le menu ne soit pas trop petit */
-    top: 50%;           /* centre verticalement par rapport au bouton */
-    left: 100%;         /* positionné à droite du bouton */
-    /*transform: translateY(-50%);  ajuste pour centrer parfaitement le menu */
-    max-height: 50px;
 }
 
 .lang-menu.show {
@@ -1067,6 +1055,7 @@ nav ul li {
     margin: 0;
     padding: 0;
 }
+
 
 
 
