@@ -719,7 +719,7 @@ owlR-slider {
     text-align: justify;
 }
 
-.cont2 a {
+.news-grid .cont2 a {
     font-size: clamp(0.8rem, 2.1vw, 1.1rem);
     color: white;
     align-self: flex-start;
@@ -730,14 +730,14 @@ owlR-slider {
     padding-left: 10px;
 }
 
-.cont2 a:hover {
+.news-grid .cont2 a:hover {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(1.05);
     color: #fff; /* pour s’assurer que le texte reste visible */
     outline: none; /* supprime le contour natif */
 }
 
-.cont2 a:active {
+.news-grid .cont2 a:active {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(0.97);
     color: #fff; /* pour s’assurer que le texte reste visible */
@@ -766,19 +766,19 @@ owlR-slider {
   text-decoration: underline;
 }
 
-.news-grid a:hover {
+/*.news-grid a:hover {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(1.05);
-    color: #fff; /* pour s’assurer que le texte reste visible */
-    outline: none; /* supprime le contour natif */
+    color: #fff; /* pour s’assurer que le texte reste visible 
+    outline: none; /* supprime le contour natif 
 }
 
 .news-grid a:active {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(0.97);
-    color: #fff; /* pour s’assurer que le texte reste visible */
-    outline: none; /* supprime le contour natif */
-}
+    color: #fff; /* pour s’assurer que le texte reste visible 
+    outline: none; /* supprime le contour natif 
+}*/
 
 /* Effet appliqué au GRID lors du clic sur le bouton */
 .news-grid.grid-click {
@@ -1052,6 +1052,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
