@@ -739,10 +739,10 @@ owlR-slider {
 /* responsive : image au-dessus sur mobile */
 @media (max-width: 640px) {
   .news-grid {
-    /*grid-template-columns: 1fr;*/
+    grid-template-columns: 1fr;
   }
   .news-grid .thumb {
-    /*height: auto;*/
+    height: auto;
   }
 }
 
@@ -1011,6 +1011,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
