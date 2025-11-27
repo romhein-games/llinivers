@@ -661,35 +661,35 @@ owlR-slider {
 /* Page actualites.html                                                                                                                                                                          */
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .news-container {
-  width: 100%;
-  margin: auto;  /*centre le bloc dans la page */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;*/
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center; /* centre horizontalement */
+   align-items: left; 
+   position : relative;
+   padding-top: clamp(20px, 2vw, 30px);
+   box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions de l'élément */
+   overflow: hidden; /* Assure que rien ne dépasse du conteneur */
+   padding-bottom: clamp(10px, 1vw, 20px);
 }
 
 .news-grid {
-  display: grid;
-  /*grid-template-columns: clamp(50px, 20vw, 500px) 1fr;*/
-  /*gap: clamp(8px, 1.5vw, 24px); /*18px;*/
+  display: flex;
   align-items: start;
-  /*padding: 18px;*/
   padding: clamp(10px, 1vw, 20px);
   border: none;
   border-radius: clamp(10px, 1vw, 12px);
   margin: clamp(10px, 1vw, 20px);
-  /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);*/
 }
 
 .news-grid:hover {
-    /*border: 1px solid #eee;*/
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* image */
 .news-grid .thumb {
-  width: clamp(50px, 20vw, 500px); /*100%;*/
+  width: clamp(50px, 20vw, 500px);
   height: auto;
   object-fit: cover;
   border-radius: clamp(10px, 1vw, 12px);
@@ -733,20 +733,9 @@ owlR-slider {
 
 /* Effet appliqué au GRID lors du clic sur le bouton */
 .news-grid.grid-click {
-  /*border: none !important;*/
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
   transform: scale(0.97);
-}
-
-/* responsive : image au-dessus sur mobile */
-@media (max-width: 640px) {
-  .news-grid {
-    /*grid-template-columns: 1fr;*/
-  }
-  .news-grid .thumb {
-    /*height: auto;*/
-  }
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1014,6 +1003,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
