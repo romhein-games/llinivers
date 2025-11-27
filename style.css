@@ -674,7 +674,7 @@ owlR-slider {
 .news-grid {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: left;
   padding: clamp(10px, 1vw, 20px);
   border: none;
   border-radius: clamp(10px, 1vw, 12px);
@@ -702,7 +702,7 @@ owlR-slider {
 
 .news-grid .content p {
     font-size: clamp(0.8rem, 2.1vw, 1.1rem);
-    margin-bottom: clamp(8px, 0.9vw, 13px);
+    margin-bottom: clamp(8px, 0.8vw, 13px);
     white-space: normal;  /* permet le retour à la ligne automatique */
     word-wrap: break-word;/* coupe les mots trop longs si nécessaire */
     overflow-wrap: break-word;
@@ -1017,6 +1017,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
