@@ -670,7 +670,6 @@ owlR-slider {
   grid-template-columns: clamp(50px, 20vw, 500px) 1fr;
   gap: clamp(8px, 1.5vw, 24px); /*18px;*/
   align-items: start;
-  grid-auto-flow: row;
   /*padding: 18px;*/
   padding: clamp(10px, 1vw, 20px);
   border: none;
@@ -691,9 +690,6 @@ owlR-slider {
   height: auto;
   object-fit: cover;
   border-radius: clamp(10px, 1vw, 12px);
-}
-.news-grid .content {
-    padding-top: 0;
 }
 
 .news-grid .full-text {
@@ -1015,6 +1011,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
