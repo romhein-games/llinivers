@@ -670,7 +670,7 @@ owlR-slider {
   grid-template-columns: clamp(50px, 20vw, 500px) 1fr;
   gap: clamp(8px, 1.5vw, 24px); /*18px;*/
   align-items: start;
-  grid-auto-flow: row
+  grid-auto-flow: row;
   /*padding: 18px;*/
   padding: clamp(10px, 1vw, 20px);
   border: none;
@@ -1012,6 +1012,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
