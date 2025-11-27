@@ -669,6 +669,9 @@ owlR-slider {
   display: grid;
   grid-template-columns: clamp(50px, 20vw, 500px) 1fr;
   gap: clamp(8px, 1.5vw, 24px); /*18px;*/
+  grid-template-areas:
+    "photo text"
+    "photo full";
   align-items: start;
   /*padding: 18px;*/
   padding: clamp(10px, 1vw, 20px);
@@ -686,10 +689,19 @@ owlR-slider {
 
 /* image */
 .news-grid .thumb {
+  grid-area: photo;
   width: clamp(50px, 20vw, 500px); /*100%;*/
   height: auto;
   object-fit: cover;
   border-radius: clamp(10px, 1vw, 12px);
+}
+
+.text {
+  grid-area: text;
+}
+
+.text-full {
+  grid-area: full;
 }
 
 .news-grid .full-text {
@@ -1011,5 +1023,6 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
