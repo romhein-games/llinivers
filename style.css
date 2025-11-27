@@ -692,6 +692,9 @@ owlR-slider {
   object-fit: cover;
   border-radius: clamp(10px, 1vw, 12px);
 }
+.news-grid .content {
+    padding-top: 0;
+}
 
 .news-grid .full-text {
   display: none;
@@ -1012,6 +1015,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
