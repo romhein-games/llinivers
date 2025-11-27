@@ -912,6 +912,9 @@ nav ul li {
     z-index: 10;
     position: absolute; /* se positionne par rapport au li parent */
     min-width: 120px;   /* largeur minimum pour que le menu ne soit pas trop petit */
+    top: 50%;           /* centre verticalement par rapport au bouton */
+    left: 100%;         /* positionné à droite du bouton */
+    transform: translateY(-50%); /* ajuste pour centrer parfaitement le menu */
 }
 
 .lang-menu.show {
@@ -1063,6 +1066,7 @@ nav ul li {
     margin: 0;
     padding: 0;
 }
+
 
 
 
