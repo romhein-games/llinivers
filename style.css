@@ -679,6 +679,10 @@ owlR-slider {
   /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);*/
 }
 
+.news-grid .content {
+    align-items: start;
+}
+
 .news-grid:hover {
     /*border: 1px solid #eee;*/
     transform: translateY(-3px);
@@ -1012,6 +1016,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
