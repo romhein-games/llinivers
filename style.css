@@ -907,14 +907,14 @@ nav ul li {
     box-shadow: 0 2px 6px rgba(0,0,0,0.5);
     list-style: none;
     padding: 5px 0;
-    /*margin-left: -20px;*/
+    margin-left: -10px;
     display: none;
     z-index: 10;
     position: absolute; /* se positionne par rapport au li parent */
     min-width: 120px;   /* largeur minimum pour que le menu ne soit pas trop petit */
     top: 50%;           /* centre verticalement par rapport au bouton */
     left: 100%;         /* positionné à droite du bouton */
-    transform: translateY(-50%); /* ajuste pour centrer parfaitement le menu */
+    /*transform: translateY(-50%);  ajuste pour centrer parfaitement le menu */
     max-height: 50px;
 }
 
@@ -1067,6 +1067,7 @@ nav ul li {
     margin: 0;
     padding: 0;
 }
+
 
 
 
