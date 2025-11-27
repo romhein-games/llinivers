@@ -662,7 +662,10 @@ owlR-slider {
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .news-container {
   width: 100%;
-  margin: auto;  centre le bloc dans la page */
+  margin: auto;  /*centre le bloc dans la page */
+  /*display: flex;
+    flex-direction: column;
+    justify-content: center;*/
 }
 
 .news-grid {
@@ -1011,6 +1014,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
