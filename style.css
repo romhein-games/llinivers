@@ -686,21 +686,31 @@ owlR-slider {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+.news-grid .cont1{
+  display: flex;
+  flex-direction: row;
+}
+
 /* image */
-.news-grid .thumb {
+.news-grid .cont1 .thumb {
   width: clamp(50px, 20vw, 500px);
   height: auto;
   object-fit: cover;
   border-radius: clamp(10px, 1vw, 12px);
 }
 
-.news-grid .cont h3 {
+.news-grid .cont1 .p {
+    font-size: clamp(0.8rem, 2.1vw, 1.1rem);
+    text-align: right;
+}
+
+.news-grid .cont2 h3 {
     text-align: left;
     font-size: clamp(1rem, 2.5vw, 1.5rem); /* taille responsive 1.2em; */
     margin-top: clamp(10px, 1vw, 20px);;
 }
 
-.news-grid .cont p {
+.news-grid .cont2 p {
     font-size: clamp(0.8rem, 2.1vw, 1.1rem);
     margin-bottom: clamp(5px, 0.7vw, 13px);
     white-space: normal;  /* permet le retour à la ligne automatique */
@@ -709,7 +719,7 @@ owlR-slider {
     text-align: justify;
 }
 
-.cont a {
+.cont2 a {
     font-size: clamp(0.8rem, 2.1vw, 1.1rem);
     color: white;
     align-self: flex-start;
@@ -720,14 +730,14 @@ owlR-slider {
     padding-left: 10px;
 }
 
-.cont a:hover {
+.cont2 a:hover {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(1.05);
     color: #fff; /* pour s’assurer que le texte reste visible */
     outline: none; /* supprime le contour natif */
 }
 
-.cont a:active {
+.cont2 a:active {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(0.97);
     color: #fff; /* pour s’assurer que le texte reste visible */
@@ -1042,6 +1052,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
