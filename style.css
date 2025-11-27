@@ -699,9 +699,12 @@ owlR-slider {
   border-radius: clamp(10px, 1vw, 12px);
 }
 
-.news-grid .cont1 p {
+.news-grid .cont1 .text {
+    flex: 1;            /* prend tout l’espace restant */
+    text-align: right;  /* tout le texte passe à droite */
+}
+.news-grid .cont1 .text p {
     font-size: clamp(0.8rem, 2.1vw, 1.1rem);
-    text-align: right;
 }
 
 .news-grid .cont2 h3 {
@@ -1052,6 +1055,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
