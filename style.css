@@ -642,7 +642,7 @@ owlR-slider {
     color: white; 
     font-size: clamp(0.8rem, 2.3vw, 2rem);
     padding-top: clamp(20px, 2vw, 30px);
-    align-text: left;
+    text-align: left;
 }
 
 .mail a {
@@ -1063,6 +1063,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
