@@ -642,6 +642,12 @@ owlR-slider {
     color: white; 
     font-size: clamp(0.8rem, 2.3vw, 2rem);
 }
+
+.mail a {
+    color: white; 
+    font-size: clamp(0.8rem, 2.3vw, 2rem);
+}
+
 .mail a:hover {
     text-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
     transform: scale(1.05);
@@ -1055,6 +1061,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
