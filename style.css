@@ -643,6 +643,7 @@ owlR-slider {
     font-size: clamp(0.8rem, 2.3vw, 2rem);
     padding-top: clamp(20px, 2vw, 30px);
     text-align: left;
+    align-items: left;
 }
 
 .mail a {
@@ -1063,6 +1064,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
