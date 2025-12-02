@@ -186,15 +186,22 @@ document.addEventListener('DOMContentLoaded', () => {
       showImage(index);
     });
     }
+    
     if (video) { // Si c'est une carte avec une vidéo
+      let index = 0;
+
+      const showVideo = i => {
+      video.forEach(video => video.classList.remove('active'));
+      video[i].classList.add('active');
+    };
       nextBtn.addEventListener('click', () => {
-        // Optionnel : passer à la carte suivante
-        console.log("Passer à la prochaine carte...");
+        index = (index + 1) % video.length;
+        showVideo(index);
       });
 
       prevBtn.addEventListener('click', () => {
-        // Optionnel : passer à la carte précédente
-        console.log("Passer à la carte précédente...");
+         index = (index - 1 + video.length) % video.length;
+         showVideo(index);
       });
     } 
   });
