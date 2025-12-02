@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const images = card.querySelectorAll('.owlR-slider img');
     const nextBtn = card.querySelector('.owlR-next');
     const prevBtn = card.querySelector('.owlR-prev');
-    const video = card.querySelectorAll('.owlR-slider video'); // Vidéo dans la carte
+    const video = card.querySelectorAll('.owlR-video video'); // Vidéo dans la carte
     
     //if (!images.length || !nextBtn || !prevBtn) return; // sécurité
     if (images.length) {
