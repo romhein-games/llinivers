@@ -435,7 +435,7 @@ main {
     border-radius: clamp(10px, 1vw, 12px)
 }
 
-owlR-slider {
+.owlR-slider {
     position: relative;
     width: 100%;
 }
@@ -1071,6 +1071,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
