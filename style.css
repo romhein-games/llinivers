@@ -490,13 +490,13 @@ owlR-slider {
 /* --- Paramètre de la vidéo dans la carte --- */
 .owlR-video {
     width: 100%;
-    top: 0;
-    left: 0;
     position: relative;
 }
 
-.owlR-slider video {
+.owlR-video video {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     border-radius: clamp(10px, 1vw, 12px); /* Optionnel : pour arrondir les bords de la vidéo */
     background-color: #000; /* Fond noir derrière la vidéo si elle n'est pas en plein écran */
@@ -504,7 +504,7 @@ owlR-slider {
     transition: opacity 0.4s ease;
 }
 
-.owlR-slider video.active {
+.owlR-video video.active {
     opacity: 1;
 }
 
@@ -1071,6 +1071,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
