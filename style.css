@@ -420,7 +420,7 @@ main {
     justify-content: center;
     gap: clamp(4px, 2vw, 200px);
     flex-wrap: nowrap;
-    margin-bottom: clamp(20px, 1vw, 30px);
+    margin-bottom: clamp(10px, 0.9vw, 20px);
 }
 
 .owlR-card {
@@ -1055,3 +1055,4 @@ nav a:active {
         }
     }
 }
+
