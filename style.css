@@ -495,7 +495,7 @@ main {
 }
 
 .owlR-video video {
-    /*position: absolute;  /* superposé */
+    position: absolute;  /* superposé */
     /*top: 0;
     left: 0;*/
     width: 100%;
@@ -1073,6 +1073,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
