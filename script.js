@@ -165,11 +165,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const images = card.querySelectorAll('.owlR-slider img');
     const nextBtn = card.querySelector('.owlR-next');
     const prevBtn = card.querySelector('.owlR-prev');
-    const video = card.querySelectorAll('.owlR-video video'); // Vidéo dans la carte
+    const video = card.querySelector('.owlR-video video'); // Vidéo dans la carte
     
     //if (!images.length || !nextBtn || !prevBtn) return; // sécurité
     if (images.length) {
-    let indexImg = 0;
+    let index = 0;
 
     const showImage = i => {
       images.forEach(img => img.classList.remove('active'));
@@ -177,31 +177,24 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     nextBtn.addEventListener('click', () => {
-      indexImg = (indexImg + 1) % images.length;
-      showImage(indexImg);
+      index = (index + 1) % images.length;
+      showImage(index);
     });
 
     prevBtn.addEventListener('click', () => {
-      indexImg = (indexImg - 1 + images.length) % images.length;
-      showImage(indexImg);
+      index = (index - 1 + images.length) % images.length;
+      showImage(index);
     });
     }
     
-    if (video.length) { // Si c'est une carte avec une vidéo
-      let indexVideo = 0;
-
-      const showVideo = i => {
-      video.forEach(video => video.classList.remove('active'));
-      video[i].classList.add('active');
-    };
+    if (video) { // Si c'est une carte avec une vidéo
+      
       nextBtn.addEventListener('click', () => {
-        indexVideo = (indexVideo + 1) % video.length;
-        showVideo(indexVideo);
+       
       });
 
       prevBtn.addEventListener('click', () => {
-         indexVideo = (indexVideo - 1 + video.length) % video.length;
-         showVideo(indexVideo);
+        
       });
     } 
   });
