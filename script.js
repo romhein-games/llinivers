@@ -179,15 +179,11 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.addEventListener('click', () => {
       index = (index + 1) % images.length;
       showImage(index);
-      console.log(index);
-      console.log("Passer à la prochaine image");
     });
 
     prevBtn.addEventListener('click', () => {
       index = (index - 1 + images.length) % images.length;
       showImage(index);
-      console.log(index);
-      console.log("Passer à la précédente image");
     });
     }
     
@@ -196,23 +192,24 @@ document.addEventListener('DOMContentLoaded', () => {
       let index = 0;
 
       const showVideo = i => {
-        videos.forEach(video => video.classList.remove('active'));
-        videos[i].classList.add('active');
+      // Enlever active + PAUSE sur toutes
+      videos.forEach(video => {
+        video.classList.remove('active');
+        video.pause();
+      });
+
+      // Ajouter active sur celle à afficher
+      videos[i].classList.add('active');
       };
       
       nextBtn.addEventListener('click', () => {
        index = (index + 1) % videos.length;
        showVideo(index);
-       console.log(index);
-       console.log(videos.length);
-       console.log("Passer à la prochaine video");
       });
 
       prevBtn.addEventListener('click', () => {
         index = (index - 1 + videos.length) % videos.length;
         showVideo(index);
-        console.log(index);
-        console.log("Passer à la précédente video");
       });
     } 
   });
