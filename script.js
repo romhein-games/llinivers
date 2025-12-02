@@ -179,12 +179,14 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.addEventListener('click', () => {
       index = (index + 1) % images.length;
       showImage(index);
+      console.log(index);
       console.log("Passer à la prochaine image");
     });
 
     prevBtn.addEventListener('click', () => {
       index = (index - 1 + images.length) % images.length;
       showImage(index);
+      console.log(index);
       console.log("Passer à la précédente image");
     });
     }
@@ -201,6 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nextBtn.addEventListener('click', () => {
        index = (index + 1) % videos.length;
        showVideo(index);
+       console.log(index);
        console.log(videos.length);
        console.log("Passer à la prochaine video");
       });
@@ -208,6 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
       prevBtn.addEventListener('click', () => {
         index = (index - 1 + videos.length) % videos.length;
         showVideo(index);
+        console.log(index);
         console.log("Passer à la précédente video");
       });
     } 
