@@ -495,7 +495,8 @@ owlR-slider {
     position: relative;
 }
 
-.owlR-video video {
+.owlR-slider video {
+    position: absolute;
     width: 100%;
     border-radius: clamp(10px, 1vw, 12px); /* Optionnel : pour arrondir les bords de la vidéo */
     background-color: #000; /* Fond noir derrière la vidéo si elle n'est pas en plein écran */
@@ -503,7 +504,7 @@ owlR-slider {
     transition: opacity 0.4s ease;
 }
 
-.owlR-video video.active {
+.owlR-slider video.active {
     opacity: 1;
 }
 
@@ -1070,6 +1071,7 @@ nav a:active {
     margin: 0;
     padding: 0;
 }
+
 
 
 
