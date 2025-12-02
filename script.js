@@ -179,22 +179,24 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.addEventListener('click', () => {
       index = (index + 1) % images.length;
       showImage(index);
+      console.log("Passer à la prochaine image");
     });
 
     prevBtn.addEventListener('click', () => {
       index = (index - 1 + images.length) % images.length;
       showImage(index);
+      console.log("Passer à la précédente image");
     });
     }
     
     if (video) { // Si c'est une carte avec une vidéo
       
       nextBtn.addEventListener('click', () => {
-       
+       console.log("Passer à la prochaine video");
       });
 
       prevBtn.addEventListener('click', () => {
-        
+        console.log("Passer à la précédente video");
       });
     } 
   });
