@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const images = card.querySelectorAll('.owlR-slider img');
     const nextBtn = card.querySelector('.owlR-next');
     const prevBtn = card.querySelector('.owlR-prev');
-    const video = card.querySelector('.owlR-video video'); // Vidéo dans la carte
+    const videos = card.querySelectorAll('.owlR-video video'); // Vidéo dans la carte
     
     //if (!images.length || !nextBtn || !prevBtn) return; // sécurité
     if (images.length) {
@@ -189,13 +189,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     }
     
-    if (video) { // Si c'est une carte avec une vidéo
+    if (videos.length) { // Si c'est une carte avec une vidéo
+
+      let index = 0;
+
+      const showVideo = i => {
+        videos.forEach(video => video.classList.remove('active'));
+        videos[i].classList.add('active');
+      };
       
       nextBtn.addEventListener('click', () => {
+       index = (index + 1) % videos.length;
+       showVideo(index);
+       console.log(videos.length);
        console.log("Passer à la prochaine video");
       });
 
       prevBtn.addEventListener('click', () => {
+        index = (index - 1 + videos.length) % videos.length;
+        showVideo(index);
         console.log("Passer à la précédente video");
       });
     } 
