@@ -252,6 +252,14 @@ document.addEventListener('DOMContentLoaded', () => {
       openOverlay(document.getElementById("menOverlay"));
     });
   }
+
+  // -------- CGU SITE
+  const openCguORButton = document.getElementById("openCguORButton");
+  if (openCguORButton) {
+    openCguORButton.addEventListener("click", () => {
+      openOverlay(document.getElementById("CguOROverlay"));
+    });
+  }
   
   // -------- CGU OWL RUNNER
   const openCguButton = document.getElementById("openCguButton");
