@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const openCguORButton = document.getElementById("openCguORButton");
   if (openCguORButton) {
     openCguORButton.addEventListener("click", () => {
-      openOverlay(document.getElementById("CguOROverlay"));
+      openOverlay(document.getElementById("cguOROverlay"));
     });
   }
   
