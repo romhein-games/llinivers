@@ -287,6 +287,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // -------- POLITIQUE DEPUIS MENTIONS OWL RUNNER
+  if (openPolButton) {
+    document.getElementById("menOROverlay").addEventListener("click", (e) => {
+      if (e.target && e.target.id === 'openPolButton') {
+        closeOverlay(document.getElementById("menOROverlay"))
+        openOverlay(document.getElementById("polOverlay"));
+      }
+    });
+  }
+
   // -------- QR CODE DOWNLOAD
   const downloadBtn = document.getElementById('download-btn');
   const qrOverlay = document.getElementById('qrOverlay');
