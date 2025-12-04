@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-   // -------- MENTIONS
+   // -------- MENTIONS SITE
   const openMenButton = document.getElementById("openMenButton");
   if (openMenButton) {
     openMenButton.addEventListener("click", () => {
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
-  // -------- CGU
+  // -------- CGU OWL RUNNER
   const openCguButton = document.getElementById("openCguButton");
   if (openCguButton) {
     openCguButton.addEventListener("click", () => {
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // -------- POLITIQUE
+  // -------- POLITIQUE CONFIDENTIALITE OWL RUNNER
   const openPolButton = document.getElementById("openPolButton");
   if (openPolButton) {
     openPolButton.addEventListener("click", () => {
@@ -269,13 +269,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // -------- POLITIQUE DEPUIS CGU
+  // -------- POLITIQUE DEPUIS CGU OWL RUNNER
   if (openPolButton) {
     document.getElementById("cguOverlay").addEventListener("click", (e) => {
       if (e.target && e.target.id === 'openPolButton') {
         closeOverlay(document.getElementById("cguOverlay"))
         openOverlay(document.getElementById("polOverlay"));
       }
+    });
+  }
+
+  // -------- MENTIONS OWL RUNNER
+  const openMenORButton = document.getElementById("openMenORButton");
+  if (openMenORButton) {
+    openMenORButton.addEventListener("click", () => {
+      openOverlay(document.getElementById("menOROverlay"));
     });
   }
 
