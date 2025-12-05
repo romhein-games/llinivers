@@ -118,7 +118,7 @@ main {
 
     background: #1e90ff;
     color: white;
-    font-size: clamp(0.4rem, 1.5vw, 1.2rem); /* taille responsive */
+    font-size: clamp(0.9rem, 1.5vw, 1rem); /* taille responsive */
     padding: clamp(10px, 1.5vw, 15px); /*clamp(20px, 3vw, 30px);  padding responsive */
     border-radius: 30px;
     text-decoration: none;
@@ -1055,6 +1055,7 @@ nav a:active {
         }
     }
 }
+
 
 
 
