@@ -1,5 +1,5 @@
 // 🔄 Au retour sur la page (pageshow), on recharge la langue stockée
-window.addEventListener("pageshow", function () {
+window.addEventListener("pageshow", function (event) {
   const lang = localStorage.getItem("preferredLanguage");
   if (!lang) return;
 
@@ -15,18 +15,12 @@ window.addEventListener("pageshow", function () {
     window.location.href = window.location.pathname.replace("/en", "");
   }
 
-  // Réinitialisation des boutons <bouton>
-  const buttons = document.querySelectorAll("button");
-  buttons.forEach(btn =>{
-    btn.disabled = false; // remet le bouton actif
-  });
-
-   // Réinitialisation des liens <a>
-  const links = document.querySelectorAll("a");
-  links.forEach(link =>{
-    link.style.pointerEvents = "auto"; // clic autorisé
-    link.style.opacity = "1"; // visuel normal
-  });
+ if (event.persited) {
+   // 'persited est vrai si la page est chargée depuis le bfcache
+   document.querySelectorAll('a, button'). forEach(el => {
+     el.blur();
+   });
+ }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
