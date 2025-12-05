@@ -257,6 +257,7 @@ main {
     border-radius: clamp(10px, 1vw, 12px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: clamp(10px, 2.5vw, 100px);  /*clamp(15px, 3vw, 50px);*/
+    background: rgba(255, 0, 0, 0.8);
 }
 
 .community {
@@ -1055,5 +1056,6 @@ nav a:active {
         }
     }
 }
+
 
 
