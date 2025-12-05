@@ -17,13 +17,13 @@ window.addEventListener("pageshow", function () {
 
   // Réinitialisation des boutons <bouton>
   const buttons = document.querySelectorAll("button");
-  links.forEach(link =>{
+  buttons.forEach(btn =>{
     btn.disabled = false; // remet le bouton actif
   });
 
    // Réinitialisation des liens <a>
   const links = document.querySelectorAll("a");
-  buttons.forEach(btn =>{
+  links.forEach(link =>{
     link.style.pointerEvents = "auto"; // clic autorisé
     link.style.opacity = "1"; // visuel normal
   });
