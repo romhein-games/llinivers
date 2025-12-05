@@ -1,5 +1,5 @@
 // 🔄 Au retour sur la page (pageshow), on recharge la langue stockée
-window.addEventListener("pageshow", function (event) {
+window.addEventListener("pageshow", function () {
   const lang = localStorage.getItem("preferredLanguage");
   if (!lang) return;
 
@@ -14,13 +14,6 @@ window.addEventListener("pageshow", function (event) {
   if (lang === "fr" && isEnglishPage) {
     window.location.href = window.location.pathname.replace("/en", "");
   }
-
- if (event.persited) {
-   // 'persited est vrai si la page est chargée depuis le bfcache
-   document.querySelectorAll('a, button'). forEach(el => {
-     el.blur();
-   });
- }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -41,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('touchend', () => {
       const link = el.dataset.link || el.getAttribute('href');
       if (link) window.location.href = link;
+      el.blur();
     });
 
     // Supprime le focus / hover collant
