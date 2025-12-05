@@ -14,8 +14,20 @@ window.addEventListener("pageshow", function () {
   if (lang === "fr" && isEnglishPage) {
     window.location.href = window.location.pathname.replace("/en", "");
   }
-});
 
+  // Réinitialisation des boutons <bouton>
+  const buttons = document.querySelectorAll("button");
+  links.forEach(link =>{
+    btn.disabled = false; // remet le bouton actif
+  });
+
+   // Réinitialisation des liens <a>
+  const links = document.querySelectorAll("a");
+  buttons.forEach(btn =>{
+    link.style.pointerEvents = "auto"; // clic autorisé
+    link.style.opacity = "1"; // visuel normal
+  });
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   // ---------------------------
