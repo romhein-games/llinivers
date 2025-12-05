@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mobile / tactile : déclenchement au relâchement du toucher
     el.addEventListener('touchend', () => {
+      el.blur();
       const link = el.dataset.link || el.getAttribute('href');
       if (link) window.location.href = link;
-      el.blur();
     });
 
     // Supprime le focus / hover collant
