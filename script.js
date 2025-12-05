@@ -32,8 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mobile / tactile : déclenchement au relâchement du toucher
     el.addEventListener('touchend', () => {
-      el.blur();
-      el.classList.remove('hover');
       const link = el.dataset.link || el.getAttribute('href');
       if (link) window.location.href = link;
     });
