@@ -362,6 +362,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: clamp(5px, 1vw, 20px);
     border-radius: clamp(10px, 2vw, 40px);
 }
 
