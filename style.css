@@ -359,12 +359,13 @@ main {
 
 .pic {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border-radius: clamp(10px, 2vw, 40px);
 }
 
 .pic img {
-    width: clamp(50px, 50vw, 700px);/*50%;*/
+    width: clamp(150px, 50vw, 700px);/*50%;*/
     height: auto;
     border-radius: clamp(10px, 2vw, 40px);
 }
