@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const downloadBtn = document.getElementById('download-btn');
   const qrOverlay = document.getElementById('qrOverlay');
   const qrCodeImg = document.getElementById('qr-code');
-  const playStoreUrl = "https://play.google.com/store/apps/details?id=com.test.jeu";
+  const playStoreUrl = "https://play.google.com/store/apps/details?id=com.llinivers.owlrunner";
 
   function isMobileOrTablet() {
     return /Mobi|Android|iPhone|iPad|Tablet/i.test(navigator.userAgent);
